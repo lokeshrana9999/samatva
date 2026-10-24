@@ -1,0 +1,60 @@
+# Checks that cost nothing to run. The evals are not run here: they call a model and cost money,
+# so CONTRIBUTING.md asks for them by hand before merging a change to a skill's text.
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  shared-blocks:
+    name: shared blocks in sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/sync-shared.mjs --check
+
+  scripts:
+    name: scripts compile, example profile lints clean
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Skills and their scripts land one a day, so each step checks only what is there yet.
+      - name: py_compile
+        run: |
+          shopt -s nullglob
+          python3 -m py_compile plugins/samatva/scripts/*.py scripts/eval-stats.py
+      - name: profile-lint examples/voice.md
+        if: hashFiles('examples/voice.md', 'plugins/samatva/scripts/profile-lint.py') != ''
+        run: |
+          out="$(python3 plugins/samatva/scripts/profile-lint.py examples/voice.md)"
+          echo "$out"
+          test "$out" = clean
+
+  plugin:
+    name: plugin and marketplace validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Pinned so a CLI release can't turn the check red on its own; bump it on purpose.
+      - run: npm install -g @anthropic-ai/claude-code@2.1.310
+      # Needs no login or API key. The ICON_MISSING warning does not fail the check.
+      - run: claude plugin validate plugins/samatva
+      - run: claude plugin validate .

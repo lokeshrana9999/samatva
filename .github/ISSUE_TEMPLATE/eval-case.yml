@@ -1,0 +1,57 @@
+name: new eval case
+description: Propose a case that checks whether a host model holds one of a skill's rules.
+title: "eval case: "
+labels: [eval-case]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every transcript, fixture, and example in this repo is synthetic: invented first names, no real person, workplace, or event. If your case is modelled on a real conversation, rename every person and place, change every amount and date, and rephrase every line before you write it here. Never paste a real chat or export.
+
+        How cases and graders are built: [docs/evals.md](https://github.com/lokeshrana9999/samatva/blob/main/docs/evals.md), in particular "make the baseline fail by construction".
+  - type: dropdown
+    id: skill
+    attributes:
+      label: skill
+      options:
+        - samatva (router)
+        - vent
+        - think-it-through
+        - cool-down-close
+        - cold-read-check
+        - before-you-send
+        - voice-setup
+    validations:
+      required: true
+  - type: textarea
+    id: trap
+    attributes:
+      label: the trap
+      description: What the prompt baits the model into doing that the skill forbids (advice, agreeing with a plan, labelling someone, drafting while flooded, a long reply, a retention hook), and the rule it tests.
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: why the baseline fails by construction
+      description: What only the skill knows about, so a run without the plugin should fail the graders. A case the baseline passes 80% of the time or more tells us nothing.
+    validations:
+      required: true
+  - type: textarea
+    id: graders
+    attributes:
+      label: graders
+      description: One line each. Say which are regexes (caps, literal tags, markers) and which are judge questions, and pair each format check with one on the behaviour itself.
+  - type: textarea
+    id: transcript
+    attributes:
+      label: synthetic transcript
+      description: Optional. The conversation the prompt embeds, with invented names. Hinglish and other code-mixed cases are welcome.
+      render: markdown
+  - type: checkboxes
+    id: synthetic
+    attributes:
+      label: privacy
+      options:
+        - label: The case is synthetic. No real transcript, export, person, workplace, or event is in it.
+          required: true

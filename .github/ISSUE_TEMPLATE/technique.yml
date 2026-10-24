@@ -1,0 +1,62 @@
+name: new cold-reading technique
+description: Propose a technique for cold-read-check to name, with its tell and a synthetic example.
+title: "technique: "
+labels: [technique]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        `cold-read-check` names what words in a transcript do, never what the person who said them is. Describe the technique the same way: no diagnosis of anyone, no real reader, astrologer, or business. The current ten are in `plugins/samatva/skills/cold-read-check/references/techniques.md`.
+
+        The example must be synthetic: invented first names, no real call or chat.
+  - type: input
+    id: name
+    attributes:
+      label: name
+      description: Short and lowercase, the way it would appear in an audit.
+      placeholder: the borrowed deadline
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: what it does
+      description: Two or three plain sentences on how it works and why it lands.
+    validations:
+      required: true
+  - type: textarea
+    id: tell
+    attributes:
+      label: tell
+      description: What in a transcript shows it is happening, specific enough that a reader could point at the line.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: synthetic micro-transcript
+      description: Four to ten timestamped lines with invented names that show the tell. Any language, code-mixed is fine.
+      placeholder: |
+        00:40 reader: there's a date coming up that matters to you, isn't there?
+        00:55 riya: my cousin's wedding is next month
+        02:10 reader: yes, the wedding. something has to be done before it, or it will go wrong
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: defense
+    attributes:
+      label: defense
+      description: One line on what the listener can notice or do.
+  - type: input
+    id: source
+    attributes:
+      label: source
+      description: Where the technique is described (a book, a paper, a study). Optional but it helps.
+  - type: checkboxes
+    id: synthetic
+    attributes:
+      label: privacy
+      options:
+        - label: The micro-transcript is synthetic. It is not a real call, chat, or reading, and names no real person or business.
+          required: true

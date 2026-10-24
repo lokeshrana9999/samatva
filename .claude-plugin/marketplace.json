@@ -1,0 +1,13 @@
+{
+  "name": "samatva",
+  "description": "Agent Skills (SKILL.md) for staying steady in a hard conversation: vent without being advised, think it through, close a session, check a reading or warning for cold-reading tricks, and hold a message until you are calm. Works mid-conversation with any agent that reads SKILL.md.",
+  "owner": { "name": "Lokesh Rana", "email": "lokeshrana9999@gmail.com", "url": "https://github.com/lokeshrana9999" },
+  "plugins": [
+    {
+      "name": "samatva",
+      "source": "./plugins/samatva",
+      "description": "De-escalation and manipulation-awareness skills: a router plus vent, think-it-through, cool-down-close, cold-read-check, before-you-send, and voice-setup, which learns your talking style from your own messages. Restraint rules live in the skill text, with optional scripts and an eval set to measure whether your host model holds them.",
+      "homepage": "https://github.com/lokeshrana9999/samatva"
+    }
+  ]
+}

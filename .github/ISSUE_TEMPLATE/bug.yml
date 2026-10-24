@@ -1,0 +1,78 @@
+name: bug
+description: A skill broke one of its rules, a script failed, or install or validate went wrong.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Don't paste a real chat, a real voice profile, a chat export, or anyone's real name: rewrite the lines with invented first names, places, amounts, and dates before you post them. Never paste an API key, token, or login.
+
+        samatva is not a crisis service. If you or someone near you is in danger, call your local emergency number; findahelpline.com lists free lines by country.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: what went wrong
+      options:
+        - a skill broke a rule (advice, options, a label for someone, too long, a retention hook)
+        - the risk handoff missed a signal, or fired on plain anger
+        - the router picked the wrong skill, or none
+        - a script failed (voice-stats.py, profile-lint.py, arousal.py)
+        - install, plugin validate, or sync-shared
+        - something else
+    validations:
+      required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: skill
+      options:
+        - samatva (router)
+        - vent
+        - think-it-through
+        - cool-down-close
+        - cold-read-check
+        - before-you-send
+        - voice-setup
+        - none, or not sure
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: agent and model
+      description: The agent you ran it in, and the model if you know it.
+      placeholder: Claude Code 2.1.310, sonnet
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: samatva version
+      description: The `version` in `plugins/samatva/.claude-plugin/plugin.json`, or the commit you installed from.
+      placeholder: 0.1.0
+  - type: textarea
+    id: steps
+    attributes:
+      label: how to reproduce
+      description: The messages you sent, rewritten so every name, place, amount, and date is invented. The shortest run that still shows it is best.
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: what it did
+      description: The reply, or the error output. Rewrite any real detail in the reply too.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: what it should have done
+      description: Name the rule if you know which one (for example "vent caps a reply at two sentences").
+  - type: checkboxes
+    id: synthetic
+    attributes:
+      label: privacy
+      options:
+        - label: Everything above is synthetic or rewritten. No real chat, export, name, or credential is in this issue.
+          required: true

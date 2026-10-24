@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: questions and ideas
+    url: https://github.com/lokeshrana9999/samatva/discussions
+    about: Ask how something works, or float an idea before it becomes an issue.
+  - name: if you need help right now
+    url: https://findahelpline.com
+    about: samatva is not a crisis service. If you or someone near you is in danger, call your local emergency number or a line listed here.

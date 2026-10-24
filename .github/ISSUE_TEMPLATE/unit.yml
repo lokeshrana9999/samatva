@@ -1,0 +1,43 @@
+name: unit
+description: One day's rollout unit, a single change a user can see or run, landed through one PR.
+title: "day N: "
+labels: [unit]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A unit is one merged commit on `main` that changes something a user can see or run, and that can be described truthfully in one sentence. Add the week's label and milestone after opening. Leave the checklist unticked; tick each item as the PR meets it.
+  - type: textarea
+    id: ships
+    attributes:
+      label: ships
+      description: What the commit changes, in one or two plain sentences.
+    validations:
+      required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: skill touched
+      options:
+        - none
+        - samatva (router)
+        - vent
+        - think-it-through
+        - cool-down-close
+        - cold-read-check
+        - before-you-send
+        - voice-setup
+        - more than one
+    validations:
+      required: true
+  - type: checkboxes
+    id: done
+    attributes:
+      label: definition of done
+      options:
+        - label: "Synthetic only: no real transcript, name, or export anywhere in the change."
+        - label: "`node scripts/sync-shared.mjs --check` and `claude plugin validate plugins/samatva` pass."
+        - label: "If a skill's text changed, its evals ran (`--tag <skill>`) and the delta did not drop."
+        - label: "If a script changed, its tests ran."
+        - label: "One line under `[Unreleased]` in CHANGELOG.md."
+        - label: "The PR references this issue (`Closes #n`) and is merged, not pushed to `main`."

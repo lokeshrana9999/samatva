@@ -1,0 +1,14 @@
+# eval runs
+evals/*/results/
+plugins/*/evals/results/
+node_modules/
+__pycache__/
+*.pyc
+# a real voice profile or chat export must never be committed; examples/voice.md is synthetic
+.claude/samatva/
+*.whatsapp.txt
+
+# working notes from the design session (local paths, private context); docs/architecture.md is the published copy
+/PLAN.md
+/ARCHITECTURE.md
+/deescalation-companion-architecture.md

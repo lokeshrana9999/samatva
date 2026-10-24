@@ -1,0 +1,90 @@
+name: crisis line correction or addition
+description: A number in the risk handoff is wrong or out of date, or a country is missing.
+title: "crisis line: "
+labels: [crisis-line]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The crisis resource list lives in one place, `plugins/samatva/skills/_shared/risk-handoff.md`, and is pasted into every skill. A number goes in only when it has been checked against the operator's own site, so the source URL and the date you checked are required.
+
+        Please don't share your own situation here; this issue is public. If you need help now, call your local emergency number or find a line at findahelpline.com.
+
+        If you also propose an eval case for this line, its transcript must be synthetic: invented names, no real conversation.
+  - type: dropdown
+    id: change
+    attributes:
+      label: change
+      options:
+        - a listed number is wrong or no longer works
+        - a listed number is right but its hours, cost, or name changed
+        - add a country or a line
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: country
+      placeholder: Kenya
+    validations:
+      required: true
+  - type: input
+    id: service
+    attributes:
+      label: service and operator
+      description: The line's name and who runs it.
+      placeholder: the line's name, then the charity or ministry that runs it
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: what the line is for
+      options:
+        - suicide, self-harm, or emotional crisis
+        - being hurt or controlled at home
+        - emergency services
+        - other
+    validations:
+      required: true
+  - type: input
+    id: number
+    attributes:
+      label: number
+      description: As a caller in that country would dial it. Add text or chat options if the line has them.
+    validations:
+      required: true
+  - type: input
+    id: hours
+    attributes:
+      label: hours and cost
+      placeholder: free, 24x7
+  - type: input
+    id: source
+    attributes:
+      label: operator source URL
+      description: The operator's own page that lists the number, not an aggregator or a news story.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: date checked
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: notes
+      description: For a correction, the line as it reads now and what it should say.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: checks
+      options:
+        - label: I checked the number on the operator's own site on the date above.
+          required: true
+        - label: This issue holds no personal story and no real chat content.
+          required: true
