@@ -1,4 +1,4 @@
-<!-- Source of truth for the risk block in every samatva SKILL.md. Edit here, then run `node scripts/sync-shared.mjs`. This comment is not copied. -->
+<!-- Source of truth for the risk block in every samatva SKILL.md. Edit here, then run `node scripts/sync-shared.mjs`. Every crisis number below was last checked against its operator's own site on 2026-10-25; recheck before each release. This comment is not copied. -->
 ## first: risk
 
 Before anything else in this skill, read every user message for these signals:

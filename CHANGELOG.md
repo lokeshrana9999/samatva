@@ -12,3 +12,7 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 - The `check` workflow: shared blocks in sync, scripts compile, plugin and marketplace validate.
 - Issue forms (bug, eval case, technique, crisis-line correction, unit) and a pull request template.
 - `README.md`, `PRIVACY.md`, `CONTRIBUTING.md`, `LICENSE` (MIT), and `docs/architecture.md`, the design the skills are cut from.
+
+### Changed
+
+- `risk-handoff.md` records when its crisis numbers were last checked against each operator's own site (2026-10-25); every number was confirmed unchanged.
