@@ -14,21 +14,17 @@ A skill cannot enforce anything. It is text a model reads, and a sycophantic hos
 
 samatva is not therapy and not a crisis service. Every skill checks for self-harm, harm to others, and being harmed, and when it sees a signal it stops and points to a person and a crisis line instead of carrying on.
 
-## Skills, one a day
+## Skills
 
-The skills land here one per day, each in its own pull request with its evals. The plan is in the pinned [Roadmap](https://github.com/lokeshrana9999/samatva/issues/1) issue.
-
-| Day | Skill | Use it when | Status |
-|---|---|---|---|
-| 1 | `vent` | you're angry or flooded, "I just need to vent" | [#10](https://github.com/lokeshrana9999/samatva/issues/10) |
-| 2 | `before-you-send` | you want to write to someone while angry | [#11](https://github.com/lokeshrana9999/samatva/issues/11) |
-| 3 | `samatva` | any upset; it picks the skill for you | [#12](https://github.com/lokeshrana9999/samatva/issues/12) |
-| 4 | `think-it-through` | you're calmer and want to decide | [#13](https://github.com/lokeshrana9999/samatva/issues/13) |
-| 5 | `cool-down-close` | the session is long or you're ready to stop | [#14](https://github.com/lokeshrana9999/samatva/issues/14) |
-| 6 | `cold-read-check` | a reading, warning, or prediction left you unsettled | [#15](https://github.com/lokeshrana9999/samatva/issues/15) |
-| 7 | `voice-setup` | you want replies to sound like you | [#16](https://github.com/lokeshrana9999/samatva/issues/16) |
-
-Until a skill's day, the skills that hand over to it use a one-line summary of it instead.
+| Skill | Use it when | |
+|---|---|---|
+| `samatva` | any upset; it picks the skill for you | coming soon |
+| `vent` | you're angry or flooded, "I just need to vent" | coming soon |
+| `think-it-through` | you're calmer and want to decide | coming soon |
+| `cool-down-close` | the session is long or you're ready to stop | coming soon |
+| `cold-read-check` | a reading, warning, or prediction left you unsettled | coming soon |
+| `before-you-send` | you want to write to someone while angry | coming soon |
+| `voice-setup` | you want replies to sound like you | coming soon |
 
 ## Install
 

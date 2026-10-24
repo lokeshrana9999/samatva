@@ -6,7 +6,7 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 
 ### Added
 
-- The `samatva` plugin and marketplace manifests, at 0.0.0 with no skills yet; skills land one a day from 0.0.1.
+- The `samatva` plugin and marketplace manifests, at 0.0.0 with no skills yet.
 - Three shared blocks, pasted by `scripts/sync-shared.mjs` (with `--check` for CI): `risk-handoff.md` and `no-memory.md` for every `SKILL.md`, and `arousal-check.md` for the skills that gate on how worked up the user is.
 - `scripts/run-evals.sh`, `scripts/eval-stats.py`, and `evals/config/windows.sh`, copied unchanged from the shipyard repo.
 - The `check` workflow: shared blocks in sync, scripts compile, plugin and marketplace validate.

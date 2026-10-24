@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # Skills and their scripts land one a day, so each step checks only what is there yet.
+      # Each step checks only the scripts and files that exist.
       - name: py_compile
         run: |
           shopt -s nullglob
