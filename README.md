@@ -57,4 +57,4 @@ Replace `codex` with your agent (`cursor`, `gemini-cli`, ...). Add `-g` to insta
 
 ## Contributing and license
 
-[CONTRIBUTING.md](CONTRIBUTING.md) has the repo layout, the rules for changing a skill, and the privacy rules for fixtures; [PRIVACY.md](PRIVACY.md) says what is read and what is written; [CHANGELOG.md](CHANGELOG.md) lists what changed. MIT, see [LICENSE](LICENSE). The cover art in `docs/assets/` was generated with Grok Imagine (xAI); the wordmark is set in Bahnschrift.
+[CONTRIBUTING.md](CONTRIBUTING.md) has the repo layout, the rules for changing a skill, and the privacy rules for fixtures; [PRIVACY.md](PRIVACY.md) says what is read and what is written; [CHANGELOG.md](CHANGELOG.md) lists what changed. MIT, see [LICENSE](LICENSE). The cover art in `docs/assets/` and the plugin icon were generated with Grok Imagine (xAI); the wordmark is set in Bahnschrift.
