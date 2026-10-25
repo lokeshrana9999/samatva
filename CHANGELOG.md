@@ -11,6 +11,7 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 - `scripts/run-evals.sh`, `scripts/eval-stats.py`, and `evals/config/windows.sh`, copied unchanged from the shipyard repo.
 - The `check` workflow: shared blocks in sync, scripts compile, plugin and marketplace validate.
 - Issue forms (bug, eval case, technique, crisis-line correction, unit) and a pull request template.
+- A project review concern for the shipyard `pr-review` skill, `.claude/shipyard/pr-review/concerns.md`: `process/out-of-unit-scope` flags any file, hunk, or reference in a PR that belongs to another unit, including links, paths, and hand-overs to skills or files not yet on `main`.
 - `README.md`, `PRIVACY.md`, `CONTRIBUTING.md`, `LICENSE` (MIT), and `docs/architecture.md`, the design the skills are cut from.
 - The plugin icon, `plugins/samatva/.claude-plugin/icon.png` (1024 px), generated with Grok Imagine.
 
