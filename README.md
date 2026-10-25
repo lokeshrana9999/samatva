@@ -19,7 +19,7 @@ samatva is not therapy and not a crisis service. Every skill checks for self-har
 | Skill | Use it when | |
 |---|---|---|
 | `samatva` | any upset; it picks the skill for you | coming soon |
-| `vent` | you're angry or flooded, "I just need to vent" | coming soon |
+| `vent` | you're angry or flooded, "I just need to vent" | Reflections only, two sentences at most, no advice, no options, no labels for anyone. Holds until you're calmer |
 | `think-it-through` | you're calmer and want to decide | coming soon |
 | `cool-down-close` | the session is long or you're ready to stop | coming soon |
 | `cold-read-check` | a reading, warning, or prediction left you unsettled | coming soon |
