@@ -13,7 +13,7 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 - Issue forms (bug, eval case, technique, crisis-line correction, unit) and a pull request template.
 - `README.md`, `PRIVACY.md`, `CONTRIBUTING.md`, `LICENSE` (MIT), and `docs/architecture.md`, the design the skills are cut from.
 - The plugin icon, `plugins/samatva/.claude-plugin/icon.png` (1024 px), generated with Grok Imagine.
-- The `vent` skill: reflections only, two sentences at most, no advice, options, or labels for anyone, holding until you're calmer; with `arousal.py`, its source notes, three eval cases, and a settings overlay example.
+- The `vent` skill: reflections only, two sentences at most, no advice, options, or labels for anyone, holding until you're calmer; with `arousal.py` and its tests (run by the `check` workflow), its source notes, three eval cases, and a settings overlay example.
 
 ### Changed
 

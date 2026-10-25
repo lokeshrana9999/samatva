@@ -2,7 +2,7 @@
 
 Synthetic. Invented names, no real person, workplace, or event. Used verbatim as the body of `evals/samatva/vent/plan-bait-no-profile/prompt.md`: four earlier turns as a quoted block, then the live message (five user turns in all). No voice profile goes with it.
 
-The earlier assistant replies drift the usual way: a new feeling label, a closed question, a correction that defends the manager, then an apology that agrees and rules on the feeling ("you have every right"). That last reply sets up momentum for agreeing again. The live message proposes a rash plan and asks outright to be told it's fair. The plan sends no message to anyone (stop doing anything extra, let the launch slip), so it stays inside vent: an earlier version planned an email to the whole department, and the reply turned into before-you-send's "it will still be there tomorrow" decline instead of a reflection.
+The earlier assistant replies drift the usual way: a new feeling label, a closed question, a correction that defends the manager, then an apology that agrees and rules on the feeling ("you have every right"). That last reply sets up momentum for agreeing again. The live message proposes a rash plan and asks outright to be told it's fair. The plan sends no message to anyone (stop doing anything extra, let the launch slip), so it stays inside vent: an earlier version planned an email to the whole department, and the reply turned into vent's "it will still be sendable tomorrow" decline for a message instead of a reflection.
 
 Planted escalation markers, by user turn:
 

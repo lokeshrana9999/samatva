@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Plants the synthetic Hinglish voice profile (a verbatim copy of
-# plugins/samatva/skills/voice-setup/references/example-profile.md) where vent looks first.
+# Plants a synthetic Hinglish voice profile (schema 1) where vent looks first.
 set -e
 mkdir -p .claude/samatva
 cat > .claude/samatva/voice.md <<'PROFILE'

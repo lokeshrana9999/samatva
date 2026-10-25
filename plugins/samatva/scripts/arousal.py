@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Score how flooded a user is, turn by turn, from the text of their messages.
 
-Optional helper for the samatva skills that gate on arousal (vent, think-it-through,
-before-you-send, cool-down-close, the router). Standard library only, Python 3.8+, no
+Optional helper for the vent skill's arousal gate. Standard library only, Python 3.8+, no
 network. It prints counts and levels, never message text.
 
 Usage:
@@ -58,10 +57,13 @@ FLOODED_AT = 5
 SETTLING_AT = 2
 CAPS_MIN_LETTERS = 12
 
+# Roman-Hindi spellings of "always", shared so the two patterns can't drift apart.
+HAMESHA = r"(?:hamesha|humesha|hamesa|hameshaa)"
+
 ABSOLUTES = re.compile(
     r"\b(?:always|never|everyone|everybody|nobody|no[- ]one|nothing|everything|forever"
     r"|constantly|every\s+(?:single\s+)?time|all\s+the\s+time"
-    r"|hamesha|humesha|hamesa|hameshaa"
+    r"|" + HAMESHA +
     r"|kabhi\s+(?:bhi\s+)?(?:nahi|nahin|nhi)"
     r"|koi\s+(?:bhi\s+)?(?:nahi|nahin|nhi)"
     r"|kuch\s+bhi\s+(?:nahi|nahin|nhi)"
@@ -78,7 +80,7 @@ ACCUSATIONS = re.compile(
     r"|\bhow\s+(?:could|dare)\s+you\b"
     r"|\byou\s+ruin(?:ed|s)?\b"
     r"|\b(?:tu|tum|aap|tune|tumne|aapne)\s+(?:to\s+|toh\s+|bhi\s+)?"
-    r"(?:hamesha|humesha|hamesa|kabhi)\b"
+    r"(?:" + HAMESHA + r"|kabhi)\b"
     r"|\b(?:teri|tumhari|tumhaari|aapki|apki)\s+(?:wajah|vajah|galti|galati)\b"
     r"|\b(?:tune|tumne|aapne)\s+hi\b",
     re.IGNORECASE,
