@@ -2,7 +2,7 @@
 
 # samatva
 
-samatva is a set of agent skills for the moment a conversation, or a person, has got under your skin. Say you're furious and need to vent, that a reading or a warning left you unsettled, or that you're about to send a message you might regret, and the `samatva` router picks one skill and holds to its rules: listen before anything else, never advise while you're flooded, never pass judgement on the people you talk about, and hand you back to a human when the session is done.
+samatva is a set of agent skills for the moment a conversation, or a person, has got under your skin. Say you're furious and need to vent, and `vent` holds to its rules: listen before anything else, never advise while you're flooded, never pass judgement on the people you talk about, and hand you back to a human when the session is done.
 
 The name is Sanskrit for equanimity, from the Gita's *samatvam yoga uchyate*, "evenness of mind is called yoga".
 

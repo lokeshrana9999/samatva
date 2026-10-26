@@ -19,3 +19,4 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 ### Changed
 
 - `risk-handoff.md` records when its crisis numbers were last checked against each operator's own site (2026-10-25); every number was confirmed unchanged.
+- The plugin and marketplace descriptions, the plugin keywords, and the README intro describe only the skills that have shipped (now `vent`); each skill's PR adds itself back.

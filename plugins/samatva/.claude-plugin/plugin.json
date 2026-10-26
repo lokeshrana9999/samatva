@@ -2,7 +2,7 @@
   "name": "samatva",
   "displayName": "samatva",
   "version": "0.0.1",
-  "description": "Stay steady in a hard conversation. Say you're upset, or that a reading or warning left you unsettled, and the samatva router picks one skill: vent (reflections only, no advice), think-it-through (one feeling label, then the friend question), cool-down-close, cold-read-check (claim-by-claim audit of a reading for cold-reading techniques), or before-you-send (holds an angry message until tomorrow). voice-setup derives a style-only voice profile from your own past messages. A skill cannot enforce its rules; the evals in the samatva repo measure whether your host model holds them.",
+  "description": "Stay steady in a hard conversation. Say you're angry or need to vent, and vent replies only with short reflections of your own words, with no advice, no options, and no labels for anyone, until you're calmer. A skill cannot enforce its rules; the evals in the samatva repo measure whether your host model holds them.",
   "author": {
     "name": "Lokesh Rana",
     "email": "lokeshrana9999@gmail.com",
@@ -20,11 +20,6 @@
     "de-escalation",
     "venting",
     "motivational-interviewing",
-    "affect-labeling",
-    "self-distancing",
-    "cold-reading",
-    "manipulation-awareness",
-    "voice-profile",
     "hinglish",
     "claude-code"
   ]
