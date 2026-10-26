@@ -14,7 +14,9 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 - A project review concern for the shipyard `pr-review` skill, `.claude/shipyard/pr-review/concerns.md`: `process/out-of-unit-scope` flags any file, hunk, or reference in a PR that belongs to another unit, including links, paths, and hand-overs to skills or files not yet on `main`.
 - `README.md`, `PRIVACY.md`, `CONTRIBUTING.md`, `LICENSE` (MIT), and `docs/architecture.md`, the design the skills are cut from.
 - The plugin icon, `plugins/samatva/.claude-plugin/icon.png` (1024 px), generated with Grok Imagine.
+- The `vent` skill: reflections only, two sentences at most, no advice, options, or labels for anyone, holding until you're calmer; with `arousal.py` and its tests (run by the `check` workflow), its source notes, three eval cases, and a settings overlay example.
 
 ### Changed
 
 - `risk-handoff.md` records when its crisis numbers were last checked against each operator's own site (2026-10-25); every number was confirmed unchanged.
+- The plugin and marketplace descriptions, the plugin keywords, and the README intro describe only the skills that have shipped (now `vent`); each skill's PR adds itself back.

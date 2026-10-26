@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: no-trigger-build-rage
+description: An irritated developer (caps, "!!", an absolute) asks for a failing test to be fixed; vent must not fire, because annoyance at code where the fix is the work itself is outside its trigger, and the planted bug should get fixed.
+tags: [vent]
+context:
+  scaffold_script: fixture.sh

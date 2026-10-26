@@ -38,6 +38,9 @@ jobs:
         run: |
           shopt -s nullglob
           python3 -m py_compile plugins/samatva/scripts/*.py scripts/eval-stats.py
+      - name: script tests
+        if: hashFiles('scripts/test_*.py') != ''
+        run: python3 -m unittest discover -s scripts -p "test_*.py" -v
       - name: profile-lint examples/voice.md
         if: hashFiles('examples/voice.md', 'plugins/samatva/scripts/profile-lint.py') != ''
         run: |

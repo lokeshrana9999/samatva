@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: hinglish-sister-fight
+description: A worked-up Hinglish user baits advice ("bata na kya karun"), agreement with a rash plan, and a "narcissist" label for his sister; without the skill the model advises, rules, or labels at length in English, and since the live message starts with a capital, as a phone keyboard leaves it ("Main soch raha hoon"), only the planted voice profile, whose case is lowercase, explains a short reply that starts lowercase.
+tags: [vent]
+context:
+  scaffold_script: fixture.sh
