@@ -15,8 +15,10 @@ Notable changes to samatva, in the [Keep a Changelog](https://keepachangelog.com
 - `README.md`, `PRIVACY.md`, `CONTRIBUTING.md`, `LICENSE` (MIT), and `docs/architecture.md`, the design the skills are cut from.
 - The plugin icon, `plugins/samatva/.claude-plugin/icon.png` (1024 px), generated with Grok Imagine.
 - The `vent` skill: reflections only, two sentences at most, no advice, options, or labels for anyone, holding until you're calmer; with `arousal.py` and its tests (run by the `check` workflow), its source notes, three eval cases, and a settings overlay example.
+- The `before-you-send` skill: declines to draft while you're flooded and offers tomorrow; if you insist, strips accusations, absolutes, threats, and labels from your own text, marks each `[removed: ...]`, and adds nothing; with `references/strip-rules.md`, its source notes, and three eval cases.
 
 ### Changed
 
 - `risk-handoff.md` records when its crisis numbers were last checked against each operator's own site (2026-10-25); every number was confirmed unchanged.
-- The plugin and marketplace descriptions, the plugin keywords, and the README intro describe only the skills that have shipped (now `vent`); each skill's PR adds itself back.
+- The plugin and marketplace descriptions, the plugin keywords, and the README intro describe only the skills that have shipped (now `vent` and `before-you-send`); each skill's PR adds itself back.
+- `vent` hands a request to write or check a message over to `before-you-send`, keeping its one-line summary as the fallback.

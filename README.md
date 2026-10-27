@@ -2,7 +2,7 @@
 
 # samatva
 
-samatva is a set of agent skills for the moment a conversation, or a person, has got under your skin. Say you're furious and need to vent, and `vent` holds to its rules: listen before anything else, never advise while you're flooded, never pass judgement on the people you talk about, and hand you back to a human when the session is done.
+samatva is a set of agent skills for the moment a conversation, or a person, has got under your skin. Say you're furious and need to vent, or that you're about to send a message you might regret, and `vent` or `before-you-send` holds to its rules: listen before anything else, never advise while you're flooded, never pass judgement on the people you talk about, and hand you back to a human when the session is done.
 
 The name is Sanskrit for equanimity, from the Gita's *samatvam yoga uchyate*, "evenness of mind is called yoga".
 
@@ -23,7 +23,7 @@ samatva is not therapy and not a crisis service. Every skill checks for self-har
 | `think-it-through` | you're calmer and want to decide | coming soon |
 | `cool-down-close` | the session is long or you're ready to stop | coming soon |
 | `cold-read-check` | a reading, warning, or prediction left you unsettled | coming soon |
-| `before-you-send` | you want to write to someone while angry | coming soon |
+| `before-you-send` | you want to write to someone while angry | Declines while you're flooded and offers tomorrow; if you insist, strips accusations, absolutes, threats, and labels from your own text and marks each `[removed: ...]` |
 | `voice-setup` | you want replies to sound like you | coming soon |
 
 ## Install
