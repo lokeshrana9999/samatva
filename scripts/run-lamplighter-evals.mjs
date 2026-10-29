@@ -3,9 +3,11 @@
 //
 //   node scripts/run-lamplighter-evals.mjs [--arm shipped|no-skill|baseline] [--case <name>]...
 //        [--tier zero|scored] [--runs N] [--full] [-j N] [--model M] [--check]
+//        [--set real] [--variant live|after|about-to-pay] [--kind official|offer|pressure|reading]
 //
 // Each case in evals/lamplighter/<case>/ is a prompt.md (frontmatter: tier, runs) plus
-// graders/*.md. The runner sends the prompt through the signed-in `grok` CLI with an agent
+// graders/*.md. --set real runs evals/lamplighter/real/ instead: cases rebuilt from the
+// documented scams in docs/lamplighter-*cases.md, with personal details removed (see its README). The runner sends the prompt through the signed-in `grok` CLI with an agent
 // profile whose system prompt is the arm under test:
 //   shipped   bots/lamplighter/instructions.md, then the lamplighter-patterns skill appended
 //   no-skill  the instructions alone (what a user gets if the Bot never loads the skill)
@@ -39,6 +41,10 @@ const onlyCases = all('--case');
 const tier = opt('--tier');
 const runsOverride = opt('--runs');
 const full = args.includes('--full');
+const set = opt('--set');
+const variant = opt('--variant');
+const kind = opt('--kind');
+const CASE_DIR = set ? path.join(CASES, set) : CASES;
 
 const read = (p) => fs.readFileSync(p, 'utf8');
 const frontmatter = (s) => {
@@ -157,20 +163,20 @@ async function grade(g, reply) {
 }
 
 function loadCases() {
-  return fs.readdirSync(CASES, { withFileTypes: true })
-    .filter((d) => d.isDirectory() && d.name !== 'results')
+  return fs.readdirSync(CASE_DIR, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && !['results', 'real'].includes(d.name))
     .filter((d) => !onlyCases.length || onlyCases.includes(d.name))
     .map((d) => {
-      const [meta, prompt] = frontmatter(read(path.join(CASES, d.name, 'prompt.md')));
-      const gdir = path.join(CASES, d.name, 'graders');
+      const [meta, prompt] = frontmatter(read(path.join(CASE_DIR, d.name, 'prompt.md')));
+      const gdir = path.join(CASE_DIR, d.name, 'graders');
       const graders = fs.readdirSync(gdir).filter((f) => f.endsWith('.md')).map((f) => {
         const [gm, body] = frontmatter(read(path.join(gdir, f)));
         return { name: f.replace(/\.md$/, ''), ...gm, question: body.trim() };
       });
       const runs = Number(runsOverride || (full ? meta.runs : 1) || 1);
-      return { name: d.name, tier: meta.tier, runs, prompt: prompt.trim(), graders };
+      return { name: d.name, tier: meta.tier, variant: meta.variant, kind: meta.kind, runs, prompt: prompt.trim(), graders };
     })
-    .filter((c) => !tier || c.tier === tier);
+    .filter((c) => (!tier || c.tier === tier) && (!variant || c.variant === variant) && (!kind || c.kind === kind));
 }
 
 async function pool(items, n, fn) {
@@ -185,7 +191,7 @@ async function pool(items, n, fn) {
 const cases = loadCases();
 const tasks = cases.flatMap((c) => Array.from({ length: c.runs }, (_, run) => ({ c, run })));
 const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-const outDir = path.join(CASES, 'results', `${stamp}-${arm}`);
+const outDir = path.join(CASES, 'results', `${stamp}-${set ? `${set}-` : ''}${arm}`);
 fs.mkdirSync(outDir, { recursive: true });
 console.log(`arm ${arm}, model ${model}: ${cases.length} cases, ${tasks.length} runs, -j ${jobs}`);
 
@@ -201,7 +207,7 @@ const results = await pool(tasks, jobs, async ({ c, run }) => {
   const failed = Object.entries(grades).filter(([, v]) => !v.pass).map(([k]) => k);
   fs.writeFileSync(path.join(outDir, `${c.name}.${run + 1}.md`), `# ${c.name} run ${run + 1} (${r.model || 'no model'})\n\n${r.text || r.error}\n\n## grades\n\n${Object.entries(grades).map(([k, v]) => `- ${v.pass ? 'pass' : 'FAIL'} ${k}: ${v.why}`).join('\n')}\n`);
   console.log(`${failed.length ? 'FAIL' : 'pass'} ${c.name} #${run + 1}${failed.length ? `: ${failed.join(', ')}` : ''}`);
-  return { case: c.name, tier: c.tier, run: run + 1, failed, grades, model: r.model };
+  return { case: c.name, tier: c.tier, variant: c.variant, run: run + 1, failed, grades, model: r.model };
 });
 
 const byCase = {};
@@ -215,6 +221,16 @@ const lines = [`# lamplighter evals, arm ${arm}, ${stamp}`, '', `model: ${model}
 for (const [name, b] of Object.entries(byCase)) {
   const failing = Object.entries(b.graders).filter(([, n]) => n < b.runs).map(([k, n]) => `${k} ${n}/${b.runs}`).join(', ');
   lines.push(`| ${name} | ${b.tier} | ${b.clean}/${b.runs} | ${failing || 'none'} |`);
+}
+const byVariant = {};
+for (const r of results) if (r.variant) {
+  const v = (byVariant[r.variant] = byVariant[r.variant] || { runs: 0, clean: 0 });
+  v.runs++;
+  if (!r.failed.length) v.clean++;
+}
+if (Object.keys(byVariant).length) {
+  lines.push('', '| variant | clean runs |', '|---|---|');
+  for (const [k, v] of Object.entries(byVariant)) lines.push(`| ${k} | ${v.clean}/${v.runs} |`);
 }
 fs.writeFileSync(path.join(outDir, 'summary.md'), `${lines.join('\n')}\n`);
 fs.writeFileSync(path.join(outDir, 'results.json'), JSON.stringify(results, null, 1));

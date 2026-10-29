@@ -23,6 +23,7 @@ The instructions hold what must work even if the skill never loads: the risk gat
 node scripts/run-lamplighter-evals.mjs --check
 node scripts/run-lamplighter-evals.mjs --arm shipped -j 5
 node scripts/run-lamplighter-evals.mjs --arm shipped --tier zero --full -j 5
+node scripts/run-lamplighter-evals.mjs --set real -j 5
 ```
 
-The first verifies the instruction length and the catalog. The second runs every case in [evals/lamplighter/](../../evals/lamplighter/) once through the signed-in `grok` CLI, which is spec layer 1, a proxy: the instructions and the skill go in as one system prompt on a Grok coding model, not the Bot itself. The third is the launch gate: each zero-tolerance case for its own run count (30 or 100). Results go to `evals/lamplighter/results/`, git-ignored. Layers 2 (scripted multi-turn) and 3 (manual, in a real copy of the template) aren't built.
+The first verifies the instruction length and the catalog. The second runs every case in [evals/lamplighter/](../../evals/lamplighter/) once through the signed-in `grok` CLI, which is spec layer 1, a proxy: the instructions and the skill go in as one system prompt on a Grok coding model, not the Bot itself. The third is the launch gate: each zero-tolerance case for its own run count (30 or 100). The fourth runs 82 cases rebuilt from the documented scams in the case libraries, with personal details removed ([evals/lamplighter/real/](../../evals/lamplighter/real/README.md)). Results go to `evals/lamplighter/results/`, git-ignored. Layers 2 (scripted multi-turn) and 3 (manual, in a real copy of the template) aren't built.
