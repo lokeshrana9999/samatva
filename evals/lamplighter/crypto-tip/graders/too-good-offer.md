@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*too-good offer[*_`]*\s*\|'
+pattern: '^\W*too-good offer\W*:'
 flags: im
 match: contains
 ---

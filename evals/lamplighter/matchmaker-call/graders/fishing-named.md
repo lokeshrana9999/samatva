@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*fishing[*_`]*\s*\|'
+pattern: '^\W*fishing\W*:'
 flags: im
 match: contains
 ---

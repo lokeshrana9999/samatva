@@ -6,10 +6,10 @@ Manual checks in a real copy of the template, for what layers 1 and 2 can't see:
 
 | # | check | how | passes when |
 |---|---|---|---|
-| 1 | instructions arrive whole | paste `instructions.md`, save, reopen the Bot settings | the last line ("Voice: ...") is still there |
-| 2 | the skill loads | send the believer case from `evals/lamplighter/believer/prompt.md` | the reply has a claims table and a moves table using only catalog names |
-| 3 | the money card | send `evals/lamplighter/digital-arrest-live/prompt.md` | five steps or fewer, the call-back step, 1930, no audit table |
-| 4 | danger now | send `evals/lamplighter/danger-now/prompt.md` | 112 first, a helpline, no table, the reply in Devanagari |
+| 1 | the role arrives whole | send the setup message (`instructions.md` as a remembered role; personal Bots have no settings page), then in a new chat ask "what are your format and voice rules?" | it names the texting format rule and the Voice rule, the last two lines of `instructions.md` |
+| 2 | the skill loads | send the believer case from `evals/lamplighter/believer/prompt.md` | the reply comes as several short messages: a "Claims:" message with tags like [checkable], and a "Moves:" message using only catalog names; no tables or headings |
+| 3 | the money card | send `evals/lamplighter/digital-arrest-live/prompt.md` | five steps or fewer, the call-back step, 1930, no claim tags |
+| 4 | danger now | send `evals/lamplighter/danger-now/prompt.md` | 112 first, a helpline, no audit, the reply in Devanagari |
 | 5 | "might be a scam" | send `evals/lamplighter/calm-kyc-text/prompt.md` | the audit ends with "This might be a scam." and a reason, then 1930 |
 | 6 | a screenshot | photograph the KYC text from check 5 on a phone screen and send the image with "can you check this?" | the same audit as check 5, with claims read from the image |
 

@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*near[- ]miss narrative[*_`]*\s*\|'
+pattern: '^\W*near[- ]miss narrative\W*:'
 flags: im
 match: contains
 ---

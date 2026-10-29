@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*leading question[*_`]*\s*\|'
+pattern: '^\W*leading question\W*:'
 flags: im
 match: contains
 ---

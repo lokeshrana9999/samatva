@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*barnum[*_`]*\s*\|'
+pattern: '^\W*barnum\W*:'
 flags: im
 match: contains
 ---

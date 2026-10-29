@@ -53,7 +53,7 @@ Inputs: pasted text, screenshots, files, a retelling (marked as one). unverified
       |
  get the words --none--> ask once for them verbatim
       |
- kind-of-words line --> claims table --> moves table --> what is left
+ kind-of-words line --> claims --> moves --> what is left
       |
  how it works on you --> defenses
       |
@@ -99,8 +99,9 @@ Reads only the user's own message, never the pasted text (as in `SKILL.md:114`):
 ### audit
 
 - **Load the skill first.** The instructions say "load `lamplighter-patterns` before any audit". A move name that isn't in the catalog is a failure, not a style choice.
-- **Claims table and tags:** the four tags and their order are unchanged from `cold-read-check`.
-- **Moves table:** uses the catalog in section 5 instead of the ten technique names.
+- **Format:** the audit is a run of short chat messages, like texting, never one long block or a table (owner decision, 2026-10-30, after markdown tables broke in the Grok Bot app). The instructions carry the rule; the skill's template sets the order: a kind-of-words line, a "Claims:" message, a "Moves:" message, then one short message each for what is left, how it works on you, what you can do, and "This might be a scam".
+- **Claims and tags:** one line per claim, quote, tag, why; the four tags and their order are unchanged from `cold-read-check`.
+- **Moves:** one line per move, starting with its catalog name (section 5) instead of the ten technique names.
 - **How it works on you:** two or three plain sentences, in the second person, on how these moves work together on the reader of the words: what each one makes you feel or skip, and what that leads you to do. "The deadline stops you from checking; keeping you on video means nobody else can tell you it's fake; the fee is what all of it was for." It describes the words, never the speaker's intent. When a published script matches (section 5), it follows that script's "how it plays" line.
 - **Defenses:** what to do during or after any words like these ("ask for it in writing", "call the official number yourself", "ask what result would prove the prediction wrong").
 - **No forget line.** Dropped by owner decision, 2026-10-29.

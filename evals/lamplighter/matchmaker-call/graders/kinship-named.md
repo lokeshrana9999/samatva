@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*kinship framing[*_`]*\s*\|'
+pattern: '^\W*kinship framing\W*:'
 flags: im
 match: contains
 ---

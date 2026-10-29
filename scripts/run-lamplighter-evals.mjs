@@ -179,11 +179,24 @@ function grok(profilePath, prompt, m, session) {
   });
 }
 
+// the move names in the reply: every line under a "Moves:" label (texting format) up to a blank
+// line, the text before its first colon; or, for an older table reply, the first cell of each row
 function movesRows(text) {
   const lines = text.split(/\r?\n/);
+  const rows = [];
+  let seen = false;
+  for (let i = 0; i < lines.length; i++) {
+    if (!/^\W*moves\W*:?\W*$/i.test(lines[i])) continue;
+    seen = true;
+    for (const l of lines.slice(i + 1)) {
+      if (!l.trim()) break;
+      const name = l.split(':')[0].replace(/^[\s\-•*_`]+|[*_`]+$/g, '').trim().toLowerCase();
+      if (name) rows.push(name);
+    }
+  }
+  if (seen) return rows;
   const start = lines.findIndex((l) => /^\s*\|\s*[*_`]*move[*_`]*\s*\|/i.test(l));
   if (start < 0) return null;
-  const rows = [];
   for (const l of lines.slice(start + 2)) {
     if (!/^\s*\|/.test(l)) break;
     rows.push(l.split('|')[1].replace(/[*_`]/g, '').trim().toLowerCase());

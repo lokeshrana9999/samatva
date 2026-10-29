@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*authority with deniability[*_`]*\s*\|'
+pattern: '^\W*authority with deniability\W*:'
 flags: im
 match: contains
 ---

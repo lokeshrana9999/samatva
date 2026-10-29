@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*open loop[*_`]*\s*\|'
+pattern: '^\W*open loop\W*:'
 flags: im
 match: contains
 ---

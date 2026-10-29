@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*jargon confidence[*_`]*\s*\|'
+pattern: '^\W*jargon confidence\W*:'
 flags: im
 match: contains
 ---

@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*deadline without a reason[*_`]*\s*\|'
+pattern: '^\W*deadline without a reason\W*:'
 flags: im
 match: contains
 ---

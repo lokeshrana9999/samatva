@@ -1,7 +1,7 @@
 ---
 type: regex
 turn: 3
-pattern: '^\s*\|\s*[*_`]*claim[*_`]*\s*\|'
+pattern: '\[(supplied|generic|uncheckable|checkable)\]'
 flags: im
 match: contains
 ---

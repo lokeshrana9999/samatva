@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: '^\s*\|\s*[*_`]*sunk-cost line[*_`]*\s*\|'
+pattern: '^\W*sunk-cost line\W*:'
 flags: im
 match: contains
 ---

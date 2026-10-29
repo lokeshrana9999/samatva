@@ -8,7 +8,7 @@ const core = path.join(root, 'evals', 'lamplighter');
 const out = path.join(core, 'multi');
 const first = (name) => fs.readFileSync(path.join(core, name, 'prompt.md'), 'utf8').replace(/^---[\s\S]*?---\s*/, '').trim();
 
-const TABLE = '^\\s*\\|\\s*[*_`]*claim[*_`]*\\s*\\|';
+const TABLE = '\\[(supplied|generic|uncheckable|checkable)\\]'; // claim tags: present means an audit was given
 const rx = (turn, pattern, flags, match) => ({ type: 'regex', turn, pattern, flags, match });
 const llm = (turn, q) => ({ type: 'llm', turn, q });
 const DEFINITE = "this is (a|definitely a|clearly a) scam|it's a scam|this is fake";
