@@ -72,7 +72,7 @@ The gate reads only what the user says is happening to their own body or safety.
 | tier | signals (the user's own words) | response |
 |---|---|---|
 | 1: danger now | self-harm or suicide (including despair after losing money: "I lost everything, I can't go on"); a wish or plan to hurt someone; someone hurting or threatening them now; "I'm not safe here" | the shared block as written: one plain sentence, helplines with the emergency number first, "this is a moment for a person, not an AI", stop the audit for the rest of the conversation |
-| 2: signs of control | someone watching their phone, keeping their money or papers, cutting them off from family or friends, with no danger now | one line that names it plainly, the local helpline (India 181, US 1-800-799-7233, UK 0808 2000 247, else findahelpline.com), and "if someone checks this phone, this chat may be visible". Then the audit continues if they want; the bot asks once |
+| 2: signs of control | someone watching their phone, keeping their money or papers, cutting them off from family or friends, with no danger now | one line that names it plainly, the local helpline (India 181, live in 34 states and UTs as of 2023; US 1-800-799-7233 or text START to 88788; UK 0808 2000 247, unverified at source; else findahelpline.com), and "if someone checks this phone, this chat may be visible". Then the audit continues if they want; the bot asks once |
 
 If tier 2 later turns into tier 1 in the same conversation, tier 1 applies from then on. When unsure which tier, treat it as tier 1.
 
@@ -88,7 +88,7 @@ Then the bot skips the audit and gives a card of at most five lines:
 1. Hang up or close the chat. Nothing real expires in the next ten minutes.
 2. Don't share a code or move money.
 3. Call the organisation yourself, on a number you look up (the back of your card, the official site), never one from the message.
-4. If that call doesn't confirm it, report it: India 1930 or cybercrime.gov.in; US reportfraud.ftc.gov; UK 159 reaches your bank.
+4. If that call doesn't confirm it, report it: India 1930 or cybercrime.gov.in; US ReportFraud.ftc.gov; UK 159 reaches your bank, then Report Fraud at reportfraud.police.uk or 0300 123 2040 (it replaced Action Fraud on 4 Dec 2025).
 5. If money already left, call your bank first.
 
 Then one line offering the audit. A pitch or a reading with "I'm about to pay" never gets the card; it goes to the what-to-do exit, since "don't pay" there is advice the baseline sends to think-it-through (`SKILL.md:115`). If the call turns out to be the real organisation, steps 1 and 3 cost the user a few minutes and nothing else.
@@ -111,40 +111,40 @@ A closed list: the bot uses only these names, so audits stay consistent and test
 
 | family | move | the tell | source |
 |---|---|---|---|
-| planted belief | leading question (cr) | yes/no question with a scary reason, dropped on "no" | Hyman 1977 |
+| planted belief | leading question (cr) | yes/no question with a scary reason, dropped on "no" | Hyman 1977; Loftus & Palmer 1974 |
 | | fishing (cr) | small factual questions that come back as insight | Hyman 1977 |
-| | echo-and-amplify (cr) | your mild word returns as a stronger label | Hyman 1977 |
+| | echo-and-amplify (cr) | your mild word returns as a stronger label | Hyman 1977 (feeding back what the client supplied) |
 | | Barnum (cr) | still fits with anyone else's name in it | Forer 1949 |
-| | near-miss narrative (cr) | a danger you never noticed, averted by luck or blessing | Kahneman & Tversky 1982 |
-| claimed authority | authority with deniability (cr) | an unseen source in place of a method | Cialdini |
+| | near-miss narrative (cr) | a danger you never noticed, averted by luck or blessing | Kahneman & Tversky 1982; Roese 1997 |
+| claimed authority | authority with deniability (cr) | an unseen source in place of a method | Hyman 1977 (implying more knowledge than shown); Cialdini (authority) |
 | | unverified authority | claims to be police, court, bank, customs, or a brand, with no way for you to verify | Stajano & Wilson 2011 (social compliance) |
-| | jargon confidence (cr) | technical terms with no inputs that could produce them | Weisberg et al. 2008 |
-| | unverifiable proof | a badge, case number, screenshot, or testimonial you can't check yourself | I4C digital-arrest advisories |
-| pressure | deadline without a reason | "within two hours", "today only", with no reason it can't wait | Cialdini (scarcity) |
-| | threat | arrest, curse, blocked account, leaked photos, if you don't act | I4C advisories; FTC scam guidance |
+| | jargon confidence (cr) | technical terms with no inputs that could produce them | Weisberg et al. 2008; Naftulin, Ware & Donnelly 1973 |
+| | unverifiable proof | a badge, case number, screenshot, or testimonial you can't check yourself | MHA alert, PIB 14 May 2024 (uniforms, sets modelled on police stations) |
+| pressure | deadline without a reason | "within two hours", "today only", with no reason it can't wait | Stajano & Wilson 2011 (time principle) |
+| | threat | arrest, curse, blocked account, leaked photos, if you don't act | MHA alert, PIB 14 May 2024; FTC scam guidance |
 | | scarcity | "last three seats", "only for you", with no time named | Cialdini |
-| | sunk-cost line | "pay one more fee to release the rest" | Arkes & Blumer 1985 |
-| | ultimatum or withdrawal | "fine, forget it then", "do this or we're done", going silent until you give in | none yet |
-| the ask | detail request | asks for a date of birth, Aadhaar, card digits, an OTP, or a password | RBI and I4C advisories |
-| | unusual payment route | gift cards, crypto, a wire, or UPI to a personal number or wallet | FTC scam guidance |
-| isolation | secrecy demand | "don't tell anyone, it'll spoil it / hurt the case" | Stark 2007 (coercive control) |
-| | stay on the line | "keep the video on", "don't hang up" | I4C digital-arrest advisories |
+| | sunk-cost line | "pay one more fee to release the rest" | Arkes & Blumer 1985; Staw 1976 (escalation of commitment) |
+| | ultimatum or withdrawal | "fine, forget it then", "do this or we're done", going silent until you give in | Christensen & Heavey 1990 (demand/withdraw) |
+| the ask | detail request | asks for a date of birth, Aadhaar, card digits, an OTP, or a password | RBI BE(A)WARE (never ask for OTP, CVV, PIN, password) |
+| | unusual payment route | gift cards, crypto, a wire, or UPI to a personal number or wallet | FTC scam guidance; RBI BE(A)WARE for UPI |
+| isolation | secrecy demand | "don't tell anyone, it'll spoil it / hurt the case" | Stark 2007 (isolation); MHA alert, PIB 14 May 2024 |
+| | stay on the line | "keep the video on", "don't hang up" | MHA alert, PIB 14 May 2024 (kept on video); FTC ("not to hang up") |
 | | channel switch | "let's move to WhatsApp / Telegram" | FTC romance-scam guidance |
-| | hidden-enemy framing | "they don't want you to know", "your family is against this" | Lifton 1961 (milieu control); unsure |
-| obligation | kinship framing (cr) | "like my own child", next to a strong claim | Cialdini (unity) |
+| | hidden-enemy framing | "they don't want you to know", "your family is against this" | Stark 2007 (isolation); Douglas et al. 2017 (conspiracy framing); unsure |
+| obligation | kinship framing (cr) | "like my own child", next to a strong claim | Cialdini 2021, *Influence*, new and expanded (unity) |
 | | guilt line | "after everything I've done for you" | Baumeister et al. 1994 |
 | | reciprocity ask | a gift, free session, or small favour before the ask | Cialdini |
 | | foot in the door | a small yes, then a bigger ask | Freedman & Fraser 1966 |
 | | claimed consensus | "everyone agrees", "even your mother says" | Cialdini (social proof) |
 | reality bending | reality denial | "that never happened", "you're imagining it" | Sweet 2019 |
-| | role reversal | a complaint turned into an attack on the person complaining | Freyd 1997 |
-| | moving goalposts | the bar changes after you meet it | none yet |
+| | role reversal | a complaint turned into an attack on the person complaining | Freyd 1997; Harsey, Zurbriggen & Freyd 2017 |
+| | moving goalposts | the bar changes after you meet it | none: a named informal fallacy, not a studied effect |
 | | conversation stopper | "trust the process", "you're overthinking" | Lifton 1961 |
 | promise | unfalsifiable prediction (cr) | a predicted event with no date and no miss possible | Popper 1963 |
-| | vague promise | something good for you (returns, marriage, "things will change") with no date or amount | none yet |
+| | vague promise | something good for you (returns, marriage, "things will change") with no date or amount | Stajano & Wilson 2011 (need and greed); Whitty 2013 |
 | | too-good offer | guaranteed returns, no risk | SEBI and SEC investor alerts |
-| | praise before the ask | intense praise or affection, then a request | Cialdini (liking); FTC romance-scam guidance |
-| | open loop (cr) | an unfinished story and a promise to continue | Zeigarnik 1927 |
+| | praise before the ask | intense praise or affection, then a request | Hyman 1977 (flattery); Cialdini (liking) |
+| | open loop (cr) | an unfinished story and a promise to continue | Ovsiankina 1928 (urge to resume); Loewenstein 1994; Zeigarnik 1927's memory effect doesn't replicate reliably |
 
 **When a line fits two moves**, one row, the first that fits:
 
@@ -160,15 +160,15 @@ A line that does two separate things ("keep the video on and don't tell your fam
 
 | script | who warns |
 |---|---|
-| digital arrest (video-call "police" or "CBI") | I4C / MHA: no digital arrest exists in Indian law |
-| KYC or SIM block | RBI, DoT: banks and telcos never ask for OTP or PIN |
-| task or part-time job, pay to unlock earnings | I4C |
-| guaranteed returns, tips groups | SEBI, SEC |
-| government agency asking for gift cards, crypto, or wire | FTC |
+| digital arrest (video-call "police" or "CBI") | MHA alert, PIB 14 May 2024. "There is no provision of digital arrest under law" is the Prime Minister's wording (Mann Ki Baat, 27 Oct 2024), not an MHA or I4C page, so the bot doesn't attribute it to them |
+| KYC or SIM block | RBI BE(A)WARE: genuine entities never ask you to share OTP, CVV, PIN, or password; DoT (PIB, 29 Mar 2024): it doesn't authorise number-disconnection calls, report on Chakshu (sancharsaathi.gov.in) |
+| task or part-time job, pay to unlock earnings | I4C and RBI warn about job fraud |
+| guaranteed returns, tips groups | SEBI (incl. PR 65/2026, 22 Oct 2026, on invitation-only WhatsApp tip groups); SEC / Investor.gov |
+| government agency asking for gift cards, crypto, or wire | FTC: government agencies never call, text, or message to ask for money |
 
 **Why it can still land:** the four mechanisms from `techniques.md` (simulation, sleeper effect, negativity bias, hypothesis seeding), plus time pressure (decisions under a deadline skip checking) and isolation (no second opinion to correct it).
 
-unverified: every source in this section is from memory and needs a check before it goes into the skill. Stajano & Wilson 2011 is kept only for unverified authority, where it fits their social-compliance principle.
+**Source check, 2026-10-29.** Every citation exists. Hyman 1977 and Stajano & Wilson 2011 were read in full; most others were checked at abstract level; the MHA, RBI, DoT, SEBI, FTC, GOV.UK, and helpline sources were read on the official pages. Several citations only partly fit their move and were replaced or paired above. Still unverified: Staw 1976, Roese 1997, Douglas et al. 2017, Loewenstein 1994, and Naftulin et al. 1973 (from memory, not a search); the volume and pages of Harsey et al. 2017; an I4C page of its own for the digital-arrest and job-fraud advisories (news reports and PIB only); Aadhaar in any RBI or I4C advisory.
 
 ## 6. rules: kept, changed, new
 
@@ -264,7 +264,7 @@ Unlocks when all of these pass:
 
 ### open
 
-1. Should the money gate list reporting lines beyond India, US, UK?
+1. Should the money gate list reporting lines beyond India, US, UK? Verified candidates: Canada, the Canadian Anti-Fraud Centre at reportcyberandfraud.canada.ca (its 1-888-495-8501 line said "currently unavailable" on 2026-10-29, so URL first); Australia, Scamwatch at scamwatch.gov.au (online form only). The EU has no single fraud line; reporting is national, so "your national police" is the honest line there.
 
 Settled 2026-10-29: two-tier risk gate; keep "moving goalposts" and "vague promise" (a move doesn't need an academic source); launch with four kinds of words, personal messages in v2.
 
