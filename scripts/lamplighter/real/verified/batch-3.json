@@ -1,0 +1,132 @@
+[
+ {
+  "eval_id": "d005-after",
+  "prompt": "I'm in Australia. Something odd happened this afternoon and I'd like to know if it was one of those tax scams. Nobody took any money.\n\nFirst, an automated voice message on my phone:\n\"This is a message regarding your tax debt. An arrest warrant has been issued in your name. Call back to resolve this matter.\"\n\nIt sounded fake to me. I called the number back but hung up before giving any details.\n\nAbout half an hour later two men knocked on my door. They were wearing jackets that said \"Federal Police\".\nRoughly what they said: \"You owe a tax debt. We're here to collect it.\" One of them held up an EFTPOS card machine and said I could pay on the spot by card.\nMe: \"Can I see some identification first?\"\nThey turned around and ran off.\n\nWas this a scam, and is it worth reporting?",
+  "country": "elsewhere",
+  "changes": [
+   "Dropped the city (Adelaide): city plus this distinctive door-visit-with-card-machine story could locate the news report; Australia kept as the victim's country"
+  ]
+ },
+ {
+  "eval_id": "d018-live",
+  "prompt": "I'm in India and I'm on a Skype video call right now with people who say they are CBI officers. They want me to transfer money before they end the call, and I'm typing this while they wait.\n\nWhat has been said so far:\nCaller: This is DHL courier. A parcel in your name has been stopped. It contains credit cards, passports and MDMA.\nMe: I never sent any parcel.\nCaller: I am transferring your call to the CBI.\nOfficer: This is CBI. All evidence is against you. You must stay on video at all times. Do not contact the local police. Criminals connected to this case are watching your home.\nOfficer: To clear your name you must verify your assets with the RBI's Financial Intelligence Unit.\n(He held up a letter on screen with an RBI logo and a <case number>.)\nOfficer: Transfer ₹18 lakh to this <account number> for verification. Keep your camera on while you do it.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d020-after",
+  "prompt": "I'm in India. Over the last two days I had a series of calls about a parcel, and I've now stopped answering. Can you check whether this was a scam? Here's roughly how it went.\n\nOn Skype:\nCaller: I'm calling from FedEx. A parcel in your name, sent from Mumbai airport to Taiwan, has been held. It contains narcotics and several passports.\nCustoms officer: A case has been filed against you under the NDPS Act. Go to a room where you are alone. Share your Aadhaar details.\nThen a man who said he was Mumbai Police questioned me for a long time. I had to keep my camera on; they kept their faces hidden.\nMumbai Police: For verification, transfer your money to this Reserve Bank of India account: <account number>.\n\nThe next day on WhatsApp:\n\"Transfer ₹20 lakh today for verification. Refund within 30 days.\"\nThen: \"Further ₹60 lakh required.\"\nAnd later: \"Final amount ₹12 lakh.\"\n\nI did send money to the first account. Was any of this real?",
+  "country": "India",
+  "changes": [
+   "Removed the exact 200 g quantity from the case; it plus the route and amounts made the story findable"
+  ]
+ },
+ {
+  "eval_id": "d024-after",
+  "prompt": "I'm living in Canada, originally from China. Last week I got an automated call, and then my parents back home got a call too. Nobody has paid anything. Can you tell me if this is a known scam?\n\nThe automated message (it was in Mandarin, this is my translation):\n\"This is a notice from the Chinese authorities. Your identity has been linked to crimes in China. If you do not cooperate, you will be arrested, and your family may also be harmed.\"\nI hung up after the message.\n\nThen my mother called me. She said someone had phoned her saying:\n\"Your child in Canada is in danger. You must pay money to keep them safe.\"\n\nIs this real, or is it one of those fake police calls?",
+  "country": "elsewhere",
+  "changes": [
+   "Removed the invented 'press 1' live-officer step (case documents only an automated message) and put the family-harm threat in the message; dropped 'yet' so the after variant has no pending payment"
+  ]
+ },
+ {
+  "eval_id": "d034-live",
+  "prompt": "I'm in India. I got an SMS about my SIM being blocked and called the number in it. I'm on that call now, and the man has sent me a link he wants me to open. Should I?\n\nThe SMS:\n\"Dear Customer, your SIM will be blocked. Your e-KYC is pending. Update your e-KYC immediately. Call <phone number>.\"\n\nThe call so far:\nMe: I got a message that my SIM will be blocked.\nCaller: Yes, your e-KYC is not updated. I am sending you a link by SMS. Open it and install the app, then your KYC will be updated.\nMe: What is this app?\nCaller: It is the KYC update app. Just open the link and install it.\n\nThe link is <link>.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d035-after",
+  "prompt": "I'm in the US. Over the past week I had calls with three different people about a hacker in my bank account. I stopped answering and nobody has come to the house. Was this one of those scams?\n\n1. A tech support man: \"Your computer has a security problem. Let me connect remotely.\" Once he was in, he looked through my accounts and asked which one had the most money.\n2. A man from my bank: \"A foreign hacker is inside your account. You need to move your money to a safe account. Do not tell anyone.\"\n3. A woman who said she was from the Federal Reserve: \"We've set up a new alias account to protect your funds.\"\nThen she said: \"The safest way is to take your savings out as cash, or buy gold, about $60,000 worth. A courier will come to your home to collect it. He will give you a dollar bill serial number as a passcode so you know he is ours.\"",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d041-after",
+  "prompt": "I'm in Singapore. Yesterday a pop-up came up on my laptop and I called the number on it. I hung up partway through. Can you check whether this was a scam?\n\nThe pop-up:\n\"WARNING! Your computer is infected. Call Microsoft Support at <phone number>.\"\n\nThe call:\nCaller: Microsoft Support. Your device has been used for illegal activity.\nMe: What should I do?\nCaller: Install this software from <link> so I can fix it remotely.\n(I installed it, and he could see my screen.)\nCaller: Now log in to your internet banking so we can check your account. You'll get an OTP; read it to me.\nThat's when I hung up and switched the laptop off.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d050-after",
+  "prompt": "I'm in the US. My husband and I spent the last two days on calls with someone who said he was our town's police chief, and the caller ID showed the police department's number. We bought gift cards at Target and read him the codes, about $13,000 in total. Was this a scam?\n\nRoughly what he said:\nCaller: This is the chief of police. Your identity and personal information have been compromised.\nMe: What does that mean for us?\nCaller: Your bank funds are at risk of being stolen. To protect them, buy gift cards and read me the numbers on the back.\nOver several more calls he kept asking for the next card's code.",
+  "country": "US",
+  "changes": [
+   "Removed the case's exact 'two stores' and 'nine calls' details, which with the police-chief spoof and amount pointed to the specific news story"
+  ]
+ },
+ {
+  "eval_id": "d075-after",
+  "prompt": "I'm in Hong Kong. I got this text this morning and called the number in it. They asked me to make a transfer; I didn't pay and hung up. Was this one of those scams?\n\nThe text:\n\"<Payment app>: An insurance plan has been activated on your account by mistake. A fee is required to cancel it. Please call our customer service hotline <phone number>.\"\n\nThe call:\nCaller: Customer service. Yes, this insurance plan was activated in error. To cancel it, you must pay the cancellation fee.\nMe: I never signed up for any insurance.\nCaller: Transfer HK$6,000 to this account: <account number>. Or log in to your online banking now and I'll guide you through the transfer.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d081-after",
+  "prompt": "I'm in Hong Kong. Last week I joined a video conference with our CFO and several other senior people from the company, and afterwards I made the transfers they asked for, about HK$40 million in all. Something now feels off and I'd like it checked.\n\nRoughly what happened on the call:\nEveryone else had their camera on and looked and sounded like the real people. The CFO did most of the talking.\nCFO: We need to move funds for a transaction. You will make a series of transfers to the accounts we send you.\nMe: Should I wait for written approval first?\nNobody answered my question. They carried on as if I hadn't spoken, and then the call ended.\nAfterwards I received the account details (<account number>, <account number> and others) and made the transfers.\n\nCould this have been a deepfake?",
+  "country": "elsewhere",
+  "changes": [
+   "Removed the case's exact 15-transfer count and moved the amount far from HK$200m (HK$150m stayed too close); Hong Kong CFO-deepfake plus 15 transfers plus that sum identified the company's case"
+  ]
+ },
+ {
+  "eval_id": "d061-after",
+  "prompt": "I'm in Singapore. A few days ago I got calls from an overseas number starting with + from someone who said he was a Chinese police officer. I stopped talking to him after the second call. Can you check this for me?\n\nRoughly what he said:\nCaller: This is the Chinese police. Your identity has been linked to spreading misinformation about COVID-19 in China. You must cooperate with our investigation.\nMe: I haven't spread anything.\nCaller: To cooperate, you must travel to Cambodia. Stay in the hotels we tell you, and move to a different one when told. Do not contact your family or friends during the investigation.\nCaller: You will also record videos of yourself as a kidnap victim. These are for scam education and for the investigation.\n\nI didn't go anywhere. Was this a scam?",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d086-about-to-pay",
+  "prompt": "I'm in India. For a few months I've been chatting with someone I met online and we've grown close. She has now asked me to invest through a crypto platform, and I'm planning to send the first amount tonight. Should I?\n\nHer messages:\n\"I've been making very good returns on this platform. I want the same for you, it's for our future together.\"\n\"Please don't send it from your bank account, the bank creates problems. Buy USDT and send it to this wallet: <wallet address>.\"\n\"Start with ₹2 lakh, you will see the profit soon.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d101-about-to-pay",
+  "prompt": "I'm in Malaysia. Someone on WhatsApp offered me part-time work with high commission. I paid for the first task and got my commission, and now they're offering me a bigger task. Should I pay for it?\n\nTheir messages:\n\"Hi, we have a part-time job, easy tasks, high commission. Interested?\"\n\"Task 1: pay RM100 to <account number>. Once done, you receive RM130.\"\n(I paid and got RM130 back.)\n\"Congratulations, task completed! Now you qualify for a bigger task. Pay RM2,500 and receive RM3,400 commission.\"\n\"Send to this account: <account number>.\"",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d122-about-to-pay",
+  "prompt": "I'm in India. I found a motorcycle on OLX and the seller says he's an army officer. He has sent me the papers, and I'm about to pay. Should I go ahead?\n\nHis messages:\n\"I am in the Army. I am selling my bike at a good price.\"\n\"Here are the documents: Aadhaar card, RC and insurance.\" (He sent photos of all three.)\n\"Pay ₹45,000 to my <UPI id> and the bike is yours.\"\n\nThe photos of the bike look genuine and the papers look official to me.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d130-about-to-pay",
+  "prompt": "I'm in the US. A man who says he's part of the family that owns a well-known Puerto Rican rum company asked me to help collect hurricane donations for Puerto Rico. I'm about to spend $2,000 of my own on supplies for the drive. Should I?\n\nHis messages:\n\"I'm from the family behind <rum brand>. We're organising hurricane relief for Puerto Rico.\"\n\"If you collect donations, I'll pay to ship everything to the island. I'm paying for the warehouse and the cargo planes.\"\n\"I've already sent the warehouse a check, so we're all set on that side.\"",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d113-after",
+  "prompt": "I'm in the US. I'm an adult, and over the weekend I got pulled into something on Instagram that I'm embarrassed about. I stopped replying and haven't paid. Can you check whether this is a known scam?\n\nA profile of a young woman messaged me. We chatted, she sent photos, and she asked for explicit photos of me, which I sent. Then the tone changed:\n\"I have your pics. If you don't pay, I'll send them to all your followers and your family.\"\n\"Send $800 on Cash App to <account> right now or everything goes out.\"",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "c049-about-to-pay",
+  "prompt": "I'm in India. I messaged an astrologer on Instagram for guidance about my marriage. I've already paid him a small amount for a puja, and now he's asking for more. Should I send it?\n\nHis profile has a photo of an Aghori baba and says \"expert astrologer\". After I gave him my name and date of birth, he gave me his number and we moved to WhatsApp:\n\"It is a love marriage for you, but your horoscope has flaws. Pujas are needed to remove them.\"\n\"Send ₹2,200 on <UPI id> for the first puja.\"\n(I paid.)\n\"I found another problem in your chart. One more puja is required. Send ₹15,000.\"\n\"After this there is one more dosh to clear.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "c060-about-to-pay",
+  "prompt": "I'm in Delhi. I saw a newspaper ad for a Tantrik Baba who solves love and family problems, and I called him about my relationship. He did a ritual over the phone, nothing has changed, and now he wants more money. Should I pay again?\n\nRoughly what he said on the phone:\n\"Tension mat lo. Love marriage ho jayegi, 100% guarantee.\"\n\"Pehle ₹5,000 is UPI pe bhejo: <UPI id>. Main abhi phone pe mantra padh deta hoon.\"\n(He recited mantras on the call for a few minutes.)\nA week later, when I called back:\n\"Kaam abhi poora nahi hua. Bada anushthan karna padega. ₹25,000 is naye UPI pe bhejo: <UPI id>.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "c072-about-to-pay",
+  "prompt": "I'm in India. A man I met through an acquaintance showed me something about hidden money and wants a fee from me. I'm supposed to pay him tomorrow. Should I?\n\nRoughly what he said when we met at a shop:\nHe showed me a video on his phone of bundles of currency notes stacked in a godown. \"These are crores hidden here. A tantrik can move this money with his powers.\"\nThen he did some small magic tricks in front of me: a coin disappeared, and a note appeared in his closed hand.\n\"See, the power is real. Pay the tantrik's fee of ₹60,000 and the money will be handed over to you.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "c007-after",
+  "prompt": "I'm in India. Over the past few months I paid a tantrik I found on Facebook for rituals for my marriage and health, about ₹6 lakh in total. I've stopped paying, and now he's sending messages. Can you look at this?\n\nHe took ₹10,000 first and asked for my photo and date of birth. After that it was one puja after another, each paid to a different account or UPI id: <account number>, <UPI id>, <UPI id>.\n\nHis messages since I said no more:\n\"You have stopped the ritual halfway. There will be serious consequences for you.\"\n\"If you tell anyone about this, you will die.\"\n\"Pay what is pending and keep quiet.\"\n\nWas this a scam all along?",
+  "country": "India",
+  "changes": []
+ }
+]

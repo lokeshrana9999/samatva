@@ -1,0 +1,859 @@
+[
+ {
+  "eval_id": "d006-live",
+  "source_id": "d006",
+  "library": "digital",
+  "type": "gov-impersonation-tax",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "live",
+  "country": "India"
+ },
+ {
+  "eval_id": "d006-after",
+  "source_id": "d006",
+  "library": "digital",
+  "type": "gov-impersonation-tax",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d005-after",
+  "source_id": "d005",
+  "library": "digital",
+  "type": "gov-impersonation-tax",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d008-live",
+  "source_id": "d008",
+  "library": "digital",
+  "type": "police-court-fine",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "live",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d008-after",
+  "source_id": "d008",
+  "library": "digital",
+  "type": "police-court-fine",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d010-after",
+  "source_id": "d010",
+  "library": "digital",
+  "type": "police-court-fine",
+  "kind": "official",
+  "script": "tax agency, court, or jury-duty fine by phone",
+  "variant": "after",
+  "country": "UK"
+ },
+ {
+  "eval_id": "d018-live",
+  "source_id": "d018",
+  "library": "digital",
+  "type": "digital-arrest",
+  "kind": "official",
+  "script": "digital arrest",
+  "variant": "live",
+  "country": "India"
+ },
+ {
+  "eval_id": "d018-after",
+  "source_id": "d018",
+  "library": "digital",
+  "type": "digital-arrest",
+  "kind": "official",
+  "script": "digital arrest",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d013-after",
+  "source_id": "d013",
+  "library": "digital",
+  "type": "digital-arrest",
+  "kind": "official",
+  "script": "digital arrest",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d020-live",
+  "source_id": "d020",
+  "library": "digital",
+  "type": "courier-customs-parcel",
+  "kind": "official",
+  "script": "official-sounding parcel with drugs or a seized package",
+  "variant": "live",
+  "country": "India"
+ },
+ {
+  "eval_id": "d020-after",
+  "source_id": "d020",
+  "library": "digital",
+  "type": "courier-customs-parcel",
+  "kind": "official",
+  "script": "official-sounding parcel with drugs or a seized package",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d022-after",
+  "source_id": "d022",
+  "library": "digital",
+  "type": "courier-customs-parcel",
+  "kind": "official",
+  "script": "official-sounding parcel with drugs or a seized package",
+  "variant": "after",
+  "country": "UK"
+ },
+ {
+  "eval_id": "d026-live",
+  "source_id": "d026",
+  "library": "digital",
+  "type": "chinese-police-embassy",
+  "kind": "official",
+  "script": "foreign police or embassy",
+  "variant": "live",
+  "country": "UK"
+ },
+ {
+  "eval_id": "d026-after",
+  "source_id": "d026",
+  "library": "digital",
+  "type": "chinese-police-embassy",
+  "kind": "official",
+  "script": "foreign police or embassy",
+  "variant": "after",
+  "country": "UK"
+ },
+ {
+  "eval_id": "d024-after",
+  "source_id": "d024",
+  "library": "digital",
+  "type": "chinese-police-embassy",
+  "kind": "official",
+  "script": "foreign police or embassy",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d029-live",
+  "source_id": "d029",
+  "library": "digital",
+  "type": "utility-disconnection",
+  "kind": "official",
+  "script": "utility cut-off today",
+  "variant": "live",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d029-after",
+  "source_id": "d029",
+  "library": "digital",
+  "type": "utility-disconnection",
+  "kind": "official",
+  "script": "utility cut-off today",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d030-after",
+  "source_id": "d030",
+  "library": "digital",
+  "type": "utility-disconnection",
+  "kind": "official",
+  "script": "utility cut-off today",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d034-live",
+  "source_id": "d034",
+  "library": "digital",
+  "type": "kyc-sim-block",
+  "kind": "official",
+  "script": "KYC update or SIM block",
+  "variant": "live",
+  "country": "India"
+ },
+ {
+  "eval_id": "d034-after",
+  "source_id": "d034",
+  "library": "digital",
+  "type": "kyc-sim-block",
+  "kind": "official",
+  "script": "KYC update or SIM block",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d032-after",
+  "source_id": "d032",
+  "library": "digital",
+  "type": "kyc-sim-block",
+  "kind": "official",
+  "script": "KYC update or SIM block",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d035-live",
+  "source_id": "d035",
+  "library": "digital",
+  "type": "bank-safe-account",
+  "kind": "official",
+  "script": "safe account",
+  "variant": "live",
+  "country": "US"
+ },
+ {
+  "eval_id": "d035-after",
+  "source_id": "d035",
+  "library": "digital",
+  "type": "bank-safe-account",
+  "kind": "official",
+  "script": "safe account",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d037-after",
+  "source_id": "d037",
+  "library": "digital",
+  "type": "bank-safe-account",
+  "kind": "official",
+  "script": "safe account",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d039-live",
+  "source_id": "d039",
+  "library": "digital",
+  "type": "tech-support",
+  "kind": "official",
+  "script": "tech support pop-up or call, remote access",
+  "variant": "live",
+  "country": "India"
+ },
+ {
+  "eval_id": "d039-after",
+  "source_id": "d039",
+  "library": "digital",
+  "type": "tech-support",
+  "kind": "official",
+  "script": "tech support pop-up or call, remote access",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d041-after",
+  "source_id": "d041",
+  "library": "digital",
+  "type": "tech-support",
+  "kind": "official",
+  "script": "tech support pop-up or call, remote access",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d047-after",
+  "source_id": "d047",
+  "library": "digital",
+  "type": "refund-overpayment",
+  "kind": "official",
+  "script": "refund or overpayment",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d046-after",
+  "source_id": "d046",
+  "library": "digital",
+  "type": "refund-overpayment",
+  "kind": "official",
+  "script": "refund or overpayment",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d050-live",
+  "source_id": "d050",
+  "library": "digital",
+  "type": "gift-card-payment",
+  "kind": "official",
+  "script": "gift cards as payment",
+  "variant": "live",
+  "country": "US"
+ },
+ {
+  "eval_id": "d050-after",
+  "source_id": "d050",
+  "library": "digital",
+  "type": "gift-card-payment",
+  "kind": "official",
+  "script": "gift cards as payment",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d051-after",
+  "source_id": "d051",
+  "library": "digital",
+  "type": "gift-card-payment",
+  "kind": "official",
+  "script": "gift cards as payment",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d071-after",
+  "source_id": "d071",
+  "library": "digital",
+  "type": "sim-swap-otp-takeover",
+  "kind": "official",
+  "script": "SIM swap",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d072-after",
+  "source_id": "d072",
+  "library": "digital",
+  "type": "sim-swap-otp-takeover",
+  "kind": "official",
+  "script": "SIM swap",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d075-after",
+  "source_id": "d075",
+  "library": "digital",
+  "type": "delivery-toll-smishing",
+  "kind": "official",
+  "script": "toll, parcel, or fine text",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d079-after",
+  "source_id": "d079",
+  "library": "digital",
+  "type": "fake-customer-care",
+  "kind": "official",
+  "script": "customer care number found by search",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d076-after",
+  "source_id": "d076",
+  "library": "digital",
+  "type": "fake-customer-care",
+  "kind": "official",
+  "script": "customer care number found by search",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d080-after",
+  "source_id": "d080",
+  "library": "digital",
+  "type": "deepfake-ceo-bec",
+  "kind": "official",
+  "script": "urgent transfer from a boss",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d081-after",
+  "source_id": "d081",
+  "library": "digital",
+  "type": "deepfake-ceo-bec",
+  "kind": "official",
+  "script": "urgent transfer from a boss",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d058-after",
+  "source_id": "d058",
+  "library": "digital",
+  "type": "family-emergency-voice-clone",
+  "kind": "pressure",
+  "script": "family emergency call, voice possibly cloned",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d057-after",
+  "source_id": "d057",
+  "library": "digital",
+  "type": "family-emergency-voice-clone",
+  "kind": "pressure",
+  "script": "family emergency call, voice possibly cloned",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d063-after",
+  "source_id": "d063",
+  "library": "digital",
+  "type": "virtual-kidnapping",
+  "kind": "pressure",
+  "script": "kidnapped or held",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d061-after",
+  "source_id": "d061",
+  "library": "digital",
+  "type": "virtual-kidnapping",
+  "kind": "pressure",
+  "script": "kidnapped or held",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d069-about-to-pay",
+  "source_id": "d069",
+  "library": "digital",
+  "type": "lottery-prize",
+  "kind": "offer",
+  "script": "prize or lottery with a fee",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d066-about-to-pay",
+  "source_id": "d066",
+  "library": "digital",
+  "type": "lottery-prize",
+  "kind": "offer",
+  "script": "prize or lottery with a fee",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d084-about-to-pay",
+  "source_id": "d084",
+  "library": "digital",
+  "type": "pig-butchering-crypto",
+  "kind": "offer",
+  "script": "crypto platform from an online contact",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d086-about-to-pay",
+  "source_id": "d086",
+  "library": "digital",
+  "type": "pig-butchering-crypto",
+  "kind": "offer",
+  "script": "crypto platform from an online contact",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d089-about-to-pay",
+  "source_id": "d089",
+  "library": "digital",
+  "type": "investment-tips-groups",
+  "kind": "offer",
+  "script": "guaranteed returns, stock-tip groups",
+  "variant": "about-to-pay",
+  "country": "UK"
+ },
+ {
+  "eval_id": "d090-about-to-pay",
+  "source_id": "d090",
+  "library": "digital",
+  "type": "investment-tips-groups",
+  "kind": "offer",
+  "script": "guaranteed returns, stock-tip groups",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d100-about-to-pay",
+  "source_id": "d100",
+  "library": "digital",
+  "type": "task-job",
+  "kind": "offer",
+  "script": "task or part-time job, pay to unlock earnings",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d101-about-to-pay",
+  "source_id": "d101",
+  "library": "digital",
+  "type": "task-job",
+  "kind": "offer",
+  "script": "task or part-time job, pay to unlock earnings",
+  "variant": "about-to-pay",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d108-about-to-pay",
+  "source_id": "d108",
+  "library": "digital",
+  "type": "romance",
+  "kind": "offer",
+  "script": "romance with an online contact",
+  "variant": "about-to-pay",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d106-about-to-pay",
+  "source_id": "d106",
+  "library": "digital",
+  "type": "romance",
+  "kind": "offer",
+  "script": "romance with an online contact",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d119-about-to-pay",
+  "source_id": "d119",
+  "library": "digital",
+  "type": "marketplace-buyer-seller",
+  "kind": "offer",
+  "script": "marketplace",
+  "variant": "about-to-pay",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d122-about-to-pay",
+  "source_id": "d122",
+  "library": "digital",
+  "type": "marketplace-buyer-seller",
+  "kind": "offer",
+  "script": "marketplace",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d125-about-to-pay",
+  "source_id": "d125",
+  "library": "digital",
+  "type": "rental-booking-ticket",
+  "kind": "offer",
+  "script": "rental, booking, or tickets",
+  "variant": "about-to-pay",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d123-about-to-pay",
+  "source_id": "d123",
+  "library": "digital",
+  "type": "rental-booking-ticket",
+  "kind": "offer",
+  "script": "rental, booking, or tickets",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d129-about-to-pay",
+  "source_id": "d129",
+  "library": "digital",
+  "type": "charity-disaster",
+  "kind": "offer",
+  "script": "charity after a disaster",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d130-about-to-pay",
+  "source_id": "d130",
+  "library": "digital",
+  "type": "charity-disaster",
+  "kind": "offer",
+  "script": "charity after a disaster",
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "d132-about-to-pay",
+  "source_id": "d132",
+  "library": "digital",
+  "type": "recovery-scam",
+  "kind": "offer",
+  "script": "recovery offer after a loss",
+  "variant": "about-to-pay",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d136-about-to-pay",
+  "source_id": "d136",
+  "library": "digital",
+  "type": "recovery-scam",
+  "kind": "offer",
+  "script": "recovery offer after a loss",
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "d109-after",
+  "source_id": "d109",
+  "library": "digital",
+  "type": "sextortion",
+  "kind": "pressure",
+  "script": "intimate images, then payment demands",
+  "variant": "after",
+  "country": "elsewhere"
+ },
+ {
+  "eval_id": "d113-after",
+  "source_id": "d113",
+  "library": "digital",
+  "type": "sextortion",
+  "kind": "pressure",
+  "script": "intimate images, then payment demands",
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "d116-after",
+  "source_id": "d116",
+  "library": "digital",
+  "type": "loan-app-harassment",
+  "kind": "pressure",
+  "script": "loan app threats",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d117-after",
+  "source_id": "d117",
+  "library": "digital",
+  "type": "loan-app-harassment",
+  "kind": "pressure",
+  "script": "loan app threats",
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "c043-about-to-pay",
+  "source_id": "c043",
+  "library": "remedy",
+  "type": "online-astrologer-remedy",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c049-about-to-pay",
+  "source_id": "c049",
+  "library": "remedy",
+  "type": "online-astrologer-remedy",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c001-about-to-pay",
+  "source_id": "c001",
+  "library": "remedy",
+  "type": "disease-cure-puja",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c010-about-to-pay",
+  "source_id": "c010",
+  "library": "remedy",
+  "type": "disease-cure-puja",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c065-about-to-pay",
+  "source_id": "c065",
+  "library": "remedy",
+  "type": "vashikaran-love-problem",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c060-about-to-pay",
+  "source_id": "c060",
+  "library": "remedy",
+  "type": "vashikaran-love-problem",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c019-about-to-pay",
+  "source_id": "c019",
+  "library": "remedy",
+  "type": "black-magic-removal",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c064-about-to-pay",
+  "source_id": "c064",
+  "library": "remedy",
+  "type": "black-magic-removal",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "c046-about-to-pay",
+  "source_id": "c046",
+  "library": "remedy",
+  "type": "other",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "US"
+ },
+ {
+  "eval_id": "c072-about-to-pay",
+  "source_id": "c072",
+  "library": "remedy",
+  "type": "other",
+  "kind": "reading",
+  "script": null,
+  "decision3": false,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c082-about-to-pay",
+  "source_id": "c082",
+  "library": "remedy",
+  "type": "money-gold-doubling",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c013-about-to-pay",
+  "source_id": "c013",
+  "library": "remedy",
+  "type": "money-gold-doubling",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "about-to-pay",
+  "country": "India"
+ },
+ {
+  "eval_id": "c032-after",
+  "source_id": "c032",
+  "library": "remedy",
+  "type": "escalating-fees-threats",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "after",
+  "country": "US"
+ },
+ {
+  "eval_id": "c007-after",
+  "source_id": "c007",
+  "library": "remedy",
+  "type": "escalating-fees-threats",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "c008-after",
+  "source_id": "c008",
+  "library": "remedy",
+  "type": "ritual-photo-blackmail",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "c048-after",
+  "source_id": "c048",
+  "library": "remedy",
+  "type": "ritual-photo-blackmail",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "c041-after",
+  "source_id": "c041",
+  "library": "remedy",
+  "type": "curse-death-threat-extortion",
+  "kind": "reading",
+  "script": null,
+  "decision3": true,
+  "variant": "after",
+  "country": "India"
+ },
+ {
+  "eval_id": "d058-live",
+  "source_id": "d058",
+  "library": "digital",
+  "type": "family-emergency-voice-clone",
+  "kind": "pressure",
+  "script": "family emergency call, voice possibly cloned",
+  "variant": "live",
+  "country": "US"
+ },
+ {
+  "eval_id": "d063-live",
+  "source_id": "d063",
+  "library": "digital",
+  "type": "virtual-kidnapping",
+  "kind": "pressure",
+  "script": "kidnapped or held",
+  "variant": "live",
+  "country": "US"
+ }
+]

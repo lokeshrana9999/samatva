@@ -6,6 +6,10 @@
 //        [--set real] [--variant live|after|about-to-pay] [--kind official|offer|pressure|reading]
 //        [--backend grok|claude] [--judge-model M]
 //
+// --set multi runs evals/lamplighter/multi/: layer 2, scripted multi-turn cases. Each prompt.md
+// holds fixed user turns separated by "=== turn ===" lines; the bot keeps the conversation (a
+// resumed session on either backend), and a grader with `turn: N` reads that turn's reply.
+//
 // --backend claude sends the same prompts through `claude -p` (default model claude-haiku-5-5,
 // judged by the same model unless --judge-model says otherwise): a second proxy for when Grok
 // usage runs out, and a check that the text holds on another model family.
@@ -26,6 +30,7 @@
 // Results go to evals/lamplighter/results/<timestamp>/ (git-ignored).
 
 import { spawn } from 'node:child_process';
+import { randomUUID } from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -114,14 +119,16 @@ const judgeProfile = profile('lamplighter-judge', JUDGE);
 const sysFile = (name, body) => { const p = path.join(work, `${name}.txt`); fs.writeFileSync(p, body); return p; };
 const botSys = sysFile(`lamplighter-${arm}`, SYSTEM[arm]);
 const judgeSys = sysFile('lamplighter-judge', JUDGE);
-const ask = (role, prompt) => (backend === 'claude'
-  ? claude(role === 'bot' ? botSys : judgeSys, prompt, role === 'bot' ? model : judgeModel)
-  : grok(role === 'bot' ? botProfile : judgeProfile, prompt, role === 'bot' ? model : judgeModel));
+const ask = (role, prompt, session) => (backend === 'claude'
+  ? claude(role === 'bot' ? botSys : judgeSys, prompt, role === 'bot' ? model : judgeModel, session)
+  : grok(role === 'bot' ? botProfile : judgeProfile, prompt, role === 'bot' ? model : judgeModel, session));
 
-// claude -p with the system prompt replaced: no tools, no MCP, no settings, no saved session
-function claude(sysPath, prompt, m) {
+// claude -p with the system prompt replaced: no tools, no MCP, no settings. A single turn saves no
+// session; a multi-turn case passes { id, first } so later turns resume the same conversation.
+function claude(sysPath, prompt, m, session) {
   const argv = ['-p', '--model', m, '--system-prompt-file', sysPath, '--tools', '""', '--strict-mcp-config',
-    '--no-session-persistence', '--setting-sources', '""', '--output-format', 'json'];
+    '--setting-sources', '""', '--output-format', 'json',
+    ...(session ? [session.first ? '--session-id' : '--resume', session.id] : ['--no-session-persistence'])];
   return new Promise((resolve) => {
     // claude is an npm shim, so Windows needs a shell; every argument is a plain token or a temp path
     const child = spawn('claude', argv, { shell: process.platform === 'win32', cwd: work });
@@ -143,11 +150,12 @@ function claude(sysPath, prompt, m) {
 }
 
 let tmpN = 0;
-function grok(profilePath, prompt, m) {
+function grok(profilePath, prompt, m, session) {
   const pf = path.join(work, `p${++tmpN}.txt`);
   fs.writeFileSync(pf, prompt);
   const argv = ['--agent', profilePath, '--prompt-file', pf, '--verbatim', '--disable-web-search', '--no-subagents',
-    '--max-turns', '1', '--output-format', 'json', '-m', m, '--cwd', work];
+    '--max-turns', '1', '--output-format', 'json', '-m', m, '--cwd', work,
+    ...(session ? [session.first ? '--session-id' : '--resume', session.id] : [])];
   return new Promise((resolve) => {
     const child = spawn('grok', argv, { shell: false });
     let out = '';
@@ -203,7 +211,7 @@ async function grade(g, reply) {
 
 function loadCases() {
   return fs.readdirSync(CASE_DIR, { withFileTypes: true })
-    .filter((d) => d.isDirectory() && !['results', 'real'].includes(d.name))
+    .filter((d) => d.isDirectory() && !['results', 'real', 'multi'].includes(d.name))
     .filter((d) => !onlyCases.length || onlyCases.includes(d.name))
     .map((d) => {
       const [meta, prompt] = frontmatter(read(path.join(CASE_DIR, d.name, 'prompt.md')));
@@ -213,7 +221,9 @@ function loadCases() {
         return { name: f.replace(/\.md$/, ''), ...gm, question: body.trim() };
       });
       const runs = Number(runsOverride || (full ? meta.runs : 1) || 1);
-      return { name: d.name, tier: meta.tier, variant: meta.variant, kind: meta.kind, runs, prompt: prompt.trim(), graders };
+      // a multi-turn case splits its user turns with lines of "=== turn ==="; a grader's `turn: N` picks the reply it reads
+      const turns = prompt.split(/^=== turn ===\s*$/m).map((t) => t.trim()).filter(Boolean);
+      return { name: d.name, tier: meta.tier, variant: meta.variant, kind: meta.kind, runs, turns, graders };
     })
     .filter((c) => (!tier || c.tier === tier) && (!variant || c.variant === variant) && (!kind || c.kind === kind));
 }
@@ -236,15 +246,27 @@ console.log(`backend ${backend}, arm ${arm}, model ${model}, judge ${judgeModel}
 
 let cost = 0;
 const results = await pool(tasks, jobs, async ({ c, run }) => {
-  const r = await ask('bot', c.prompt);
-  cost += r.cost;
+  const session = c.turns.length > 1 ? { id: randomUUID(), first: true } : null;
+  const replies = [];
+  let r;
+  for (const turn of c.turns) {
+    r = await ask('bot', turn, session);
+    cost += r.cost;
+    replies.push(r);
+    if (session) session.first = false;
+    if (r.error) break;
+  }
   const grades = {};
   for (const g of c.graders) {
-    grades[g.name] = r.error ? { pass: false, why: `run failed: ${r.error}` } : await grade(g, r.text);
+    const rt = replies[Number(g.turn || c.turns.length) - 1];
+    grades[g.name] = !rt || rt.error ? { pass: false, why: `run failed: ${rt ? rt.error : 'turn not reached'}` } : await grade(g, rt.text);
     cost += grades[g.name].cost || 0;
   }
   const failed = Object.entries(grades).filter(([, v]) => !v.pass).map(([k]) => k);
-  fs.writeFileSync(path.join(outDir, `${c.name}.${run + 1}.md`), `# ${c.name} run ${run + 1} (${r.model || 'no model'})\n\n${r.text || r.error}\n\n## grades\n\n${Object.entries(grades).map(([k, v]) => `- ${v.pass ? 'pass' : 'FAIL'} ${k}: ${v.why}`).join('\n')}\n`);
+  const body = c.turns.length > 1
+    ? replies.map((x, i) => `## turn ${i + 1}\n\n> ${c.turns[i].split('\n').join('\n> ')}\n\n${x.text || x.error}`).join('\n\n')
+    : (r.text || r.error);
+  fs.writeFileSync(path.join(outDir, `${c.name}.${run + 1}.md`), `# ${c.name} run ${run + 1} (${r.model || 'no model'})\n\n${body}\n\n## grades\n\n${Object.entries(grades).map(([k, v]) => `- ${v.pass ? 'pass' : 'FAIL'} ${k}: ${v.why}`).join('\n')}\n`);
   console.log(`${failed.length ? 'FAIL' : 'pass'} ${c.name} #${run + 1}${failed.length ? `: ${failed.join(', ')}` : ''}`);
   return { case: c.name, tier: c.tier, variant: c.variant, run: run + 1, failed, grades, model: r.model };
 });

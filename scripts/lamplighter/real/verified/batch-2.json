@@ -1,0 +1,154 @@
+[
+ {
+  "eval_id": "d006-after",
+  "prompt": "I'm in the US, I moved here a few years ago on a green card. I got a call last week that showed up as the IRS on caller ID, and I hung up before paying anything. Can you check whether this was one of those scams?\n\nRoughly what he said:\nCaller: This is the Internal Revenue Service. Our records show you owe back taxes to the government that were never paid.\nMe: I file my taxes every year.\nCaller: There is an unpaid balance of $4,800 under your name. If it is not cleared today, you face arrest, imprisonment, fines or deportation. Officers can be sent to your address.\nMe: How do I pay it?\nCaller: You must pay immediately. Go to a store now and buy prepaid cards for the full amount, then call me back and read out the serial numbers. Or you can wire the money to the account I give you: <account number>.\nMe: Can I pay through the IRS website instead?\nCaller: No. This is the only way to stop the arrest. Do not hang up and do not delay.",
+  "country": "US",
+  "changes": [
+   "moved the victim back to the US: the case is an India call centre phoning US taxpayers and immigrants (brief country India was the call-centre location); Income Tax Department and rupees replaced with IRS and dollars",
+   "restored the documented deportation threat and spoofed IRS caller ID; user set as a legal immigrant so the threat fits",
+   "replaced the amount with a rounded $4,800"
+  ]
+ },
+ {
+  "eval_id": "d010-after",
+  "prompt": "I'm in England. Yesterday a man rang my landline saying he was a police officer, and I was on the phone with them for most of the afternoon. I didn't go to the bank in the end. Can you check this for me?\n\nRoughly how it went:\nCaller: This is the police, Detective Sergeant speaking. We are investigating fraud inside your bank, and staff there may be involved.\nMe: How do I know you're really the police?\nCaller: Very sensible. Hang up and dial 999, and you'll be put through to me.\n(I hung up and dialled 999, and a different man answered at once and said he was another officer on the same case. I didn't realise the line had never cleared.)\nCaller 2: Thank you for checking. We need your help with a covert operation. We'd like you to withdraw £6,000 in cash so we can use it as evidence against the staff involved.\nMe: Can't the bank sort it out?\nCaller 2: No, the fraud is inside the bank. Your cash is what helps us expose it. Stay on the line while you go. An officer will come to your door to collect the cash.\nThey rang back again and again over several hours.",
+  "country": "UK",
+  "changes": [
+   "replaced the undocumented \"don't tell the bank\" secrecy trick with the documented pretext (exposing fraud inside the bank)"
+  ]
+ },
+ {
+  "eval_id": "d020-live",
+  "prompt": "I'm in India, and I'm on a Skype video call right now with people saying they are customs and Mumbai Police. They told me to stay in a room alone with my camera on, and now they want me to transfer ₹20 lakh to an RBI account for verification. Is this real?\n\nWhat they've said so far:\nCaller 1: I am calling from FedEx. A parcel booked in your name from Mumbai airport to Taiwan has been stopped. It contains narcotics and several passports.\nMe: I never sent any parcel.\nCaller 2: This is Customs. A case has been filed against you under the NDPS Act. Go to a room where nobody else is present and keep this call going. Read me your Aadhaar number.\nCaller 3: Mumbai Police. Keep your camera on at all times. Answer every question. (Their own cameras are off.)\nCaller 3: To prove your money is clean, transfer ₹20 lakh to this Reserve Bank of India account: <account number>. It is only for verification. You will get it back within 30 days.\nCaller 3: Do it now while you are on camera.",
+  "country": "India",
+  "changes": [
+   "dropped the city and the exact drug weight, which together with FedEx-Taiwan-RBI pointed to the specific news story"
+  ]
+ },
+ {
+  "eval_id": "d026-after",
+  "prompt": "I'm in Australia and my parents live in China. I got this email a while ago saying it was from the Chinese police, and I didn't reply. Was this one of those scams?\n\nThe email:\n\"Notice from the Public Security Bureau\n\nDear Sir/Madam,\n\nDuring an investigation we intercepted a package overseas. Your personal details, including your name and passport information, were used on this package. You are now linked to a criminal case, <case number>.\n\nYou must cooperate with the investigation. Contact the officer handling your case immediately at <phone number>.\n\nPublic Security Bureau\"\n\nI've since read that some people who answered these were later told to hide away and send videos of themselves to their family, and then their family was asked for money. I want to know if this email is the start of that.",
+  "country": "elsewhere",
+  "changes": [
+   "moved the victim back to Australia (case is Sydney; brief said UK)",
+   "removed the invented \"do not discuss with friends or classmates\" line: not documented for the email, and \"classmates\" hinted at the student victim"
+  ]
+ },
+ {
+  "eval_id": "d030-after",
+  "prompt": "I'm in New York. Someone rang our shop this week saying he was from Con Edison and that our power would be cut. We didn't pay anything. Was this a scam?\n\nRoughly what he said:\nCaller: This is Con Edison. Your account is past due and a crew is on the way to disconnect power to your business.\nMe: We pay the bill every month.\nCaller: Our system shows an unpaid balance. To stop the shutoff you need to pay $3,600 right now.\nMe: Can I pay through the website?\nCaller: No, the account is already flagged. The only way to stop the crew is to pay by Bitcoin. I'll send you the address: <wallet address>.\nMe: Can I call you back?\nCaller: If you hang up, the power goes off today.",
+  "country": "US",
+  "changes": [
+   "removed the invented Bitcoin-machine walkthrough; the case documents only Bitcoin as payment"
+  ]
+ },
+ {
+  "eval_id": "d035-live",
+  "prompt": "I'm in the US. I'm on the phone right now with someone from my bank's fraud team. Earlier a tech support person was on my computer, and now the bank says a hacker is in my account and I need to move my savings today. Should I do what they say?\n\nWhat they've said so far:\nTech support: I can see a problem on your computer. Let me connect remotely so I can check it. Which account has the most money in it?\nBank: This is the fraud department. A foreign hacker is inside your account. You need to move the money to a safe account right away. Don't tell anyone at the branch or your family, the hacker could be watching.\nBank: I'm transferring you to a Federal Reserve officer who will set up a new alias account for you.\nFederal Reserve: To protect your funds, withdraw $80,000 in cash, or buy gold with it. You can also wire it to this metals dealer: <account number>, and the metal will be shipped to your home.\nFederal Reserve: A courier will come to collect it. He will give you a dollar-bill serial number as a passcode so you know he's ours. Stay on the line with me while you go to the bank.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d039-after",
+  "prompt": "I'm in the US. A warning popped up on my laptop saying it was infected, with a Microsoft number to call. I called, let them connect remotely, and paid $350 for the repair. Now I'm not sure it was real. Can you check?\n\nThe pop-up:\n\"MICROSOFT SECURITY ALERT\nYour computer has been infected with a virus. Your personal and financial information is at risk.\nDo not shut down or restart your computer.\nCall Microsoft Support immediately: <phone number>\"\n\nThe call:\nCaller: Microsoft Support. I can see your system is badly infected. Please install this tool so I can connect: <link>.\nCaller: (on my screen) These red lines are the virus. The cleaning and protection will cost $350.\nCaller: For payment, please open your online banking while I am connected so I can confirm it goes through.\nMe: Okay, it's done.\nCaller: Your computer is safe now. If you see any problem again, call this same number.",
+  "country": "US",
+  "changes": [
+   "moved the victim to the US: India was where the scam call-centre clients were, the victims were charged \"hundreds of dollars\" and the case was a US prosecution; rupee amount replaced with $350"
+  ]
+ },
+ {
+  "eval_id": "d050-live",
+  "prompt": "I'm in the US. I'm on the phone right now with someone who says he is our town's police chief, and the caller ID shows the police department's number. My wife and I have just bought gift cards and he's asking me to read him the codes now. Should I?\n\nWhat he's said so far:\nCaller: This is the chief of police. Your identity and personal information have been compromised.\nMe: What does that mean for us?\nCaller: Criminals are about to take the money out of your bank account. The only way to keep your funds from being stolen is to put the money into gift cards.\nCaller: Go to Target and buy gift cards, about $13,000 in total. If one store won't sell you that much, go to a second Target.\nMe: We bought the first batch.\nCaller: Good. Scratch off the back and read me each code, one at a time. I'll call you back after that for the next batch.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d072-after",
+  "prompt": "I'm in the US. A few days ago my phone suddenly lost service, and by the time I got it back most of my crypto, about $240,000, was gone. Can you check what happened here?\n\nRoughly what happened:\nMy phone showed \"No service\" all afternoon. I thought it was a network problem.\nThen I got this email from my carrier:\n\"Your wireless number has been successfully transferred to a new SIM card. If you did not request this change, please contact us.\"\nThen from my crypto wallet:\n\"A sign-in to your account was verified using the code sent to your phone number.\"\n\"Password reset successful.\"\n\"Withdrawal confirmed to <wallet address>.\"\nI never asked for a new SIM. When I called the carrier, they said the request to move my number looked normal to them.",
+  "country": "US",
+  "changes": [
+   "replaced the $15 million figure: a tens-of-millions SIM-swap loss points straight to the one famous case; used an ordinary rounded amount"
+  ]
+ },
+ {
+  "eval_id": "d080-after",
+  "prompt": "I'm in the US. We wired about $1.3 million to a business partner last month after an email from what looked like their usual address said their bank details had changed. They now say they never got it. Was this one of those scams?\n\nA few weeks before, some of our staff got this:\n\"Shared document: Q3 statement. Sign in with your work email to view: <link>\"\n\nThen this came from the partner's address:\n\"Hi,\nPlease note our banking details have changed. Kindly send the payment for the outstanding invoice to our new account below, effective immediately:\nBank: <bank name>\nAccount: <account number>\nPlease confirm once the wire is sent.\nThanks\"\n\nWe replied to the same email to check, and got back \"Yes, confirmed, please proceed with the new account.\" So we sent it.",
+  "country": "US",
+  "changes": [
+   "the case documents spoofed emails mimicking partners' addresses, so the bank-change email now comes from a lookalike address, not the real one"
+  ]
+ },
+ {
+  "eval_id": "d063-after",
+  "prompt": "I'm in the US. A few days ago I got a call from a number I didn't know while my daughter's phone was dead. My husband called the police while I stayed on the line, and it turned out she was fine the whole time. Was this one of those scams?\n\nRoughly what happened:\n(A girl screamed \"Mom!\" and there were sounds of a struggle.)\nCaller: We have your daughter.\nMe: Who is this?\nCaller: Mexican mafia. You call me sir. She is being watched right now.\nCaller: You want her back, you pay $6,000. Don't talk to anyone. Don't hang up.\nMe: I don't have that much in cash.\nCaller: Then you wire it. Write down these accounts: <account number>, <account number>. Send part to each one.\nHe kept me on the phone for about an hour, telling me what to say at the wire counter. The police stopped the transfer.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d084-about-to-pay",
+  "prompt": "I'm in the US. I met someone on social media a couple of months ago and we talk every day. She got me into a crypto platform and my account shows good profit. She says I should add $30,000 more in bitcoin today. Should I send it?\n\nSome of our chat:\nHer: Good morning! Did you sleep well? I was thinking about you.\nHer: My uncle taught me this platform, I only share it with people I trust. Look at my returns this month.\nHer: Register here: <link>. Deposit bitcoin to your account address and I'll show you which trades to place.\nMe: I put in a little and it's up a lot already.\nHer: See? I told you. If you add $30,000 now we can catch the next big move together. This is for our future.\nMe: That's most of my savings.\nHer: I would never steer you wrong. Send the bitcoin to <wallet address> today.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d100-about-to-pay",
+  "prompt": "I'm in Chennai, India. I joined a part-time job on WhatsApp liking YouTube videos and doing reviews, and at first they paid me small amounts. Now my earnings are frozen and they want ₹60,000 as a penalty to release them. Should I pay it today?\n\nMessages:\nWhatsApp: Hello! Part-time work from home. Like and subscribe to YouTube videos and earn ₹50 per task. Interested?\nWhatsApp: Also post Google reviews for these websites: <link>.\nThen: Congratulations, you are selected for our premium group. Join Telegram: <link>\n(The Telegram group has over 50 people posting screenshots of their earnings.)\nTelegram: For higher-paying tasks, pay a subscription of ₹12,000 to <account number>.\nTelegram: Your next task must be finished within 10 minutes.\n(I could not finish it in time.)\nTelegram: Task failed. Your earnings of ₹1,45,000 are frozen. Pay ₹60,000 penalty to <account number> to release your full balance. Members who pay today are released immediately.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d119-about-to-pay",
+  "prompt": "I'm in Chennai, India. I found an Activa scooter on OLX and the seller says he is an army officer being transferred to New Delhi. He wants ₹30,000 on Google Pay before he sends it. Should I pay?\n\nOur chat:\nSeller: Hello, the Activa is available. I am in the army, posted at the camp here for five years. I am being transferred to New Delhi, so I am selling it cheap.\nMe: Can I come and see it?\nSeller: Civilians cannot enter the camp. I am sending my ID card as proof. (He sent a photo of an army identity card.)\nSeller: Send ₹30,000 on Google Pay to <UPI id>. Our transport team needs proof of payment before they can deliver the bike to you.\nMe: Can I pay when it arrives?\nSeller: No, without the payment proof the army transport will not release it. Pay now and I will send the bike today.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d129-about-to-pay",
+  "prompt": "I'm in the US. A member of a local group I follow posted a fundraiser on social media for Hurricane Helene relief. I'm about to send $250 through PayPal. Should I send it?\n\nThe post:\n\"Our group is collecting donations for families hit by Hurricane Helene. Everything raised goes straight to relief supplies and people who lost their homes. Please give what you can through our PayPal: <link>. Share this post! Every dollar helps.\"\n\nA comment from the organiser:\n\"Thank you all so much, we've already raised a lot. Keep it coming, the need is huge.\"\n\nIt looks genuine and the person is part of the group, but I've read that money from these sometimes ends up in someone's own account.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d109-after",
+  "prompt": "I'm in Singapore. I met someone on a dating app, we moved to a messaging app, and they talked me into an intimate video call. Now they say they recorded it and want money. Was this one of those scams?\n\nMessages after the call:\nThem: I recorded everything. Look. (sent a screenshot from the call)\nThem: I have your contact list from your social media. Your family, your friends, your colleagues.\nThem: Pay S$3,000 or I post the video online and send it to all of them.\nMe: Please delete it.\nThem: Pay first, then I delete. Here is the account: <account number>.\nThem: You have until tonight.\n\nI haven't paid anything. I'm an adult and so were they, as far as I know.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "c043-about-to-pay",
+  "prompt": "I'm in Delhi, India. I found an astrologer on social media and called him about my problems at work and at home. He says it is negative energy and wants ₹2.4 lakh for rituals at a temple in a holy town. Should I pay?\n\nRoughly what he said on the phone:\nHe: I have looked at your situation. All these setbacks in your job and personal life are because of negative energy on you.\nMe: Can it be fixed?\nHe: Yes, but only through proper rituals. I will have them performed for you at a temple in a holy town. Pandits there will do it on your behalf, you do not need to travel.\nHe: The total cost is ₹2.4 lakh. You can send it in parts to this account: <account number>.\nHe: Once the rituals are done, your career and relationships will settle. Many people have been helped this way.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "c065-about-to-pay",
+  "prompt": "I'm in India. I found an astrologer on Instagram and told him about problems in my marriage. He says black magic will give me full control over my husband, and wants ₹25 lakh in cash plus some jewellery. Should I give it?\n\nInstagram chat:\nAstrologer: Aapki problem samajh gaya. Aapke pati aapki baat nahi sunte, ghar mein jhagde hote hain.\nMe: Haan, bahut time se aisa hi chal raha hai.\nAstrologer: Main ek vidhi karunga, black magic ki. Isse aapko apne pati par full dominance mil jayegi. Woh wahi karenge jo aap chahogi.\nMe: Kitna kharcha hoga?\nAstrologer: ₹25 lakh cash, aur baaki gold jewellery mein. Cash ghar mein hai toh wahi de dijiye.",
+  "country": "India",
+  "changes": [
+   "removed the invented secrecy line (\"kisi ko batana mat\"), not documented in the case",
+   "dropped Mumbai: city plus Instagram plus \"full dominance\" plus a lakhs figure would find the news story"
+  ]
+ },
+ {
+  "eval_id": "c046-about-to-pay",
+  "prompt": "I'm in New York state, US. I've been seeing a psychic at a fortune-telling shop and she now says my ex-fiancé needs money for a medical procedure, and wants $15,000 to pass on. Should I pay it?\n\nRoughly what she said, over several visits:\nShe: Your energy is blocked. We need to do an egg ritual. Hold this egg over your body, then bring it back to me.\n(We did the egg ritual several times.)\nShe: Now the reversing time ritual. Give me your watch. We will turn time back.\nShe: I have seen something. He is sick. He needs a medical procedure and he cannot pay for it.\nShe: Bring $15,000 and I will make sure it reaches him.",
+  "country": "US",
+  "changes": [
+   "removed undocumented additions: the egg-breaking \"darkness\" reveal, the reunion purpose of the time ritual, and the promise that paying would bring the ex-fiance back"
+  ]
+ },
+ {
+  "eval_id": "c032-after",
+  "prompt": "I'm in the US. Over about a year I gave a psychic around $450,000 in cash, jewelry, clothes, concert tickets and gift cards to remove a curse. I've stopped going now. Was this a scam?\n\nRoughly what she said:\nShe: You are cursed. That is why everything keeps going wrong. Only rituals can remove this affliction, and they are expensive.\nShe: (later) The curse is stronger than I thought. I need more for the next ritual. Bring cash, or jewelry. Gift cards are fine too.\nMe: I can't keep paying like this.\nShe: If you stop now, the curse will destroy your marriage, your business and your family.\nShe: You can send it through Cash App or Zelle if you can't come in.\nNothing she took was ever returned.",
+  "country": "US",
+  "changes": [
+   "removed the reputational-damage threat, which the case documents for a different victim; this victim's documented threat (marriage, business, family) stays"
+  ]
+ },
+ {
+  "eval_id": "c041-after",
+  "prompt": "I'm near Mumbai, India. A man who moved in across the road did a pooja for my husband and took our cash and gold in a sealed box. He has gone to his guru's place, and when I opened the box it was empty. Was this a fraud?\n\nRoughly what he said:\nHe: Main aapke pati aur devar ki sharab chhudwa sakta hoon. Ghar mein buri aatmayein hain, woh bhi nikaal dunga. Aur yahan zameen mein khazana chhupa hai.\nHe: Aapke pati par ek buri aatma ka asar hai. Aath din ke andar unki maut ho jayegi.\nMe: Ise rokne ka koi upay hai?\nHe: Ek pooja karni padegi, ₹4 lakh ki. Raat ko mere ghar par hogi.\nHe: Saara cash aur sona is box mein rakho. Main ise seal kar dunga. 45 din tak mat kholna, warna pooja ka asar khatam.\nHe: Main apne guru ke paas ja raha hoon.\nWe gave him about ₹3.5 lakh in cash and around 100 grams of gold.",
+  "country": "India",
+  "changes": []
+ }
+]

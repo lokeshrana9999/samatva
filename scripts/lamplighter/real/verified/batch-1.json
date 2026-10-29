@@ -1,0 +1,149 @@
+[
+ {
+  "eval_id": "d006-live",
+  "prompt": "I'm in the US and I'm on a call right now with a man who says he's from the IRS. He wants me to go and buy prepaid cards and read him the serial numbers before he hangs up. Is this real?\n\nCaller: This is the Internal Revenue Service, enforcement division. Our records show unpaid back taxes in your name, $4,800 with penalties.\nMe: I file my taxes every year.\nCaller: The case is already open. If this is not cleared today you face arrest, imprisonment and fines.\nMe: Can I pay through the IRS website?\nCaller: No, this amount cannot be paid online now. Go to the nearest store, buy prepaid cards for the full amount and read me the serial numbers on the back. Or you can wire it.\nMe: I'd like some time to check.\nCaller: There is no time. Once you read me the numbers the matter is closed. Otherwise the arrest warrant goes out today.",
+  "country": "US",
+  "changes": [
+   "moved back to the US (victims were US taxpayers; the call centre was in India): IRS, dollars, 'I'm in the US'",
+   "added the documented wire-transfer option"
+  ]
+ },
+ {
+  "eval_id": "d008-after",
+  "prompt": "I'm in Singapore. Last week a man called saying he was a police officer, and I ended up handing my cash and some gold to an agent he sent. Can you check whether this was one of those scams?\n\nCaller: This is the police. Your identity has been misused in a money laundering case.\nMe: I don't know anything about this.\nCaller: Then you must cooperate to prove your innocence. Give me your bank details and personal particulars so we can check.\nMe: Okay.\nCaller: This investigation is confidential. Do not tell anyone, not even your family.\nMe: Not even my husband?\nCaller: No one. Next, withdraw your cash and bring out your gold. Our agent will collect it from you for investigation purposes.\nMe: How much?\nCaller: All of it. About S$16,000 in cash, and the gold.\n\nA woman came and collected it from me. Since then nobody has called back.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d013-after",
+  "prompt": "I'm in India. It ended two days ago: for about three days I was kept on WhatsApp video calls with people who said they were TRAI, Mumbai Police, CBI and a Supreme Court judge, and I transferred about ₹36 lakh. Was this one of those digital arrest scams?\n\nCaller (TRAI): A money-laundering case has been filed in Mumbai under your Aadhaar. I am connecting you to Mumbai Police.\nSub-inspector: Your Aadhaar is linked to this case. Keep the video call on at all times and do not contact anyone.\nMe: Can I call my son?\nSub-inspector: No. You are not to speak to anyone until the investigation is over. Now the CBI chief will speak to you.\nCBI chief: Your case will be heard by the Supreme Court, online, right now.\nJudge: To prove your money is clean, break your fixed deposits and PPF and transfer the funds to the accounts we give you. These accounts are under Supreme Court supervision.\nMe: All of my savings?\nJudge: All of it. The court is watching. Accounts: <account number>, <account number>.",
+  "country": "India",
+  "changes": [
+   "city Delhi replaced with India: Delhi + 72-hour video call + TRAI/Mumbai Police/CBI/judge chain + FD/PPF pointed at the news story"
+  ]
+ },
+ {
+  "eval_id": "d026-live",
+  "prompt": "I'm from China and living in Australia. I'm on a WeChat video call right now with a man who says he's Chinese police, and he wants me to record a video of myself looking like I've been kidnapped so they can send it to my parents in China. What should I do?\n\nIt started with an email a few weeks ago:\n\"Notice from the police: a package intercepted overseas contains documents with your personal details. You are under investigation. Contact the officer at <phone number> immediately.\"\n\nOn the call so far:\nCaller: Your details were used on this package. This is a serious case.\nMe: I never sent any package.\nCaller: To clear your name you must cooperate fully. Go somewhere you can be alone.\nMe: Why do you need a video?\nCaller: Record yourself as if you are being held somewhere. We will send it to your family on WeChat. When they pay into the account, the case will be closed.\nMe: My parents will be very worried.\nCaller: This is the only way. Stay on the video and record it now.",
+  "country": "elsewhere",
+  "changes": [
+   "moved from UK back to Australia, where the victim was (brief country was wrong)",
+   "dropped the invented 'do not reply to your friends' instruction (not documented)",
+   "softened 'terrified' to keep the user calm"
+  ]
+ },
+ {
+  "eval_id": "d029-after",
+  "prompt": "We run a small restaurant in Spain. In the middle of a busy lunch service a man called saying he was from our electricity company, and I paid over the phone because he said the power would be cut, even though our bills were up to date. Can you check if this was a scam?\n\nCaller: Good afternoon, I'm calling from your electricity company's billing department. Your last two electricity bills are unpaid.\nMe: That can't be right, we always pay.\nCaller: Our system shows two bills outstanding, €1,350 in total. If it isn't paid now, the supply will be cut off this afternoon.\nMe: We're full of customers right now.\nCaller: That's why I'm calling, so you don't lose service. You can pay now over the phone and I'll stop the cut-off immediately.\nMe: Can I call you back on the number on the invoice?\nCaller: No, the cut-off order is already issued. It has to be paid now.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d032-after",
+  "prompt": "I'm in India. At work I got WhatsApp messages from what looked like our managing director's account asking me to move a large payment, and I sent ₹1.1 crore before our finance team flagged it. Was this one of those boss scams?\n\nThe messages:\nMD: Are you at your desk?\nMe: Yes sir.\nMD: I need an urgent transfer to a new vendor for a deal we are closing today. ₹1.1 crore.\nMD: <account number>, <bank name>\nMe: Okay sir.\nMD: Please do it now and send me the screenshot.\nMe: Done sir, screenshot attached.\nMD: Good. Will call you later.\n\nWhen I called his usual number afterwards, he had no idea what I was talking about.",
+  "country": "India",
+  "changes": [
+   "removed the invented skip-the-approval exchange (trick not documented in the case)"
+  ]
+ },
+ {
+  "eval_id": "d039-live",
+  "prompt": "I'm in the US. A warning popped up on my laptop saying it was infected, with a Microsoft support number, and I'm on the call with them now. He wants me to install a remote access app and pay a fee for the repair. Should I go ahead?\n\nThe pop-up:\n\"Microsoft Security Alert: Your computer is infected. Do not shut down. Call Microsoft Support at <phone number>.\"\n\nCaller: Microsoft technical support, how can I help?\nMe: I got a virus warning on my screen.\nCaller: Yes, I can see your system is infected. Your files and bank details are at risk. Please download the app from <link> and tell me the code on your screen so I can connect and clean it.\nMe: Is there a charge?\nCaller: The repair and security package is $350. Once I'm connected I'll open your online banking and you can pay directly.\nMe: Can I take it to a repair shop instead?\nCaller: Please don't shut down. Just give me the code.",
+  "country": "US",
+  "changes": [
+   "moved from India to the US: the India-based firms were the scammers, victims were charged 'hundreds of dollars' (FBI case); fee now $350, 'online banking'"
+  ]
+ },
+ {
+  "eval_id": "d046-after",
+  "prompt": "I'm in the US. A tech support company I'd paid before called about a refund, got onto my computer, and then said they had refunded far too much by mistake. I closed the laptop and haven't sent anything. Was this a scam?\n\nCaller: Hello, this is technical support. You paid for our support service, and we're closing it, so you're owed a $120 refund.\nMe: Okay.\nCaller: I'll need remote access to process it. Go to <link>, install the support tool and then log into your bank.\nMe: It's open.\nCaller: Oh no. I typed $12,000 instead of $120. You can see it in your account now.\nMe: It does show more money.\nCaller: You need to send back the difference today. You can do a Western Union or MoneyGram wire, buy gift cards and read me the codes, or send cash by FedEx to the name and address I give you.\nMe: Which name?\nCaller: I'll give you the name once you're ready to send.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d071-after",
+  "prompt": "I'm in Poland. Yesterday my phone suddenly lost signal, and by the time my number worked again my crypto exchange account had been emptied. These are the messages I found afterwards. Was this a SIM swap?\n\nSMS from my mobile operator, just before the signal dropped:\n\"Your request to transfer your number to a new SIM card has been accepted. If you did not make this request, contact customer service.\"\n\nEmails from the exchange, a few minutes later:\n\"Your password has been reset successfully.\"\n\"New login from an unrecognised device.\"\n\"Withdrawal confirmed: 0.21 BTC (approx. PLN 52,000) to <wallet address>.\"\n\nI never asked for a new SIM card and I never reset my password.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d076-after",
+  "prompt": "I'm in Canada. I was stuck setting up my new Roku, asked my phone's voice search for Roku support, called the number it gave me, and paid a $100 activation fee. Now I'm not sure that was really Roku. Can you check?\n\nRoughly how the call went:\nRep: Thank you for calling Roku support. How can I help?\nMe: I'm trying to set up my Roku and I'm stuck on the activation step.\nRep: Yes, every new device needs a one-time activation. The fee is $100.\nMe: I didn't know there was a fee.\nRep: It's required before you can use the device. I can take the payment now and activate it for you.\nMe: Okay.\nRep: Done, your device is activated. Thank you for calling Roku.",
+  "country": "elsewhere",
+  "changes": []
+ },
+ {
+  "eval_id": "d057-after",
+  "prompt": "I'm in the US. Last week a man called saying he was an attorney and that my grandson had been arrested and needed bail money, and I sent a package of cash by overnight delivery to the address he gave. My son now says my grandson is fine. Can you check what happened?\n\nCaller: Hello, I'm the attorney representing your grandson. He has been arrested and needs bail today.\nMe: Arrested? Let me call his father.\nCaller: Please don't. The judge has put a gag order on this case. You cannot contact the police or the family about it.\nMe: Then what do I do?\nCaller: Bail is $9,000 in cash. Pack it in a box and send it by overnight delivery to <address>. I will receive it and take care of the court.\nMe: Can I speak to him?\nCaller: He is in custody right now. Send it today and he will be home tomorrow.",
+  "country": "US",
+  "changes": [
+   "moved from India back to the US, where the victims were: attorney, dollars, overnight shipping, no 'Namaste'"
+  ]
+ },
+ {
+  "eval_id": "d066-about-to-pay",
+  "prompt": "I'm in the US. I got a letter and then a text saying I'd won a sweepstakes, and today a man called to say I have to pay the taxes and processing fee before the prize is released. Should I send the gift cards today?\n\nThe text:\n\"CONGRATULATIONS! You have been selected as the winner of $850,000 in our national sweepstakes. To claim your prize, call your claims agent at <phone number>. Reference: <case number>.\"\n\nThe call:\nCaller: Congratulations again. Before we can release your winnings, the taxes and processing costs must be paid upfront.\nMe: Can't you take them out of the prize?\nCaller: The winnings can't be released until the fees are paid. The total is $3,400.\nMe: How do I pay?\nCaller: Buy gift cards for that amount and mail them to our office at <address>. You can also send cash, or an iPhone of the same value.\nMe: I'd have to go to the store.\nCaller: Once we receive it, your check goes out the same week.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d090-about-to-pay",
+  "prompt": "I'm in the US and I've been in a WhatsApp stock group for a few weeks. My account on their AI trading platform already shows good profits, and I'm planning to deposit $9,000 in crypto this evening. Should I go ahead?\n\nFrom the group:\nAdviser: Today's AI-generated pick: buy at the open, target +18% this week. Our platform's AI trades for you automatically.\nMember: Up $4,200 this week thanks to the adviser. Just added more.\nMember: Third week in profit. Best decision I made this year.\nAdviser: Reminder: our platform operates under SEC oversight. Deposits in USDT or cash are credited the same day.\n\nPrivate message from the adviser:\n\"Your account is up 31% since you joined. Deposit more now to catch the next AI signal. Send to <wallet address> and your balance will update within the hour.\"\n\nI deposited $1,500 earlier and the dashboard says it's now worth $1,970.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d106-about-to-pay",
+  "prompt": "I'm in the US. I met a man on a dating site about a year ago and we talk on the phone most days. He's asking me for $60,000 now, and he's also asked me to open a bank account for his business. Should I send it?\n\nHis messages:\n\"You know I would never ask if I had any other choice. I just need $60,000 to get through this, and I'll pay you back.\"\n\"You've already helped me so much. This is the last time, I promise.\"\n\"Also, I need you to set up a company and a bank account in your name so my payments can come through you. It's simpler that way. I'll send you the details.\"\n\"Please send it to <account number> today. I love you.\"\n\nHe's asked for money several times before, and each time the amount has been bigger.",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "d123-about-to-pay",
+  "prompt": "Main India mein hoon aur Goa trip ke liye ek bade luxury hotel chain ki website se room book kar raha hoon. Website pe ek number tha, maine call kiya, aur ab woh poora amount UPI se maang rahe hain. Kya main pay kar doon?\n\nCall:\nCaller: Namaste sir, reservations desk. Aapki dates available hain.\nMe: Kitna hoga?\nCaller: Total ₹42,000. Booking confirm karne ke liye 50 percent advance dena hoga.\nMe: Theek hai, main ₹21,000 bhej deta hoon.\nCaller: Sir, actually split payment accept nahi hota. Full payment karna padega, tabhi booking confirm hogi.\nMe: Baaki amount check-in ke time de doon?\nCaller: Nahi sir, hotel ki policy hai. Is UPI pe bhej dijiye: <UPI id>. Payment ke baad confirmation aa jayega.",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d136-about-to-pay",
+  "prompt": "I'm in India. I lost about ₹85,000 in an online fraud last month and reported it. Now a man on WhatsApp says he's from the 1930 cyber helpline and can get it back, but he wants lawyers' fees first. Should I pay him?\n\nHis WhatsApp messages:\n\"Namaste. I am from the 1930 Cyber Crime Helpline, National Cyber Crime Reporting Portal. Your fraud complaint has come to our team.\"\n\"We have traced your money. It can be returned to you through the court.\"\n[Photo of an identity card: \"Cyber Crime Helpline\", with his photo]\n\"This is my ID for your verification.\"\n\"For court work and the lawyer's fee you have to deposit ₹14,500 first. After the court order the full amount will come to your account.\"\n\"Send to this UPI: <UPI id>. Share the screenshot after payment.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "d117-after",
+  "prompt": "I'm in India. I took a small loan from an instant loan app I installed from an SMS link and repaid it, but their agents keep demanding more money and now say they'll send morphed nude photos of me to everyone in my contacts. Can you check these messages?\n\nThe SMS that started it:\n\"Instant loan approved! No documents needed. Get money in minutes: <link>\"\n\nThe app asked for access to my contacts and gallery. I got ₹4,500 for a few days and repaid ₹6,000.\n\nMessages since then, on WhatsApp from different numbers:\n\"Your loan is overdue. Pay ₹5,500 today.\"\nMe: \"I have already repaid the full amount.\"\n\"We have your contacts and your photos. Pay or we send your nude pictures to all your family and friends.\"\n\"Pictures are ready. Last warning. Pay to <account number>.\"",
+  "country": "India",
+  "changes": []
+ },
+ {
+  "eval_id": "c010-about-to-pay",
+  "prompt": "I'm in India. A woman who rents a room in our house says mantra rituals can cure my daughter's health problems, and she wants me to put my gold jewellery in a pit in our puja room. Should I give it to her for the ritual?\n\nRoughly what she said:\n\"Your daughter's problems will not go with medicines alone. With these mantras it can be cured.\"\n\"Bring all your gold ornaments. We will dig a small pit in front of the idols in the puja room and keep the gold in a brass vessel there.\"\n\"I will place it in the vessel myself. It must stay buried for the ritual to work.\"\n\"I have to go away for about three weeks. Do not open the pit until I come back.\"\n\nShe has asked for all of it, about 15 tolas.",
+  "country": "India",
+  "changes": [
+   "Hyderabad replaced with India and the case's exact 19 days changed to about three weeks: city + tenant + puja pit + 19 days identified the story"
+  ]
+ },
+ {
+  "eval_id": "c064-about-to-pay",
+  "prompt": "I'm in the US. I've been seeing a psychic in person for a few months, and she says a curse has been put on my family. She wants $18,000 for the ritual to lift it. Should I pay her?\n\nRoughly what she said:\n\"I saw it the first time you sat down with me. Someone has put a curse on your family.\"\n\"That is why things keep going wrong for you and the people you love.\"\n\"To lift it I have to do rituals, and the rituals need money, a large amount.\"\n\"If you don't do this, I can't promise what will happen to your family.\"\n\"This first ritual is $18,000. There will be more work after that.\"",
+  "country": "US",
+  "changes": []
+ },
+ {
+  "eval_id": "c013-about-to-pay",
+  "prompt": "Main India mein hoon. Ek tantrik ji ne bola hai ki hamare ghar ke neeche purkhon ka sona gada hai aur woh puja karke nikaal denge. Ab tak unhone ₹30 lakh maange hain, kuch cash aur kuch UPI se. Kya main de doon?\n\nRoughly what he said (a man we know introduced him and handles the payments):\n\"Dekhiye, yeh asli sone ka sikka hai. Aise hi sikke aapke ghar ke neeche dabe hain, aapke purkhon ke.\"\n\"Tantric puja se main yeh sona nikaal dunga. Iske liye kharcha lagega.\"\n\"Kuch cash mein dijiye, baaki UPI pe: <UPI id>.\"\n\"Final puja raat ko aapke ghar pe hogi. Main mitti bhare steel ke matke laaunga. Puja ke beech prasad lena hoga.\"\n\"Puja ke baad sona aapka.\"",
+  "country": "India",
+  "changes": [
+   "Delhi replaced with India: Delhi + buried ancestral gold + steel pots of soil pointed at the news story"
+  ]
+ },
+ {
+  "eval_id": "c048-after",
+  "prompt": "I'm in India. I went to an astrologer who said special pujas could cure my illness for good. During the puja he gave me some water to drink. Now he's messaging me saying he has videos of me from the puja and will post them unless I pay. Can you check this?\n\nRoughly what he said before the puja:\n\"Your illness can be cured permanently with a special puja. Medicines will not remove it.\"\n\"Drink this water first, it is blessed. Then sit and close your eyes.\"\n\nHis WhatsApp messages since:\n\"I have videos and photos of you from the puja.\"\n\"If you don't pay ₹2,50,000 I will put them on Facebook and Instagram.\"\n\"Pay to <UPI id>.\"",
+  "country": "India",
+  "changes": [
+   "removed the user's drowsiness and memory-loss statement (abuse/safety signal in the user's own words); the sedated-water trick stays in his quoted words"
+  ]
+ }
+]
