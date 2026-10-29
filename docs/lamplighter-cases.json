@@ -1,0 +1,2491 @@
+{
+ "built": "2026-10-29",
+ "counts": {
+  "verified": 52,
+  "partly": 32
+ },
+ "cases": [
+  {
+   "id": "c001",
+   "verdict": "verified",
+   "title": "Mumbai woman pays Rs 69.30 lakh in cash and gold for pujas promised to cure sister's cancer",
+   "date": "2026-10-11",
+   "location": "Chembur and Tilak Nagar, Mumbai, Maharashtra, India",
+   "script": "disease-cure-puja",
+   "channel": "poster advertisement",
+   "steps": [
+    "In June 2025 a Chembur woman saw posters for an astrologer offering \"100% solutions\"; her sister had lung and liver cancer and was not improving.",
+    "One accused allegedly used cowrie shells to claim black magic had affected the sister; the two accused performed rituals at her home over three days.",
+    "They allegedly demanded 48 planetary and mandal worship rituals at distant temples (Kamakhya and Kashi Vishwanath) and she paid about Rs 38-40 lakh by transfer and cash between June and August 2025, with a promised recovery by December.",
+    "In March 2026 a further Rs 10 lakh and Rs 2-3 lakh for gold-related worship were allegedly demanded, and she handed over two gold chains (10 g and 12 g) to be returned.",
+    "They allegedly pressured her for more money, warning that refusal would make the rituals ineffective; the sister died and the gold was not returned.",
+    "She complained to Tilak Nagar police and a case was registered; a sessions court later rejected one accused's anticipatory bail."
+   ],
+   "quoted_lines": [
+    "100% solutions"
+   ],
+   "amount_lost": "Rs 69.30 lakh in cash, bank transfers and gold ornaments (as reported)",
+   "outcome": "Two men (reported as brothers) booked; no arrest reported; sessions court rejected one accused's anticipatory bail (reported 26 Oct 2026, exact order date not stated); investigation ongoing",
+   "legal_sections": "Maharashtra Prevention and Eradication of Human Sacrifice and Other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013 (Section 3), per the first article; BNS provisions not specified",
+   "reporting_route": "police complaint (Tilak Nagar police station)",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/mumbai/chembur-woman-duped-of-6930-lakh-on-pretext-of-curing-sisters-cancer-through-puja-two-booked",
+     "published": "2026-10-11"
+    },
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/mumbai/mumbai-sessions-court-rejects-astrologers-anticipatory-bail-in-6930-lakh-cancer-cure-fraud-case",
+     "published": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "c003",
+   "verdict": "verified",
+   "title": "Facebook astrology ad leads to Rs 11.26 lakh loss over a marital-dispute remedy, Navi Mumbai",
+   "date": "2026-10",
+   "location": "Airoli, Navi Mumbai, Maharashtra, India",
+   "script": "online-astrologer-remedy",
+   "channel": "Facebook advertisement, then phone; payments by UPI and bank transfer",
+   "steps": [
+    "A 31-year-old woman, in frequent conflict with her husband, saw a Facebook ad for an astrologer listing a mobile number.",
+    "She called the number; the man claimed he could permanently end the couple's disputes and said rituals and remedies were needed.",
+    "He said the process required payment; over several occasions she transferred Rs 8,26,500 by UPI and to a bank account and handed over a 20-gram gold necklace valued at Rs 3 lakh.",
+    "The disputes continued, she realised she had been cheated, and complained to Rabale police."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 11,26,500 (Rs 8,26,500 in transfers plus a 20 g gold necklace valued at Rs 3 lakh)",
+   "outcome": "Case registered against unidentified accused; no arrest reported; police tracing the transactions and the accused",
+   "legal_sections": "Bharatiya Nyaya Sanhita Section 318(4) (cheating)",
+   "reporting_route": "police station (Rabale police)",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/mumbai/airoli-woman-duped-of-1126-lakh-by-fake-astrologer-on-facebook-after-seeking-solution-to-marital-disputes",
+     "published": "2026-10-16"
+    },
+    {
+     "outlet": "Newsband",
+     "url": "https://newsband.in/article_detail/fake-astrologer-dupes-woman-of-rs-1126-lakh",
+     "published": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "c002",
+   "verdict": "partly",
+   "title": "Nashik man allegedly takes Rs 7.5 lakh from asthma patient for rituals and promises money rain",
+   "date": "2026-10",
+   "location": "Gangapur area, Nashik, Maharashtra, India (complainant from Panvel)",
+   "script": "disease-cure-puja",
+   "channel": "not reported",
+   "steps": [
+    "A Panvel woman with asthma was allegedly told that rituals could cure her illness and bring money from the sky.",
+    "The accused allegedly arranged transport from Panvel to Nashik for her and her husband, who were blindfolded.",
+    "Over three rituals, including one near Balaji Temple on Gangapur Road, she was allegedly asked to remove her clothes and wear a thin white garment; a human skull and menstrual-blood-stained clothes were reportedly used and a goat was sacrificed in a roughly two-hour ceremony.",
+    "He allegedly collected Rs 7.5 lakh in total, including a Rs 5 lakh ritual.",
+    "Neither the money nor her recovery came; when she asked for a refund she got evasive replies.",
+    "MANS raised the matter with the Police Commissioner and a case was registered at Gangapur police station."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 7.5 lakh in total over three rituals, including one ritual of Rs 5 lakh",
+   "outcome": "Case registered at Gangapur police station; no arrest reported; police and MANS urged other possible victims to complain",
+   "legal_sections": "Maharashtra Prevention and Eradication of Human Sacrifice and other Inhuman, Evil and Aghori Practices and Black Magic Act, plus relevant BNS sections (not specified)",
+   "reporting_route": "woman filed a complaint; activists of Maharashtra Andhashraddha Nirmoolan Samiti raised it with the Nashik Police Commissioner",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/pune/nashik-man-cheats-woman-of-75-lakh-by-promising-to-make-money-rain",
+     "published": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "id": "c004",
+   "verdict": "partly",
+   "title": "Nashik woman tantrik held for extorting Rs 1.6 lakh from Dhule daily-wage worker and engaging her daughter to the tantrik's son",
+   "date": "2026-09-27",
+   "location": "Dhule and Nashik, Maharashtra, India (accused arrested in Nashik)",
+   "script": "escalating-fees-threats",
+   "channel": "introduced by the victim's friends, in person",
+   "steps": [
+    "Two friends introduced the daily-wage worker from Dhule to a self-styled tantrik in Nashik.",
+    "The tantrik had her consume a lemon, ash and water mixture with a peda, claimed she was possessed, and directed rituals in Nashik on Amavasya and Purnima days.",
+    "On 14 July 2026 at Kevadiban near Gangaghat she underwent a ritual bath, changed clothes and ate coconut and peda, after which she vomited.",
+    "The tantrik demanded Rs 1.51 lakh and received Rs 1.30 lakh in cash, then forcibly collected a further Rs 30,000.",
+    "She was told to leave her 21-year-old daughter at a friend's house in Dhule for 40 days and that problems would end if the daughter married the tantrik's son; an engagement was arranged on 24 July 2026 and contact was then cut off.",
+    "With ANiS help she complained to Dhule City Police on 27 Sept and the accused was arrested in Nashik."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 1.60 lakh (Rs 1.30 lakh in cash plus Rs 30,000 forcibly collected, against Rs 1.51 lakh demanded)",
+   "outcome": "Accused (a woman) arrested in Nashik by Dhule City Police with Nashik Police help; further investigation ongoing; allegations unproven",
+   "legal_sections": "Maharashtra Anti-Superstition and Black Magic Act and other relevant provisions; sections not stated",
+   "reporting_route": "victim approached Maharashtra Andhashraddha Nirmoolan Samiti (ANiS), whose activists helped her file a complaint at Dhule City Police Station on 27 Sept 2026",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/pune/nashik-woman-tantrik-held-for-extorting-160-lakh-forcing-daughters-engagement",
+     "published": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "id": "c005",
+   "verdict": "partly",
+   "title": "Udaipur woman gives gold and cash to Instagram astrologer for a son remedy",
+   "date": "2026-09-17",
+   "location": "Savina police station area, Udaipur, Rajasthan, India",
+   "script": "online-astrologer-remedy",
+   "channel": "Instagram ad, then phone and a home visit",
+   "steps": [
+    "About three months before the complaint a woman saw an Instagram ad for an astrologer and contacted the listed number.",
+    "She said she wanted a son after about six years of marriage with a daughter; he promised a remedy by astrological measures.",
+    "He took Rs 9,000 online as a fee and told her not to tell anyone or the puja would not work.",
+    "In July he visited her home and took about 6 tola of gold (two chains and two pendant sets); he later asked for more and she gave about 7 tola (two bangles and two kadas).",
+    "He kept assuring a quick solution by phone, then stopped answering calls; she complained at Savina police station."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About 15 tola of gold jewellery plus Rs 9,000 paid online, as the article totals it (itemised items add to about 13 tola)",
+   "outcome": "Case registered at Savina police station; police tracing accused by mobile number; no arrest reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Savina)",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Udaipur edition)",
+     "url": "https://www.patrika.com/udaipur-news/woman-loses-15-tola-gold-after-fake-astrologer-promises-baby-boy-20913441",
+     "published": "2026-09-17"
+    }
+   ]
+  },
+  {
+   "id": "c008",
+   "verdict": "verified",
+   "title": "Chennai parrot astrologer's dosha-removal puja on a nude video call, then blackmail",
+   "date": "2026-09",
+   "location": "Chennai, Tamil Nadu, India (accused traced to Courtallam, Tenkasi district)",
+   "script": "ritual-photo-blackmail",
+   "channel": "in person at a beach, then phone and video call",
+   "steps": [
+    "A 37-year-old Canadian woman of Sri Lankan Tamil origin met a parrot astrologer at Besant Nagar beach, Chennai; he discussed personal matters to gain her trust.",
+    "He said an adverse planetary position (Saturn, per one report) affected her and a special puja would remove it, quoting Rs 70,000.",
+    "He told her to perform the ritual without clothes during midnight video calls.",
+    "She paid Rs 20,000 (about Rs 70,000 per one report).",
+    "He said he had recorded the calls, demanded Rs 5 lakh and threatened to circulate the video online; one report says he later used the recordings to demand sex.",
+    "She complained to Mambalam All-Women Police Station; police traced him through phone and bank details to Courtallam and he was remanded."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 20,000 paid per DT Next and Deccan Chronicle (about Rs 70,000 per Jaffna Monitor); Rs 70,000 ritual fee quoted; Rs 5 lakh demanded",
+   "outcome": "Arrested around 3 September 2026; produced before a court and remanded to judicial custody; police examining his phone for other victims",
+   "legal_sections": "not reported (described as blackmail)",
+   "reporting_route": "police station (Mambalam All-Women Police Station)",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/news/chennai/chennai-astrologer-held-for-blackmailing-canadian-woman-with-nude-ritual-photos",
+     "published": "2026-09-04"
+    },
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/southern-states/tamil-nadu/tamil-nadu-astrologer-held-for-threatening-canadian-woman-with-nude-ritual-video-1985016",
+     "published": "2026-09-05"
+    },
+    {
+     "outlet": "Jaffna Monitor",
+     "url": "https://www.jaffnamonitor.com/astrology-ritual-turns-into-blackmail-for-sri-lankan-tamil-canadian-woman-in-chennai/",
+     "published": "2026-09-05"
+    }
+   ]
+  },
+  {
+   "id": "c007",
+   "verdict": "verified",
+   "title": "Kolkata woman pays Rs 7.66 lakh to self-styled tantrik met on Facebook, threatened with death if she speaks",
+   "date": "2026-09",
+   "location": "Watganj, Kolkata, West Bengal, India",
+   "script": "escalating-fees-threats",
+   "channel": "social media (Facebook), then phone",
+   "steps": [
+    "The accused contacted the woman on Facebook and she reached him through a phone number on his profile.",
+    "He promised to fix her marital and health problems through occult rituals.",
+    "He took an initial Rs 8,750 and asked for her photograph and date of birth.",
+    "He repeatedly asked for more money for pujas and rituals; she transferred a total of Rs 7,66,345 in instalments to multiple bank accounts and UPI IDs.",
+    "When she grew suspicious and refused to pay more he allegedly threatened serious consequences, including death, if she told anyone.",
+    "She complained to Watganj Police Station."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 7,66,345 in total (including an initial Rs 8,750)",
+   "outcome": "Complaint registered; investigation launched using phone, bank, UPI and Facebook details; no arrest reported",
+   "legal_sections": "not reported (described as online fraud and extortion)",
+   "reporting_route": "police station (Watganj Police Station)",
+   "sources": [
+    {
+     "outlet": "Hans India (IANS)",
+     "url": "https://www.thehansindia.com/kolkata/kolkata-woman-alleges-tantrik-duped-her-of-lakhs-of-rupees-on-promise-to-solve-marital-issues-1122030",
+     "published": "2026-09-15"
+    }
+   ]
+  },
+  {
+   "id": "c006",
+   "verdict": "verified",
+   "title": "Fake astrologer takes about 329 grams of gold from 62-year-old homemaker over a year of pujas, Bengaluru",
+   "date": "2026-09",
+   "location": "Girinagar, Bengaluru, Karnataka, India (Byatarayanapura police)",
+   "script": "other",
+   "channel": "in person (home visits)",
+   "steps": [
+    "A self-styled astrologer, whose number the homemaker got through an auto driver, was asked for help with her son's drinking and smoking and her daughter's marriage match.",
+    "He said a puja to a goddess would fix these and took a 50-gram gold chain.",
+    "Over nearly a year he kept visiting and asking for more ornaments for new-moon and full-moon pujas, and she handed over chains, bangles, earrings, rings and other jewellery in instalments.",
+    "On 19 August she asked for the ornaments back for a festival puja.",
+    "That night he sent a video showing himself apparently injured in an accident; a caller claimed he had a serious head injury and his phone was switched off."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About 329 grams of gold jewellery worth around Rs 40 lakh",
+   "outcome": "Case registered on 7 September; police searching for the accused; no arrest or recovery reported",
+   "legal_sections": "Section 318(4) of the Bharatiya Nyaya Sanhita (cheating)",
+   "reporting_route": "police (Byatarayanapura police)",
+   "sources": [
+    {
+     "outlet": "Country and Politics",
+     "url": "https://www.countryandpolitics.in/2026/09/17/fake-astrologer-cheats-62-year-old-woman-of-gold-worth-rs-40-lakh-in-bengaluru/",
+     "published": "2026-09-17"
+    }
+   ]
+  },
+  {
+   "id": "c013",
+   "verdict": "verified",
+   "title": "Delhi tantrik's buried-ancestral-gold ritual: 79-year-old loses cash and is robbed of gold after sedation",
+   "date": "2026-08-04",
+   "location": "Seemapuri, northeast Delhi, India",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "The accused showed the 79-year-old a genuine gold coin and promised to recover buried ancestral gold through tantric rituals.",
+    "An associate introduced the victim to the fake tantrik and facilitated payments.",
+    "The victim paid about Rs 39.30 lakh in cash and by UPI.",
+    "On the night of 4 August the accused staged a ritual at the victim's home using steel pots of soil and fake gold biscuits.",
+    "The victim was allegedly given a sedative and lost consciousness; on waking about Rs 15 lakh of gold jewellery was missing from his cupboard."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 39.30 lakh (cash and UPI) plus about Rs 15 lakh of gold jewellery missing",
+   "outcome": "Main accused (posing as a tantrik/pandit under multiple names) arrested in Muzaffarnagar, UP, with two associates; Rs 2.73 lakh cash, 11 rings, tantric clothing, an SUV, IDs and phones recovered; investigation continuing",
+   "legal_sections": "BNS 318(4), 305, 123 and 3(5)",
+   "reporting_route": "police: FIR No. 622/2026 at Seemapuri police station; arrests by Shahdara district Special Staff",
+   "sources": [
+    {
+     "outlet": "The Hans India",
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/fake-tantrik-two-associates-arrested-for-cheating-old-man-stealing-gold-jewellery-worth-rs-15-lakh-1132664",
+     "published": "2026-10-15"
+    },
+    {
+     "outlet": "The Hans India",
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/three-held-for-cheating-delhi-man-of-rs-39-lakh-1132823",
+     "published": "2026-10-16"
+    },
+    {
+     "outlet": "LatestLY",
+     "url": "https://www.latestly.com/india/news/fake-tantrik-dupes-delhi-man-with-buried-gold-ritual-steals-jewellery-worth-inr-15-lakh-7645812.html",
+     "published": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "c012",
+   "verdict": "verified",
+   "title": "Self-described spiritual practitioner allegedly took about Rs 25.10 lakh from a doctor for poojas; High Court refuses to quash FIR",
+   "date": "2026-08-03",
+   "location": "Chhattisgarh, India",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "The accused allegedly claimed divine powers to remove family difficulties through pooja.",
+    "The complainant, a doctor, approached him after the death of his younger brother.",
+    "He allegedly paid various sums over several months, about Rs 25.10 lakh plus expenses.",
+    "The accused sought to quash the FIR, calling the payments voluntary offerings and alleging political motive and delay.",
+    "The High Court refused, saying disputed facts need investigation and trial."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 25.10 lakh plus incidental expenses (as alleged)",
+   "outcome": "Chhattisgarh High Court (Division Bench) dismissed the petition in CRMP No. 1923 of 2026; FIR not quashed; matter goes to investigation and trial",
+   "legal_sections": "FIR under Section 318(4) BNS (cheating); quashing petition under Section 528 BNSS",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "LiveLaw",
+     "url": "https://www.livelaw.in/high-court/chhattisgarh-high-court/fir-spiritual-practitioner-cheating-25-lakh-divine-powers-544481",
+     "published": "2026-08-05"
+    }
+   ]
+  },
+  {
+   "id": "c015",
+   "verdict": "verified",
+   "title": "Self-styled baba in Pune allegedly obtains semi-nude photos under threat, claiming to remove negative energy",
+   "date": "2026-08",
+   "location": "Kondhwa, Pune, Maharashtra, India",
+   "script": "black-magic-removal",
+   "channel": "in person and social media, via his motivational sessions",
+   "steps": [
+    "A self-styled motivational speaker and influencer called 'Baba' approached women and girls linked to his sessions.",
+    "He told one woman negative energy had entered her body and needed removal through physical activity.",
+    "He demanded semi-nude photos, saying they were needed to track progress.",
+    "He allegedly obtained the photos under threats.",
+    "Police say he misused such images in multiple cases."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "not reported",
+   "outcome": "Arrested (aged 23); remanded to two days' police custody; phone and laptop seized; investigation ongoing",
+   "legal_sections": "BNS 75, 78, 79, 318(4); Section 3(2) Maharashtra Prevention and Eradication of Human Sacrifice and other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013; IT Act Section 67",
+   "reporting_route": "Kondhwa police station (complaint by a 22-year-old woman)",
+   "sources": [
+    {
+     "outlet": "Pune Karnews",
+     "url": "https://www.punekarnews.in/pune-self-styled-youtuber-baba-arrested-for-allegedly-seeking-nude-photos-on-pretext-of-removing-negative-energy/",
+     "published": "2026-08-19"
+    }
+   ]
+  },
+  {
+   "id": "c014",
+   "verdict": "partly",
+   "title": "Priest tells Oshawa woman she is possessed and requires a private ceremony, then allegedly assaults her",
+   "date": "2026-08",
+   "location": "Oshawa, Ontario, Canada",
+   "script": "black-magic-removal",
+   "channel": "in person (family hired him for a home ceremony)",
+   "steps": [
+    "The family hired a visiting priest to perform a religious ceremony at their home.",
+    "He allegedly told the woman she was possessed by evil spirits.",
+    "He allegedly said healing required a ceremony in a private location.",
+    "Police allege she was sexually assaulted during the ceremony.",
+    "Police believe there may be more victims and appealed for information."
+   ],
+   "quoted_lines": [
+    "evil spirits"
+   ],
+   "amount_lost": "not reported (no payment mentioned)",
+   "outcome": "Charged with sexual assault; held for a bail hearing; charge not tested in court",
+   "legal_sections": "not reported (charge: sexual assault)",
+   "reporting_route": "police (Durham Regional Police)",
+   "sources": [
+    {
+     "outlet": "CP24",
+     "url": "https://www.cp24.com/news/2026/08/26/new-york-religious-leader-charged-with-sexual-assault-after-being-hired-to-perform-ceremony-in-oshawa/",
+     "published": "2026-08-26"
+    }
+   ]
+  },
+  {
+   "id": "c011",
+   "verdict": "verified",
+   "title": "Four arrested in hidden-treasure scam using fake gold-coated coins, Hyderabad",
+   "date": "2026-08",
+   "location": "Hyderabad, Telangana, India (case registered at Rajendranagar police station; victims in unnamed areas)",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "The ringleader, struggling with family expenses, devised the plan for easy money and recruited three associates.",
+    "The gang claimed they could locate 'gupta nidhulu' (hidden treasure) buried beneath people's homes.",
+    "At a targeted house they dug and secretly planted a sack of coal and duplicate gold-coated coins.",
+    "They told victims the material needed time and rituals to turn into gold, then left.",
+    "Police seized 25 duplicate gold-coated coins, 6 kg of coal, 4 kg of soil and puja material."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 1 crore total, at least 11 victims (police estimate)",
+   "outcome": "Four arrested; case registered at Rajendranagar police station and under investigation",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Rajendranagar, with Task Force Shamshabad)",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-four-held-for-cheating-people-with-hidden-treasure-scam",
+     "published": "2026-08-10"
+    }
+   ]
+  },
+  {
+   "id": "c010",
+   "verdict": "verified",
+   "title": "Tenant persuades woman to bury gold in a puja pit for her daughter's illness, then swaps it, Hyderabad",
+   "date": "2026-08",
+   "location": "Tukkuguda, Maheshwaram, Hyderabad, Telangana, India",
+   "script": "disease-cure-puja",
+   "channel": "in person",
+   "steps": [
+    "A tenant in the victim's house persuaded the 55-year-old woman that mantra rituals could cure her daughter's health problems.",
+    "She told the victim to place gold ornaments in a pit in the puja room for a few days.",
+    "A pit was dug in front of the idols and a brass vessel was used.",
+    "She allegedly kept the real gold in her bag and buried fake jewellery in the vessel.",
+    "She said she would return after 19 days and left; the family later dug up the pit and found iron rings."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About 20 tolas of gold (as reported)",
+   "outcome": "Complaint lodged with Pahadishareef police; accused reportedly taken into custody and questioned (allegations, unproven)",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Pahadishareef)",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-woman-allegedly-loses-20-tolas-of-gold-in-ritual-fraud",
+     "published": "2026-08-26"
+    }
+   ]
+  },
+  {
+   "id": "c016",
+   "verdict": "partly",
+   "title": "Bhopal women take silver jewellery from childless woman on promise of illness and fertility cure",
+   "date": "2026-07-11",
+   "location": "Bhopal, Madhya Pradesh, India",
+   "script": "disease-cure-puja",
+   "channel": "in person (door-to-door visit)",
+   "steps": [
+    "Two women visited a 32-year-old childless woman and claimed she had weakness, dizziness and TB-like symptoms.",
+    "They gave her two packets said to be medicine.",
+    "They said a special ritual, with a Rs 1,100 fee, would cure her and help her conceive.",
+    "They asked for her silver mangalsutra, anklets and toe rings for a cremation-ground ritual, promising to return them.",
+    "They fled with the ornaments; police traced and arrested four women on Sunday."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Silver jewellery worth about Rs 25,000; a Rs 1,100 ritual fee was also demanded",
+   "outcome": "Four women arrested the next day (12 July); investigation ongoing",
+   "legal_sections": "not specified; a fraud case was registered",
+   "reporting_route": "Parwalia Sadak police station (complaint after the victim told her husband)",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/bhopal/4-women-arrested-for-duping-childless-woman-of-jewellery-in-bhopal",
+     "published": "2026-07-12"
+    }
+   ]
+  },
+  {
+   "id": "c017",
+   "verdict": "verified",
+   "title": "NRI priest arrested at Hyderabad airport over special-puja and spiritual-remedy fraud",
+   "date": "2026-06-26",
+   "location": "Bachupally and Rajiv Gandhi International Airport (Shamshabad), Hyderabad, Telangana, India (US cheating cases suspected)",
+   "script": "other",
+   "channel": "not reported (devotee contact)",
+   "steps": [
+    "An NRI priest allegedly collected large sums from devotees by promising special poojas and spiritual remedies for personal and financial problems.",
+    "A software professional complained to Bachupally Police, who booked a cheating case.",
+    "When victims asked for their money back, he allegedly threatened them with black magic (Telangana Today).",
+    "He reportedly left for the US; a Look Out Circular was issued and police suspect similar fraud there, including a complaint by a US temple owner.",
+    "Immigration officials stopped him on arrival at the airport and handed him to Bachupally Police.",
+    "Police widened the probe to identify more victims and verify further complaints and transactions."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Lakhs of rupees (exact total not reported)",
+   "outcome": "Arrested at the airport under a Look Out Circular; cheating case registered; more complaints being verified; no charge sheet or conviction reported",
+   "legal_sections": "not reported (described as a cheating case)",
+   "reporting_route": "police station (Bachupally Police)",
+   "sources": [
+    {
+     "outlet": "NewsMeter",
+     "url": "https://newsmeter.in/crime/nri-priest-arrested-at-hyderabad-airport-in-multi-lakh-spiritual-fraud-case-770653",
+     "published": "2026-06-27"
+    },
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/nri-priest-nabbed-at-rgia-over-alleged-multi-lakh-fraud",
+     "published": "2026-06-27"
+    }
+   ]
+  },
+  {
+   "id": "c018",
+   "verdict": "verified",
+   "title": "In-law posing as tantrik takes Rs 11.68 lakh for money multiplication and hands over a suitcase of bricks",
+   "date": "2026-06-04",
+   "location": "Khairthal-Tijara district, Rajasthan, India (ritual in Punhana, Haryana)",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "The accused, the father of the victim's daughter's in-laws, claimed divine powers and said a maulvi could multiply money.",
+    "The victim paid an initial Rs 11,000 for a puja, then borrowed from relatives and paid about Rs 11.68 lakh in total.",
+    "He was taken to Punhana, Haryana, where a maulvi allegedly performed a ritual in a dark room.",
+    "He was given a heavy suitcase and told not to open it for a month; it held only bricks and stones.",
+    "The victim filed a complaint at Khairthal police station and a case was registered."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 11.68 lakh",
+   "outcome": "Case registered; investigation started; no arrest reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Khairthal)",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Alwar edition)",
+     "url": "https://www.patrika.com/alwar-news/rajasthan-khairthal-tijara-fraud-man-duped-of-11-lakh-above-in-tantra-mantra-scam-20642428",
+     "published": "2026-06-05"
+    }
+   ],
+   "related": "same accused as c021 (a different victim)"
+  },
+  {
+   "id": "c019",
+   "verdict": "verified",
+   "title": "Pune family pays about Rs 3.9 lakh for Karani Badha tantrik and aghori rituals found through YouTube",
+   "date": "2026-06-01",
+   "location": "Lohegaon, Pune, Maharashtra, India (accused from Nashik; rituals also in Ujjain, Nashik and Kolkata)",
+   "script": "black-magic-removal",
+   "channel": "video (YouTube), then phone",
+   "steps": [
+    "A family seeking remedies for a 53-year-old housewife's health problems found the accused's YouTube videos in December 2023 and called the number on the channel.",
+    "The accused allegedly diagnosed the problem remotely as Karani Badha and Bhoot Badha.",
+    "Rituals were allegedly held at the home, with water mixed with holy ash and white powder given to the family, and Rs 65,000 was demanded.",
+    "Further rituals followed: midnight rituals at a crematorium in Ujjain, a Shiva-Parvati wedding ceremony, an initiation in Nashik and a final ritual in Kolkata.",
+    "The accused allegedly warned relatives could die or suffer mental illness if rituals were not completed.",
+    "Payments continued with no improvement; after seeing YouTube exposes the family suspected fraud and an FIR was registered on 1 June 2026."
+   ],
+   "quoted_lines": [
+    "Karani Badha",
+    "Bhoot Badha"
+   ],
+   "amount_lost": "About Rs 3.9 lakh as reported (itemised payments in the source do not clearly add up to that total)",
+   "outcome": "FIR registered; investigation ongoing; no arrests, charges or court proceedings reported; allegations unproven",
+   "legal_sections": "IPC 420 and 34; Section 3(2) of the Maharashtra Prevention and Eradication of Human Sacrifice and Other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013",
+   "reporting_route": "complaint to Pune police with help from Maharashtra Andhashraddha Nirmoolan Samiti; FIR at Lohegaon Police Station",
+   "sources": [
+    {
+     "outlet": "Punekar News",
+     "url": "https://www.punekarnews.in/?p=236581",
+     "published": "2026-06-02"
+    }
+   ]
+  },
+  {
+   "id": "c020",
+   "verdict": "partly",
+   "title": "Psychic and co-defendant indicted for financial-curse cleansing fraud of at least $2.5 million",
+   "date": "2026-06",
+   "location": "Indictment in the Western District of Washington, USA (defendants from Texas; initial appearance in the Eastern District of Texas)",
+   "script": "black-magic-removal",
+   "channel": "social media",
+   "steps": [
+    "The accused posed as a psychic and used social media to reach people dealing with divorce, isolation or a loved one's death.",
+    "Victims were told their misfortunes came from a financial curse.",
+    "They were told it could be broken only by liquidating assets and sending cash or gold coins for a spiritual cleansing.",
+    "Prosecutors say most of the money, promised back after purification, was kept, with small amounts returned to keep victims trusting.",
+    "One victim, defrauded of $258,000, was allegedly persuaded to open credit cards and take car loans to clear karmic debts.",
+    "A co-defendant allegedly managed the receiving bank accounts, sold the gold coins and vouched for the psychic."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "At least $2.5 million alleged (April 2021 to July 2024); one Washington victim sent over $2 million",
+   "outcome": "Indicted; couple made initial court appearance in Texas; no conviction reported; charges are allegations",
+   "legal_sections": "Conspiracy to commit wire and mail fraud; four counts each of wire fraud and mail fraud (up to 20 years per count if convicted, as reported)",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Fox 26 Houston",
+     "url": "https://www.fox26houston.com/news/texas-couple-charged-psychic-fraud-bridgette-evans-vinnie-uwanawich",
+     "published": "2026-06-16"
+    }
+   ]
+  },
+  {
+   "id": "c009",
+   "verdict": "partly",
+   "title": "Malerkotla tantrik takes Rs 4.22 lakh from Ludhiana lawyer over wife's 'possession' and graveyard ritual",
+   "date": "2026-06",
+   "location": "Ludhiana, Punjab, India (accused from Malerkotla)",
+   "script": "disease-cure-puja",
+   "channel": "in person, via an acquaintance's introduction",
+   "steps": [
+    "An acquaintance introduced the tantrik as a black-magic expert who could cure the lawyer's ill wife within days.",
+    "The tantrik said the wife was possessed by a demonic force after black magic by miscreants.",
+    "He said a graveyard ritual was needed or her health would worsen.",
+    "The lawyer paid repeatedly out of worry, but the wife did not improve.",
+    "On 9 June, at the promised money return outside Ludhiana court house, the accused said he had gambled the money away, grabbed the lawyer's collar and threatened him."
+   ],
+   "quoted_lines": [
+    "We wanted to cheat you, so we did. I have connections with gangsters, smugglers and policemen."
+   ],
+   "amount_lost": "Rs 4.22 lakh",
+   "outcome": "Case registered at Haibowal police station; investigation continuing; no arrest reported (report dated 2026-08-31)",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Haibowal)",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/ludhiana/malerkotla-tantrik-booked-for-duping-ludhiana-lawyer-of-4-22-lakh/",
+     "published": "2026-08-31"
+    }
+   ]
+  },
+  {
+   "id": "c021",
+   "verdict": "verified",
+   "title": "Neighbour self-styled tantrik takes Rs 32 lakh from family over jinn-possession remedies, Alwar",
+   "date": "2026-05-22",
+   "location": "Khairthal, Alwar district, Rajasthan, India (clerics in Punhana, Haryana)",
+   "script": "escalating-fees-threats",
+   "channel": "in person",
+   "steps": [
+    "A neighbour claiming tantric powers said the family home was troubled by a jinn and an evil spirit and someone could die without a special puja.",
+    "He promised to make the husband a crorepati within 20 days, had the husband's tea shop closed on his advice and spoke of sacrifices.",
+    "The family paid Rs 12 lakh on 10 Dec 2025 and Rs 11.5 lakh was demanded on 2 Jan 2026; the total paid was about Rs 32 lakh including payments to clerics and for puja.",
+    "A Punhana contact told the family he had received only Rs 1.5 lakh and the rest was with the accused.",
+    "When the family sought a refund he delayed, threatened to kill them and threatened a Rs 40 lakh fraud case against them.",
+    "After a night confrontation he filed a counter-complaint; police brought both sides to the station and arrested both for breach of the peace."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 32 lakh",
+   "outcome": "Family's complaint registered at Khairthal police station; both parties arrested for breach of the peace as reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Khairthal)",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Alwar edition)",
+     "url": "https://www.patrika.com/alwar-news/bikaner-fake-guru-32-lakh-fraud-20601697",
+     "published": "2026-05-23"
+    }
+   ],
+   "related": "same accused as c018 (a different victim)"
+  },
+  {
+   "id": "c022",
+   "verdict": "partly",
+   "title": "Fake Instagram astrologer takes gold and cash from Gwalior student, held in family-police sting",
+   "date": "2026-05-15",
+   "location": "Murar, Gwalior, Madhya Pradesh, India (accused from Moradabad, Uttar Pradesh, coming from Haridwar)",
+   "script": "online-astrologer-remedy",
+   "channel": "Instagram account",
+   "steps": [
+    "A first-year BSc student contacted a fake astrology Instagram page in January 2026 and was told her horoscope showed serious defects.",
+    "She paid Rs 10,000 online and handed over gold bangles, a chain, earrings and other jewellery; he then blocked her number.",
+    "Her aunt noticed the situation and contacted him through the student's account, claiming family disputes and offering gold instead of cash.",
+    "He agreed to return from Haridwar and came to a meeting point near Murar vegetable market.",
+    "He was held by police and family after accepting a gold ring; two associates waiting in a car escaped."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 10,000 online plus gold jewellery (value not reported)",
+   "outcome": "Accused detained by police at the sting; two associates absconding; police suspect a wider organised online network linked to Haridwar and other cities",
+   "legal_sections": "not reported",
+   "reporting_route": "relative informed police, who ran a sting with the family; Murar police area",
+   "sources": [
+    {
+     "outlet": "Dainik Jagran English",
+     "url": "https://english.dainikjagranmpcg.com/states/madhya-pradesh/fake-instagram-astrologer-held-in-gwalior-for-duping-student-of/article-18495",
+     "published": "2026-05-16"
+    }
+   ]
+  },
+  {
+   "id": "c024",
+   "verdict": "verified",
+   "title": "Facebook astrology ad leads to nearly Rs 8 lakh loss in black-magic removal scam, Bengaluru",
+   "date": "2026-05",
+   "location": "Bengaluru, Karnataka, India",
+   "script": "black-magic-removal",
+   "channel": "Facebook ad, then phone; payments by NEFT, Google Pay and PhonePe",
+   "steps": [
+    "A businessman seeking guidance on family problems clicked an astrology ad on Facebook.",
+    "Callers discussed his horoscope and numerology and gained his trust.",
+    "They claimed black magic and negative spiritual practices had been used against him and quoted about Rs 10 lakh for rituals.",
+    "He paid nearly Rs 8 lakh in multiple transfers; a later caller demanded Rs 5 lakh more.",
+    "When he asked for his money back, the callers allegedly threatened him and refused."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Nearly Rs 8 lakh paid; a further Rs 5 lakh demanded (payment not reported)",
+   "outcome": "Complaint filed and cyber fraud case registered; investigation ongoing; no arrest or recovery reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint (cyber fraud case)",
+   "sources": [
+    {
+     "outlet": "NewsFirst Prime",
+     "url": "https://newsfirstprime.com/bengaluru/facebook-astrology-ad-trap-bengaluru-businessman-loses-rs-8-lakh-in-black-magic-removal-scam-11878858",
+     "published": "2026-05-27"
+    }
+   ]
+  },
+  {
+   "id": "c023",
+   "verdict": "partly",
+   "title": "Instagram fake astrologer and love-guru network blackmails victims with recorded video calls, Ahmedabad",
+   "date": "2026-05",
+   "location": "Ahmedabad, Gujarat, India (accused arrested in Bikaner and Jaipur, Rajasthan)",
+   "script": "ritual-photo-blackmail",
+   "channel": "Instagram and Facebook profiles and paid ads, then WhatsApp video calls",
+   "steps": [
+    "The gang ran Instagram and Facebook accounts posing as astrologers, relationship advisers and spiritual healers, using paid ads and direct outreach to offer rituals and vashikaran for love, marriage and family problems at about Rs 3,000-15,000.",
+    "Victims were asked for photos and personal details for rituals; the photos were edited and used for threats.",
+    "Victims were pressured into undressing on video calls described as a shudhikaran vidhi ritual, and the calls were screen-recorded.",
+    "The recordings were used to demand money under threat of public circulation; the complainant paid Rs 1,43,951 through repeated transfers.",
+    "Police say the operation ran about two years (IANS: two and a half) and contacted large numbers of people (Patrika: about 300 mobile numbers in one month); one accused was arrested in Bikaner and a second in Jaipur (four days' remand), with a third absconding."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 1,43,951 by the complainant; police estimates across victims Rs 40-42 lakh to Rs 40-50 lakh, with about Rs 60 lakh in linked bank transactions over two years",
+   "outcome": "Two arrested, court granted four days' police remand to the second; third accused absconding; police examining 8 Instagram and 2 Facebook accounts; 65+ victims reported",
+   "legal_sections": "BNS 75(2), 77, 78(2), 308(2), 318(4), 351(2), 61(2); Information Technology Act 66(D) and 67",
+   "reporting_route": "FIR at Cyber Crime Police Station, Ahmedabad; investigated by Ahmedabad Cyber Crime Branch",
+   "sources": [
+    {
+     "outlet": "Republic World",
+     "url": "https://www.republicworld.com/tech/apps/instagram-love-guru-scam-exposed-fake-astrologer-lures-women-forces-nude-video-calls-extorts-lakhs-ahmedabad-police-arrest-main-accused",
+     "published": "2026-05-05"
+    },
+    {
+     "outlet": "Newsgram (IANS)",
+     "url": "https://www.newsgram.com/india/2026/05/04/gujarat-fake-love-guru-on-instagram-lured-women-recorded-videos-and-blackmailed-them-one-held",
+     "published": "2026-05-04"
+    },
+    {
+     "outlet": "LatestLY (IANS)",
+     "url": "https://www.latestly.com/india/news/extortion-network-busted-in-gujarat-fake-love-guru-on-instagram-lured-women-recorded-videos-and-blackmailed-them-one-held-7417233.html",
+     "published": "2026-05-05"
+    },
+    {
+     "outlet": "Social News XYZ",
+     "url": "https://www.socialnews.xyz/2026/05/25/gujarat-police-trace-rs-60-lakh-trail-in-fake-astrology-racket-targeting-women-accused-held",
+     "published": "2026-05-25"
+    },
+    {
+     "outlet": "Rajasthan Patrika (Ahmedabad edition)",
+     "url": "https://www.patrika.com/ahmedabad-news/cyber-crime-branch-arrests-another-accused-in-fraud-gang-20610602",
+     "published": "2026-05-25"
+    },
+    {
+     "outlet": "Rajasthan Patrika (Bikaner edition)",
+     "url": "https://www.patrika.com/bikaner-news/fake-astrologer-fraud-accused-arrested-jaipur-20612474",
+     "published": "2026-05-26"
+    }
+   ]
+  },
+  {
+   "id": "c025",
+   "verdict": "verified",
+   "title": "Self-styled healer promises prasad cure, assaults woman and posts her photos on a fake Instagram account",
+   "date": "2026-04-11",
+   "location": "Pamgarh, Janjgir-Champa, Chhattisgarh, India (arrested in Dharamshala, Himachal Pradesh)",
+   "script": "disease-cure-puja",
+   "channel": "in person",
+   "steps": [
+    "A woman visited a self-described miracle healer with a friend, and he said a prasad would cure her chronic physical pain.",
+    "He took her number and, on 26 March, called her to a local market and gave her the prasad.",
+    "He allegedly took her from Bilaspur to Maihar (Madhya Pradesh), partly by train, and sexually assaulted her in a hotel under the pretext of treatment.",
+    "He allegedly took objectionable photos, then created a fake Instagram account in her name, posted the images and kept calling to harass her.",
+    "She complained at Pamgarh police station on 11 April; he was arrested in Dharamshala after technical investigation and location tracking."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "not reported",
+   "outcome": "Arrest; judicial remand; investigation ongoing; allegations not tested in court",
+   "legal_sections": "Section 64(2)(m) (the page calls it IPC, but it is a BNS section); IT Act Section 67",
+   "reporting_route": "police station (Pamgarh)",
+   "sources": [
+    {
+     "outlet": "The Sootr",
+     "url": "https://thesootr.com/state/chhattisgarh/nirmal-baba-arrested-raping-woman-on-pretext-of-treatment-janjgir-champa/articleshow/134171793.html",
+     "published": "2026-04-23"
+    }
+   ]
+  },
+  {
+   "id": "c026",
+   "verdict": "verified",
+   "title": "Man claiming supernatural powers befriends wealthy married woman on Facebook and takes nearly Rs 1 crore, Hyderabad",
+   "date": "2026-04-10",
+   "location": "Jubilee Hills, Hyderabad, Telangana, India",
+   "script": "other",
+   "channel": "social media (Facebook)",
+   "steps": [
+    "The accused contacted a married woman on social media, mainly Facebook, and police say he targeted wealthy women.",
+    "He offered to solve her personal problems through supernatural abilities and gained her trust.",
+    "Over about three years he got large sums from her, nearly Rs 1 crore in total.",
+    "After her complaint, police registered a case and tracked him through digital evidence.",
+    "He was arrested about four years after the money was collected; police suspect other victims."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Nearly Rs 1 crore (as reported)",
+   "outcome": "Arrested by Jubilee Hills police roughly four years after the money was collected; officials suspect more victims",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint (Jubilee Hills Police)",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-man-arrested-for-cheating-woman-of-rs-1-crore-using-supernatural-powers-claim",
+     "published": "2026-04-10"
+    }
+   ]
+  },
+  {
+   "id": "c027",
+   "verdict": "verified",
+   "title": "Delhi self-styled tantrik's money-multiplying pooja ends in triple murder",
+   "date": "2026-02",
+   "location": "Peeragarhi, Delhi, India",
+   "script": "money-gold-doubling",
+   "channel": "not reported",
+   "steps": [
+    "A self-proclaimed tantrik from Firozabad, Uttar Pradesh, who ran a tantric centre, allegedly offered sudden financial gains (dhanvarsha) through rituals and the promise of multiplying money.",
+    "He allegedly asked the victims to arrange Rs 2 lakh in cash, plus liquor and soft drinks, for a pooja.",
+    "He allegedly served sweets laced with poison along with drinks.",
+    "Once the victims lost consciousness he allegedly took their cash and valuables and fled.",
+    "Three people were found dead in a parked car on the Peeragarhi flyover; police confirmed murder on 11 February 2026."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "not reported (Rs 2 lakh cash demanded for the pooja; cash and valuables allegedly taken, amount not stated)",
+   "outcome": "Arrest; murder case under investigation; police described him as a habitual offender who initially tried to mislead investigators",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Zee News",
+     "url": "https://zeenews.india.com/india/peeragarhi-murder-case-baba-arrested-had-mixed-poison-in-laddoos-3015952.html",
+     "published": "2026-02-11"
+    }
+   ]
+  },
+  {
+   "id": "c028",
+   "verdict": "verified",
+   "title": "Fake 'Tantrik Baba' and 'Maulana' duo take about Rs 40 lakh from Chandigarh woman after social media ads",
+   "date": "2026-01",
+   "location": "Chandigarh, India (accused from Jhunjhunu district, Rajasthan)",
+   "script": "black-magic-removal",
+   "channel": "social ad (Facebook and Instagram)",
+   "steps": [
+    "A woman under family stress saw Facebook and Instagram ads offering solutions to personal and domestic problems.",
+    "The accused and an associate posed as a 'Tantrik Baba' and a 'Maulana' to gain her trust.",
+    "She was threatened with invented supernatural dangers and repeatedly pressed to pay for remedies.",
+    "She sent money to several bank accounts from February 2024 to May 2025 and handed over about 150 grams of gold jewellery.",
+    "Police identified the accused through bank KYC documents and mobile data and arrested a 25-year-old man."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 40 lakh, including around 150 grams of gold jewellery",
+   "outcome": "Case registered in January (year inferred as 2026); 25-year-old arrested; two mobile phones recovered; no charges, court action or recovery of money or gold reported",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/chandigarh/chandigarh-woman-duped-of-rs-40-lakh-in-cyber-fraud-posing-as-tantrik/",
+     "published": "2026-02-11"
+    }
+   ]
+  },
+  {
+   "id": "c029",
+   "verdict": "partly",
+   "title": "Tiruvanmiyur 'godman' takes cash and gold during evil-eye ritual",
+   "date": "2025-12",
+   "location": "Tiruvanmiyur, Chennai, Tamil Nadu, India",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "The accused knocked on a family's door and said black magic had been performed on them.",
+    "He said a ritual was needed to reverse it, and she let him in.",
+    "He had her and her husband's clothes set aside, along with the cash and gold jewellery she was wearing.",
+    "While she went to the kitchen to fetch water, he fled with the cash and jewellery."
+   ],
+   "quoted_lines": [
+    "black magic was performed on her family"
+   ],
+   "amount_lost": "Rs 10,000 cash plus gold bangles and gold earrings (values not reported)",
+   "outcome": "Case registered by Tiruvanmiyur police; a 50-year-old man from Kottivakkam arrested and remanded to judicial custody",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint (Tiruvanmiyur police)",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/news/chennai/claiming-to-ward-off-evil-eye-fake-godman-steals-cash-jewels-in-chennai-856668",
+     "published": "2025-12-14"
+    }
+   ]
+  },
+  {
+   "id": "c032",
+   "verdict": "verified",
+   "title": "Psychic business accused of curse-cleansing fraud on two victims, over $600,000, Pennsylvania",
+   "date": "2025-10",
+   "location": "Jenkintown, Pennsylvania, USA (charges announced by the Montgomery County District Attorney's Office)",
+   "script": "escalating-fees-threats",
+   "channel": "psychic business",
+   "steps": [
+    "Victims were told they were cursed and needed expensive rituals to remove the affliction.",
+    "The first victim paid from September 2022 to August 2023 in cash, jewelry, clothing, concert tickets and gift cards; nothing was returned.",
+    "That victim was told that not paying would destroy her marriage, business and family.",
+    "A second victim was pressed for personal information, photographs, a designer purse and more money, with threats of reputational damage and personal repercussions.",
+    "Funds from both victims moved through Cash App, Zelle and a credit union into the defendants' accounts."
+   ],
+   "quoted_lines": [
+    "reputational damage and personal repercussions"
+   ],
+   "amount_lost": "Nearly $596,000 from the first victim plus at least $18,000 from the second (over $600,000 total)",
+   "outcome": "Two people arrested 7 Oct 2025 and charged; both posted bail pending a preliminary hearing on 20 Oct 2025; no trial outcome reported",
+   "legal_sections": "Corrupt organizations; theft by unlawful taking; theft by deception; dealing in proceeds of unlawful activities; receiving stolen property; fortune telling",
+   "reporting_route": "not reported (investigation began December 2024; second victim came forward during the investigation)",
+   "sources": [
+    {
+     "outlet": "WNDU (16 NewsNow)",
+     "url": "https://www.wndu.com/2025/10/16/2-charged-600000-psychic-fortune-telling-scheme-that-promised-lift-curses-district-attorney-says",
+     "published": "2025-10-16"
+    }
+   ]
+  },
+  {
+   "id": "c031",
+   "verdict": "partly",
+   "title": "Bengaluru 'money rain' ritual gang sells serial-number-altered Rs 2,000 notes",
+   "date": "2025-10",
+   "location": "Bengaluru, Karnataka, India (arrests also in Andhra Pradesh)",
+   "script": "money-gold-doubling",
+   "channel": "not reported",
+   "steps": [
+    "The gang altered serial numbers, series codes and printed year on Rs 2,000 notes so they matched numbers claimed to be special.",
+    "Victims were told a 'money rain' ritual using such notes would multiply their money a hundredfold.",
+    "Staged pujas and ceremonies were used to make the claim credible.",
+    "Some victims reportedly paid up to Rs 4 lakh per altered note.",
+    "Tampered notes deposited at the RBI by members for a commission led to an RBI manager's complaint on 17 October 2025 and arrests from 24 October."
+   ],
+   "quoted_lines": [
+    "money rain"
+   ],
+   "amount_lost": "Up to Rs 4 lakh per note paid by some victims; Rs 18 lakh in altered notes seized",
+   "outcome": "10 people arrested and remanded to judicial custody on 3 November 2025; one woman still absconding; Rs 18 lakh and tampering equipment seized",
+   "legal_sections": "not reported",
+   "reporting_route": "police (RBI manager's complaint at Halasuru Gate police station, 17 October 2025)",
+   "sources": [
+    {
+     "outlet": "The Logical Indian",
+     "url": "https://thelogicalindian.com/bengaluru-police-bust-money-rain-ritual-scam-using-fake-%E2%82%B92000-notes-10-arrested-%E2%82%B918-lakh-seized/",
+     "published": "2025-11-05"
+    },
+    {
+     "outlet": "The Week (PTI wire)",
+     "url": "https://www.theweek.in/wire-updates/national/2025/11/04/mes25-ka-cheating.html",
+     "published": "2025-11-04"
+    }
+   ]
+  },
+  {
+   "id": "c030",
+   "verdict": "verified",
+   "title": "Self-proclaimed tantrik's haunted-house ritual scam on Instagram takes Rs 1.14 lakh from one woman",
+   "date": "2025-10",
+   "location": "Jhunjhunu, Rajasthan, India (case registered at Cyber police station, New Delhi District)",
+   "script": "black-magic-removal",
+   "channel": "social ad (Instagram) and website",
+   "steps": [
+    "The accused ran fake Instagram accounts and a website offering spiritual solutions and paid to promote his reels.",
+    "He told a woman her house was haunted by spirits and sent fabricated photos of ghostly figures and shadows.",
+    "He demanded money for rituals; she paid Rs 1.14 lakh by UPI into accounts linked to him and his family.",
+    "She complained on the National Cyber Crime portal; police traced the Instagram account, numbers and transactions.",
+    "He kept changing location but was arrested in Jhunjhunu; police say he cheated more than 50 people the same way."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 1.14 lakh from one complainant; police say more than 50 people were cheated the same way",
+   "outcome": "Accused arrested in Jhunjhunu on a Sunday before 14 Oct 2025; report does not say whether he has been charged, granted bail or convicted",
+   "legal_sections": "Section 318(4) BNS (cheating)",
+   "reporting_route": "complaint on the National Cyber Crime portal",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/delhi/self-proclaimed-tantrik-held-for-cheating-people/",
+     "published": "2025-10-14"
+    }
+   ]
+  },
+  {
+   "id": "c034",
+   "verdict": "partly",
+   "title": "Self-styled baba takes gold for black-magic removal and hidden-treasure rituals, Bengaluru",
+   "date": "2025-09-26",
+   "location": "Hulimavu police jurisdiction, Bengaluru, Karnataka, India",
+   "script": "black-magic-removal",
+   "channel": "not reported",
+   "steps": [
+    "The accused, using several aliases, claimed he could remove black magic or locate hidden treasure.",
+    "He gained victims' trust and collected their gold ornaments under the pretext of rituals or pujas.",
+    "He then fled with the valuables.",
+    "Police detained him on 26 September near Bannerghatta Main Road.",
+    "He reportedly confessed to a similar offence in Bhadravathi, Shivamogga district."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About 485.4 grams of gold ornaments valued at about Rs 53 lakh recovered (individual victim losses not stated)",
+   "outcome": "Arrested; theft case registered at Hulimavu police station; about half the gold recovered from his home in Kolar, the rest pledged at jewellery shops in Nagpur and BTM Layout; police tracing other victims and checking for a wider network",
+   "legal_sections": "not reported",
+   "reporting_route": "Hulimavu police station (theft case)",
+   "sources": [
+    {
+     "outlet": "NewsKarnataka",
+     "url": "https://newskarnataka.com/bengaluru/bengaluru-man-arrested-for-cheating-people-with-black-magic-rituals/15102025/",
+     "published": "2025-10-15"
+    }
+   ]
+  },
+  {
+   "id": "c033",
+   "verdict": "verified",
+   "title": "Fake tantriks take Rs 6 lakh of gold from a goldsmith's employee in Coimbatore",
+   "date": "2025-09-15",
+   "location": "Coimbatore, Tamil Nadu, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "Two men posing as tantriks stopped a goldsmith's employee returning with gold collected on Telugu Street.",
+    "They warned him that misfortune could befall him.",
+    "They asked him to hand the gold over for a puja to ward off evil and told him to close his eyes.",
+    "When he opened his eyes the men and the gold were gone."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Gold worth Rs 6 lakh",
+   "outcome": "No arrests reported; police search for the two men",
+   "legal_sections": "not reported",
+   "reporting_route": "Complaint by the smithy owner at Variety Hall Road police",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/news/tamilnadu/tamil-nadu-fake-tantriks-con-goldsmith-of-gold-worth-rs-6-lakhs-846695",
+     "published": "2025-09-15"
+    }
+   ]
+  },
+  {
+   "id": "c037",
+   "verdict": "verified",
+   "title": "Self-styled godman in Nagpur allegedly forces woman into a naked ritual and blackmails her with the video",
+   "date": "2025-08-21",
+   "location": "Pachpaoli, Nagpur, Maharashtra, India",
+   "script": "ritual-photo-blackmail",
+   "channel": "in person",
+   "steps": [
+    "The accused befriended people with domestic problems at tea stalls and claimed to practise black magic, targeting vulnerable women.",
+    "He allegedly forced a woman to take part in a naked ritual.",
+    "He allegedly recorded it and used the video to blackmail and repeatedly exploit her.",
+    "After continued threats she complained; police registered an FIR and arrested him."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "not reported",
+   "outcome": "FIR registered and accused arrested; investigation ongoing; police trying to reach other possible victims",
+   "legal_sections": "not reported",
+   "reporting_route": "Complaint to Pachpaoli Police, FIR registered",
+   "sources": [
+    {
+     "outlet": "Nagpur Today",
+     "url": "https://www.nagpurtoday.in/nagpur-police-arrest-fake-godman-for-forcing-woman-into-obscene-rituals/08211023",
+     "published": "2025-08-21"
+    }
+   ]
+  },
+  {
+   "id": "c035",
+   "verdict": "partly",
+   "title": "Lucknow astrologer allegedly scares a client, marries her, then extorts and threatens her",
+   "date": "2025-08-18",
+   "location": "Chinhat and Aliganj, Lucknow, Uttar Pradesh, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "The woman says she met the astrologer in November 2022; he allegedly used predictions and fear, including that her marriage was fixed with a man over 50, to push her to divorce her husband and cut other relationships.",
+    "He allegedly gave her an intoxicant in prasad, and she says she learned afterwards that he had married her at an Arya Samaj temple in Aliganj on 28 November 2022.",
+    "After the marriage he allegedly demanded money and jewellery and abused and blackmailed her.",
+    "On 17 January 2025 he allegedly left with her jewellery and clothes, later demanding Rs 50 lakh by phone and threatening to publish objectionable photos and videos.",
+    "Chinhat police registered an FIR and began searching for him."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 50 lakh demanded by phone; amount actually paid not stated; jewellery and clothes taken (value not stated)",
+   "outcome": "FIR registered; accused not arrested as of the report; police searching and raiding possible hideouts (all claims are the complainant's allegations)",
+   "legal_sections": "Bharatiya Nyaya Sanhita sections 85, 115(2), 351(3), 352; Dowry Prohibition Act 1961 sections 3 and 4",
+   "reporting_route": "Complaint to Chinhat police station, FIR registered",
+   "sources": [
+    {
+     "outlet": "Patrika",
+     "url": "https://www.patrika.com/lucknow-news/astrologer-trapped-a-woman-married-her-and-then-started-blackmailing-her-19873173",
+     "published": "2025-08-18"
+    }
+   ]
+  },
+  {
+   "id": "c036",
+   "verdict": "verified",
+   "title": "Man posing as astrologer takes Rs 50,000 over house 'dosha', Tiruchy",
+   "date": "2025-08-07",
+   "location": "Aina Patti village near Thottiyam, Tiruchy, Tamil Nadu, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "He visited a farming family's home, in unusual attire, while the children were at school.",
+    "He said a dosha in the house endangered the children.",
+    "He said it could only be removed by special rituals at the doorstep with Rs 50,000 as an offering, and told them to keep the money in the house bureau afterwards.",
+    "He sent the couple inside to light a lamp and fled with the cash.",
+    "The wife raised an alarm and a relative detained him until police arrived."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 50,000",
+   "outcome": "Arrested; cash seized by Thottiyam police; further investigation under way",
+   "legal_sections": "not reported",
+   "reporting_route": "Thottiyam police attended the scene, seized cash and arrested the man (no formal complaint route stated)",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/news/tamilnadu/tiruchy-man-posing-as-astrologer-claims-house-has-dosha-makes-away-with-rs-50000-842629",
+     "published": "2025-08-08"
+    }
+   ]
+  },
+  {
+   "id": "c040",
+   "verdict": "partly",
+   "title": "Fortune teller charged after taking $20,000 from elderly woman for evil-spirit removal and seeking $42,000 more, Long Island",
+   "date": "2025-07-17",
+   "location": "Hicksville, Nassau County, New York, USA",
+   "script": "black-magic-removal",
+   "channel": "in person (reading at the accused's business)",
+   "steps": [
+    "A 68-year-old woman visited a business advertising astrology and evil-spirit removal and received a reading.",
+    "She returned days later and he offered to solve her problems and ward off evil spirits, charging $20,000 on 3 July.",
+    "He then demanded $42,000 more and drove her to a bank to withdraw it.",
+    "Bank staff found the withdrawal suspicious and called police, who arrested him in the parking lot."
+   ],
+   "quoted_lines": [
+    "purchase the power to fight evil spirits"
+   ],
+   "amount_lost": "$20,000 paid on 3 July 2025; a further $42,000 was being withdrawn when police intervened (headline total $62,000)",
+   "outcome": "Arrested in the bank parking lot on 17 July 2025; pleaded not guilty and released on bail with an ankle monitor while the investigation continues; police asked other possible victims to come forward",
+   "legal_sections": "Third-degree grand larceny; third-degree attempted grand larceny; two misdemeanor counts of fortune-telling",
+   "reporting_route": "Bank employee alerted police; police appeal for other victims to call Nassau County Police",
+   "sources": [
+    {
+     "outlet": "AOL (article citing CBS coverage)",
+     "url": "https://www.aol.com/long-island-astrologer-arrested-over-163136751.html",
+     "published": "2025-07-18"
+    },
+    {
+     "outlet": "WION",
+     "url": "https://www.wionews.com/world/indian-origin-astrologer-arrested-in-new-york-for-62-000-evil-spirit-scam-1753185480102",
+     "published": "2025-07-22"
+    }
+   ]
+  },
+  {
+   "id": "c039",
+   "verdict": "verified",
+   "title": "Two men posing as police and a tantrik take gold rings from traders in Indore",
+   "date": "2025-07-17",
+   "location": "Palasia and Dwarkapuri areas, Indore, Madhya Pradesh, India",
+   "script": "other",
+   "channel": "in person (street and tea shop)",
+   "steps": [
+    "Two men on a bike posing as police stopped a bullion trader near Palasia, warned of police checking ahead and told him to remove his gold rings.",
+    "One man put the rings in a handkerchief and handed it back; three rings were missing when the trader checked.",
+    "On 17 July a man at a Dwarkapuri tea shop claimed tantra-mantra could solve the owner's personal and business problems.",
+    "He wrapped the owner's two gold rings in a Rs 100 note and told him to keep it safe, then left; the rings were gone.",
+    "Both victims complained; police said the gang has duped at least two elderly people in Tilak Nagar and Aerodrome areas."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "No cash reported; three gold rings (bullion trader) and two gold rings (tea shop owner)",
+   "outcome": "Investigations ongoing; police reviewing CCTV; no arrests at publication",
+   "legal_sections": "not reported",
+   "reporting_route": "Police complaints by both victims (Palasia and Dwarkapuri police)",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/indore/indore-fake-cops-fake-tantrik-trick-traders-out-of-gold-rings",
+     "published": "2025-07-28"
+    }
+   ]
+  },
+  {
+   "id": "c041",
+   "verdict": "verified",
+   "title": "Fake godman with a false name takes cash and gold from a Thane family with a claimed cure and an 8-day death prophecy",
+   "date": "2025-07",
+   "location": "Kashigaon, Mira Road, Thane district, Maharashtra, India (accused arrested in Turbhe, Navi Mumbai)",
+   "script": "curse-death-threat-extortion",
+   "channel": "in person",
+   "steps": [
+    "He moved into a house across from the victim's home in April 2025 and befriended the family.",
+    "He claimed he could cure the woman's husband and brother-in-law of drinking, clear the house of evil spirits and locate hidden treasure.",
+    "He told the woman her husband was under an evil spirit's influence and would die within eight days.",
+    "He said a pooja costing Rs 5 lakh was needed to prevent this and held it on the night of 14 May at his residence.",
+    "The family handed over cash and gold, which he said was sealed in a box to stay unopened for 45 days, and said he was going to his guru's place; the woman later opened the box and found it empty."
+   ],
+   "quoted_lines": [
+    "convinced the victim that her husband was under the influence of an evil spirit"
+   ],
+   "amount_lost": "Rs 2.7 lakh in cash and 84 grams of gold jewellery",
+   "outcome": "Complaint filed 1 July 2025; accused arrested in Turbhe, Navi Mumbai; police seized Rs 94,000 cash and 12 grams of jewellery; police said he often rented homes in Mumbai, Navi Mumbai, Thane and Palghar to run similar frauds",
+   "legal_sections": "Sections 318(4) and 316(2) Bharatiya Nyaya Sanhita (cheating, criminal breach of trust); Maharashtra Prevention and Eradication of Human Sacrifice and other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013 (as reported)",
+   "reporting_route": "police complaint (station not named in the report)",
+   "sources": [
+    {
+     "outlet": "PTI via The Week",
+     "url": "https://www.theweek.in/wire-updates/national/2025/07/06/bes2-mh-fake-godman-arrest.html",
+     "published": "2025-07-06"
+    }
+   ]
+  },
+  {
+   "id": "c043",
+   "verdict": "verified",
+   "title": "Astrologer takes nearly Rs 3 lakh from an IT analyst for 'negative energy' rituals said to be held in Vrindavan",
+   "date": "2025-06-17",
+   "location": "Delhi (complaint to Delhi Police, briefing by DCP North); arrest in Jaipur, Rajasthan, India",
+   "script": "online-astrologer-remedy",
+   "channel": "social media profile, then phone and bank transfers",
+   "steps": [
+    "The accused posted astrology and spiritual-remedy content on social media.",
+    "A 28-year-old IT analyst came across his profile and contacted him (The Tribune says he approached users; ThePrint says she phoned him).",
+    "He told her that negative energy was behind her professional and personal setbacks and that rituals, said to be performed in Vrindavan, would fix them.",
+    "She paid nearly Rs 3 lakh in multiple transfers; with no results and the accused unresponsive, she complained to police.",
+    "Police raided locations in Jaipur, found him at his residence, froze the receiving bank account, and he reportedly admitted most rituals were staged to extract money."
+   ],
+   "quoted_lines": [
+    "no real intent of delivering results"
+   ],
+   "amount_lost": "Nearly Rs 3 lakh",
+   "outcome": "Arrested in Jaipur (aged 35); receiving bank account frozen; police seeking other victims",
+   "legal_sections": "Section 35 Bharatiya Nagarik Suraksha Sanhita 2023 (arrest without warrant); no cheating or fraud section named in either report",
+   "reporting_route": "police complaint to Delhi Police",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/delhi/astrologer-held-for-duping-it-analyst-of-rs-3-lakh/",
+     "published": "2025-06-18"
+    },
+    {
+     "outlet": "ThePrint (PTI)",
+     "url": "https://theprint.in/india/fake-astrologer-held-from-jaipur-for-cheating-delhi-woman-of-rs-3-lakh/2660899/",
+     "published": "2025-06-17"
+    }
+   ]
+  },
+  {
+   "id": "c042",
+   "verdict": "partly",
+   "title": "Nathdwara youth loses Rs 1 crore cash to a tantric 'doubling' ritual staged by fraudsters",
+   "date": "2025-06-12",
+   "location": "Nathdwara, Rajsamand district, Rajasthan, India (arrests in Pune and Mumbai)",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "The accused claimed a secret tantric technique could double a local youth's cash.",
+    "They said the money would stay with them during the ritual and they would take only their share once it doubled.",
+    "On 12 June 2025, at a secluded spot, they staged a tantric ritual with puja items and sprayed an intoxicating perfume that left the youth and his friend frightened and disoriented.",
+    "They took the carton of cash and the car key and fled.",
+    "The youth complained to police the next day; a special team with cyber cell help traced the accused to Mumbai and Pune and arrested the two main accused."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 1 crore in cash; about Rs 25 lakh recovered",
+   "outcome": "Two main accused arrested in Pune and Mumbai; Rs 25 lakh recovered; about Rs 75 lakh unaccounted for; other accused absconding at time of report",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint at Shri Nathji Mandir police station, Nathdwara, filed the day after the incident",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Rajsamand edition)",
+     "url": "https://www.patrika.com/rajsamand-news/fraud-of-doubling-money-through-tantric-rituals-one-crore-fraud-exposed-in-nathdwara-two-arrested-25-lakh-cash-recovered-19906971",
+     "published": "2025-08-31"
+    }
+   ]
+  },
+  {
+   "id": "c044",
+   "verdict": "verified",
+   "title": "Self-styled godman takes gold and cash for pujas never performed, Nagole",
+   "date": "2025-05-28",
+   "location": "Nagole, Hyderabad, Telangana, India",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "A woman approached a self-proclaimed godman running a religious centre in Nagole about family problems.",
+    "He assured her he could solve them and said rituals and pujas were needed.",
+    "He collected gold ornaments and cash from her.",
+    "He allegedly performed no puja and did not return the valuables; he switched off his phone and absconded.",
+    "Police registered a case and asked other possible victims to come forward."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About 5 tolas of gold ornaments and Rs 35,000 cash",
+   "outcome": "Case registered at Nagole police station; accused absconding at time of report; police asked other possible victims to come forward",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint at Nagole police station",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-woman-duped-by-self-styled-godman-in-ritual-scam-police-launches-manhunt",
+     "published": "2025-05-28"
+    }
+   ]
+  },
+  {
+   "id": "c046",
+   "verdict": "verified",
+   "title": "Self-described psychic pleads guilty to egg and time-reversal ritual fraud, Vestal, New York",
+   "date": "2025-05-08",
+   "location": "Vestal, New York, USA",
+   "script": "other",
+   "channel": "in person (fortune-telling parlor)",
+   "steps": [
+    "In 2022 the accused and another psychic at a Vestal fortune-telling business targeted a victim.",
+    "The victim was made to perform multiple 'egg rituals' and a 'reversing time' ritual using a watch.",
+    "The victim then paid money said to be for an ex-fiance's medical procedure, which the accused reportedly invented.",
+    "A private investigator collected evidence and gave it to Vestal Police, who arrested the accused.",
+    "She pleaded guilty to scheme to defraud in the first degree and received five years probation."
+   ],
+   "quoted_lines": [
+    "emotionally broken and financially devastated"
+   ],
+   "amount_lost": "not stated; restitution of $20,000 combined to two victims",
+   "outcome": "Guilty plea 8 May 2025; five years probation; $20,000 combined restitution to two victims",
+   "legal_sections": "Scheme to defraud in the first degree (as reported)",
+   "reporting_route": "evidence gathered by a private investigator and given to Vestal Police Department",
+   "sources": [
+    {
+     "outlet": "WBNG",
+     "url": "https://www.wbng.com/2025/05/09/binghamton-psychic-pled-guilty-following-investigation",
+     "published": "2025-05-09"
+    }
+   ]
+  },
+  {
+   "id": "c045",
+   "verdict": "partly",
+   "title": "Fake astrologer takes six sovereigns of gold from a childless couple for a child-blessing ritual, Kolathur",
+   "date": "2025-05",
+   "location": "Kolathur, Chennai, Tamil Nadu, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "A man posing as an astrologer approached a couple who had been childless for 17 years.",
+    "He said a special ritual could bless them with a child and that their gold jewellery had to be soaked in a tamarind water mixture.",
+    "The jewellery, six sovereigns of gold, was handed over for the ritual and ended up with the accused.",
+    "The husband complained to Kolathur police and the accused was arrested."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Six sovereigns of gold",
+   "outcome": "Accused arrested by Kolathur police after the husband's complaint",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint at Kolathur police station",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/news/chennai/fraudster-posing-as-astrologer-cheats-dupes-six-sovereigns-in-kolathur-arrested-833612",
+     "published": "2025-05-14"
+    }
+   ]
+  },
+  {
+   "id": "c047",
+   "verdict": "verified",
+   "title": "Self-styled 'Lady Aghori' takes Rs 9.8 lakh for special pujas and threatens victim, Hyderabad",
+   "date": "2025-04-22",
+   "location": "Mokila, Hyderabad, Telangana, India (accused traced to Uttar Pradesh)",
+   "script": "disease-cure-puja",
+   "channel": "not reported",
+   "steps": [
+    "A self-styled Aghori promised to solve a woman's problems and health issues through special pujas.",
+    "The accused collected Rs 9.8 lakh from her.",
+    "When she asked for the money back, the accused allegedly threatened her, reportedly with death.",
+    "Mokila police registered a case and examined surveillance footage and technical evidence.",
+    "Police traced the accused to Uttar Pradesh and took the accused into custody."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 9.8 lakh",
+   "outcome": "Accused taken into custody in Uttar Pradesh; case registered on the woman's complaint",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint at Mokila police station",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-mokila-police-arrest-lady-aghori-in-up-for-cheating-woman-to-tune-of-rs-9-8-lakh",
+     "published": "2025-04-22"
+    }
+   ]
+  },
+  {
+   "id": "c048",
+   "verdict": "verified",
+   "title": "Self-styled astrologer sedates women, records videos and blackmails them, Medak",
+   "date": "2025-03-20",
+   "location": "Medak district, Telangana, India (accused from Anupuram near Vemulawada, as reported)",
+   "script": "ritual-photo-blackmail",
+   "channel": "not reported",
+   "steps": [
+    "He offered astrology services and claimed special pujas could permanently cure mental and physical illnesses.",
+    "During the rituals he allegedly put sleeping pills in water so women became drowsy or unconscious.",
+    "He allegedly sexually exploited them and recorded videos and pictures.",
+    "He used the recordings to blackmail the women, threatened to post them on social media and extorted a large sum.",
+    "He was arrested on 20 March 2025 and police found dozens of videos of different women."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Large sum, not quantified",
+   "outcome": "Arrested 20 March 2025; case registered; investigation ongoing; police found dozens of videos",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Siasat",
+     "url": "https://www.siasat.com/fake-baba-arrested-for-exploiting-women-in-telanganas-medak-3197776/",
+     "published": "2025-03-21"
+    }
+   ]
+  },
+  {
+   "id": "c049",
+   "verdict": "verified",
+   "title": "Instagram astrologer persona takes about Rs 5.9 lakh in puja fees for a love-marriage horoscope",
+   "date": "2025-02-18",
+   "location": "Electronics City area, India (city and filing police unit not stated in the article)",
+   "script": "online-astrologer-remedy",
+   "channel": "Instagram, then WhatsApp and a payment app",
+   "steps": [
+    "A 24-year-old woman seeking marriage guidance messaged an Instagram account whose profile showed an Aghori baba photo and claimed expert astrologer status.",
+    "The account holder took her name and date of birth, shared a mobile number, and said it was a love marriage but her horoscope had flaws needing pujas.",
+    "He first asked for Rs 1,820 by payment app, then kept citing new problems and asking for more money.",
+    "When she stopped paying and asked for a refund, he returned Rs 13,000, then threatened suicide and said he would name her in a note.",
+    "A man claiming to be an advocate phoned and said the astrologer would kill himself if pressed to repay money spent on pujas."
+   ],
+   "quoted_lines": [
+    "expert astrologer",
+    "it was a love marriage for her"
+   ],
+   "amount_lost": "Rs 5.9 lakh (headline says nearly Rs 6 lakh); Rs 13,000 was returned",
+   "outcome": "Case registered against two suspects (the persona and a caller posing as an advocate); police said cyber criminals ran it and no real astrologer or advocate was involved; no arrests reported",
+   "legal_sections": "Information Technology Act (section not specified); BNS Section 318 (cheating)",
+   "reporting_route": "police complaint (unit not named)",
+   "sources": [
+    {
+     "outlet": "Gulte",
+     "url": "https://www.gulte.com/trends/340495/woman-loses-%e2%82%b96-lakh-to-online-astrologer-for-love-ritual/amp",
+     "published": "2025-02-18"
+    }
+   ]
+  },
+  {
+   "id": "c050",
+   "verdict": "partly",
+   "title": "Farmer loses about Rs 31 lakh to tantrik promising buried treasure and receives a pot of mud",
+   "date": "2025-02-08",
+   "location": "Rasgan gram panchayat, Naugaon tehsil, Alwar district, Rajasthan, India",
+   "script": "other",
+   "channel": "in person (strangers met on the road, then phone contact)",
+   "steps": [
+    "Months earlier three men asked a farmer for help after losing their way; one claimed to be a tantrik who could extract treasure from the ground.",
+    "The tantrik said treasure was buried in the farmer's house and asked him to gather items for a ritual; the men visited and took the items plus Rs 1,86,786.",
+    "At night they dug a pit in the house, pretended to place money in it, produced smoke and showed a snake and jewelry-like objects.",
+    "They gave him a box and told him not to open it for 40 days; he was called to Delhi and handed over Rs 19,86,786.",
+    "The men demanded more and threatened him; he paid about Rs 8 lakh more, borrowing from relatives.",
+    "After 40 days the box held a clay pot of mud; he complained to police."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 31 lakh per the headline; itemised figures (Rs 1,86,786 + Rs 19,86,786 + about Rs 8 lakh) add to roughly Rs 29.7 lakh",
+   "outcome": "Case registered at Naugaon police station; investigation started",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Naugaon)",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Alwar edition)",
+     "url": "https://www.patrika.com/alwar-news/fake-tantrik-duped-a-person-of-rs-31-lakh-by-promising-to-extract-hidden-treasure-from-his-house-in-alwar-19383382",
+     "published": "2025-02-08"
+    }
+   ]
+  },
+  {
+   "id": "c051",
+   "verdict": "verified",
+   "title": "Self-styled healer takes Rs 8.87 lakh from a woman for a dead body needed in a black-magic cure, Bhiwandi",
+   "date": "2025-01",
+   "location": "Avchitpada, Millatnagar, Bhiwandi, Thane district, Maharashtra, India",
+   "script": "black-magic-removal",
+   "channel": "in person, then video call",
+   "steps": [
+    "A self-styled baba and healer told a 46-year-old woman, whose husband had blood pressure and hypertension, that her husband and son were affected by black magic.",
+    "He told her to bring a dead body for mantras and black magic, promising her husband would be healed; he said a body had been found in Malegaon and demanded Rs 10 lakh.",
+    "The price was negotiated to Rs 8 lakh, paid in parts over about 15 months, totalling Rs 8.87 lakh.",
+    "He asked her and her son to come to his home; when she refused he offered to show the rituals over video call; her husband did not improve.",
+    "An NGO helped her go to police; he was arrested and reportedly admitted buying duplicate skeletons in Mumbai and using them on video calls, and said he lent her Rs 3 lakh for business at monthly interest."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 8.87 lakh in part payments over about 15 months; a separate Rs 3 lakh business loan with monthly interest also alleged",
+   "outcome": "FIR filed; accused arrested, produced in court and remanded to police custody until 15 January 2025",
+   "legal_sections": "Bharatiya Nyaya Sanhita (sections not stated); Sections 3(1) and 3(2) Maharashtra Prevention and Eradication of Human Sacrifice and other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013",
+   "reporting_route": "victim approached a Thane NGO working against such practices, which helped her go to police; FIR at Shantinagar police, Bhiwandi",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/mumbai/mumbai-baba-arrested-for-allegedly-duping-887-lakh-from-46-year-old-woman-over-black-magic-in-bhiwandi",
+     "published": "2025-01-12"
+    }
+   ]
+  },
+  {
+   "id": "c052",
+   "verdict": "verified",
+   "title": "Ahmedabad factory owner nearly poisoned by tantrik promising to quadruple cash",
+   "date": "2024-12-01",
+   "location": "Sanathal area under Sarkhej police station, Ahmedabad, Gujarat, India",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "A self-styled tantrik told a cosmetics trading factory owner he would quadruple his Rs 4-5 lakh through a tantric ritual.",
+    "He planned to give the owner water laced with poison as ritual prasad so he would die, likely appearing as a heart attack, and keep the cash.",
+    "He offered his driver a 25% cut to join the plan; the driver refused and told police.",
+    "Sarkhej police and a Zone-7 DCP team watched the accused and caught him with the owner near Sanathal before the attack."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Not lost; Rs 4-5 lakh was at risk",
+   "outcome": "Accused caught and arrested before the poisoning; owner's life saved; FIR registered on the owner's complaint",
+   "legal_sections": "not reported",
+   "reporting_route": "police (Sarkhej) acting on a tip-off from the accused's driver; FIR on the owner's complaint",
+   "sources": [
+    {
+     "outlet": "Rajasthan Patrika (Ahmedabad edition)",
+     "url": "https://www.patrika.com/ahmedabad-news/attempt-to-murder-factory-owner-by-promising-to-quadruple-money-tantrik-arrested-19202837",
+     "published": "2024-12-03"
+    }
+   ]
+  },
+  {
+   "id": "c053",
+   "verdict": "verified",
+   "title": "Five arrested for taking Rs 55 lakh over fake good-luck prayers, Telangana",
+   "date": "2024-11-16",
+   "location": "Jangaon, Jangaon district, Telangana, India (report datelined Warangal)",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "A couple and associates promised good luck through special prayers, described by police as fake rituals.",
+    "They tricked a woman into handing over Rs 55 lakh and plot documents.",
+    "After her complaint, a Deputy Commissioner ordered a special team led by a Circle Inspector.",
+    "The team arrested five people during a vehicle check at Nehru Parka, Jangaon town, and seized gold, silver and a car."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 55 lakh and plot documents",
+   "outcome": "Five arrested; gold ornaments worth Rs 21.6 lakh, silver worth Rs 16,000 and a car seized",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint by the woman victim; the Deputy Commissioner ordered a special team",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/news/crime/jangaon-5-arrested-for-fake-good-luck-prayers-1838865",
+     "published": "2024-11-16"
+    }
+   ]
+  },
+  {
+   "id": "c054",
+   "verdict": "verified",
+   "title": "Astrologer collects Rs 37.5 lakh for poojas that ran 54 days against three recommended, Andhra Pradesh",
+   "date": "2024-10-29",
+   "location": "Kakinada area, Andhra Pradesh, India (Mogalturu police; complainant from Penumantra village)",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "A man consulted an astrologer about personal problems.",
+    "The astrologer advised poojas for three days.",
+    "The rituals reportedly ran for 54 days.",
+    "The complainant paid Rs 37.50 lakh and, when his problems were not resolved, concluded he was cheated.",
+    "He complained and Mogalturu police registered a case."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 37.50 lakh (alleged)",
+   "outcome": "Case registered and under investigation; no arrest reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Mogalturu police)",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/criminal-case-against-astrologer-for-fraud-1833885",
+     "published": "2024-10-29"
+    }
+   ]
+  },
+  {
+   "id": "c038",
+   "verdict": "partly",
+   "title": "Instagram 'tantra vidya' puja scam takes about Rs 18 lakh from an MBA professional; three held in Rajasthan",
+   "date": "2024-10",
+   "location": "Sriganganagar, Rajasthan, India (victim from Jabalpur, Madhya Pradesh)",
+   "script": "escalating-fees-threats",
+   "channel": "social ad (Instagram reel), then phone",
+   "steps": [
+    "The gang advertised on Instagram, promising solutions to problems and wishes through special worship and 'tantra vidya'.",
+    "The victim watched a reel and discussed her marriage and career with the lead accused by phone.",
+    "He asked her to perform a worship remedy, claiming he had achieved 'Siddhis', and took Rs 60,000 on 6-8 October 2024; further money went by UPI until 6 February 2025.",
+    "He threatened that someone in her family would die if she left the 'puja-paath' midway, and other men said they would pray for her from different directions.",
+    "When she asked for a refund she was abused and threatened; she complained to police by post and three men were arrested."
+   ],
+   "quoted_lines": [
+    "tantra vidya",
+    "Siddhis",
+    "puja-paath"
+   ],
+   "amount_lost": "About Rs 18 lakh per the complaint (Rs 60,000 on 6-8 October 2024; Rs 15.48 lakh by UPI up to 6 February 2025)",
+   "outcome": "Three men arrested; the named alleged kingpin's status is not stated; money traced to suspects' and associates' bank accounts; recovery efforts ongoing at time of report",
+   "legal_sections": "not reported",
+   "reporting_route": "Written complaint sent by post to Sriganganagar police",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/rajasthan/tantra-vidya-scam-on-instagram-mba-professional-loses-rs-18-lakh-3-held-in-rajasthan/",
+     "published": "2025-07-04"
+    }
+   ]
+  },
+  {
+   "id": "c055",
+   "verdict": "verified",
+   "title": "Lucknow businessman pays about Rs 65 lakh to a 'digital tantrik' over business losses",
+   "date": "2024-09-16",
+   "location": "Lucknow, Uttar Pradesh, India",
+   "script": "escalating-fees-threats",
+   "channel": "not reported",
+   "steps": [
+    "A share-market businessman sought a remedy for losses in his business and contacted a self-styled 'digital tantrik'.",
+    "The tantrik demanded money in instalments as payment for rituals or remedies.",
+    "He used fear of black magic to pressure the businessman into paying.",
+    "He kept demanding more even after receiving about Rs 65 lakh."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 65 lakh",
+   "outcome": "Complaint filed and case registered at Hazratganj Kotwali police station; no arrest or further police action reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (Hazratganj Kotwali)",
+   "sources": [
+    {
+     "outlet": "Zee News Hindi",
+     "url": "https://zeenews.india.com/hindi/india/up-uttarakhand/lucknow/digital-tantrik-cheated-businessman-of-rs-65-lakh-on-pretext-of-profit-in-business/2432043",
+     "published": "2024-09-16"
+    }
+   ]
+  },
+  {
+   "id": "c056",
+   "verdict": "partly",
+   "title": "Two fake astrologers collect UPI payments through nine social media accounts, Sriganganagar",
+   "date": "2024-08",
+   "location": "Sriganganagar, Rajasthan, India (report datelined Abohar)",
+   "script": "online-astrologer-remedy",
+   "channel": "social media ads and UPI payments",
+   "steps": [
+    "Two suspects ran nine fake social media IDs advertising themselves as astrologers: five on Instagram on one phone, two on another phone of the same suspect, two on the other suspect's phone.",
+    "Neither could show a degree or certificate in astrology.",
+    "Over about a year they collected money from people via UPI, duping them of 'lakhs'.",
+    "Police arrested both and seized three mobile phones and 10 ATM cards.",
+    "Police planned to obtain information from their bank accounts when the bank opened on Tuesday."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Not specified; people duped of 'lakhs'",
+   "outcome": "Two suspects arrested (reported as late evening before the 25 August briefing, so about 24 August 2024; one reading gives 25 August); bank-account inquiry planned; charges, court proceedings and total loss not reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police-led bust, announced at a Superintendent of Police briefing",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/punjab/fake-astrology-racket-busted-in-sriganganagar-2-held/",
+     "published": "2024-08-26"
+    }
+   ]
+  },
+  {
+   "id": "c057",
+   "verdict": "partly",
+   "title": "Ajmer self-styled tantrik extorts lakhs (reported as about Rs 2.5 crore and about Rs 35 lakh) with black-magic and marriage rituals and pressures woman to convert",
+   "date": "2024-05-18",
+   "location": "Clock Tower police station area, Ajmer, Rajasthan, India",
+   "script": "escalating-fees-threats",
+   "channel": "phone call",
+   "steps": [
+    "Contact began by phone during the second COVID lockdown, through a college friend; he built trust by claiming tantric powers.",
+    "First in-person meeting was in November 2021; he said her family faced a supernatural threat.",
+    "From March 2022 he demanded money for rituals tied to her marriage and her father's property disputes.",
+    "He claimed her aunt had done black magic endangering her father's life and demanded more money for counter-rituals.",
+    "He mortgaged her jewellery at a bank and took lakhs of rupees.",
+    "He pressured her to transfer her house into his name, and to convert and marry him."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Article gives about Rs 2.5 crore and, separately, about Rs 35 lakh in the body (the lead says only 'crores'); the figures are not reconciled",
+   "outcome": "Arrested after the victim reported continued extortion and threats; 160 g of gold jewellery and coins recovered; presented in court and remanded for further investigation; reportedly admitted spending the money on online gaming and betting",
+   "legal_sections": "not reported (described only as relevant sections of fraud and extortion)",
+   "reporting_route": "complaint at Clock Tower police station, Ajmer",
+   "sources": [
+    {
+     "outlet": "India TV News",
+     "url": "https://www.indiatvnews.com/rajasthan/rajasthan-woman-duped-of-crores-under-guise-of-black-magic-tantra-mantra-2024-05-18-932096",
+     "published": "2024-05-18"
+    }
+   ]
+  },
+  {
+   "id": "c058",
+   "verdict": "verified",
+   "title": "Self-described black magic practitioner demands Rs 5,000 for crematorium ritual for sick daughter, Thane",
+   "date": "2024-04-20",
+   "location": "Crematorium on Padgha-Borivili road, Thane district, Maharashtra, India (accused from Titwala, complainant from Kisan Nagar)",
+   "script": "disease-cure-puja",
+   "channel": "in person",
+   "steps": [
+    "A woman's daughter, separated from her husband, was often ill and not improving.",
+    "The accused claimed he could remove evil spirits and treat her; she visited him at least eight times with no improvement.",
+    "He told her to bring her daughter and family to a crematorium on the night of 20 April for rituals and asked for Rs 5,000; six to eight others were also there on his advice.",
+    "10-12 villagers arrived during the ritual, seized him, called him a fake godman and took him to a temple.",
+    "Police were alerted and arrested him."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 5,000 demanded for rituals (payment not reported)",
+   "outcome": "Arrested; booked under the Maharashtra anti-human sacrifice and black magic Act, 2013",
+   "legal_sections": "Maharashtra Prevention and Eradication of Human Sacrifice and Other Inhuman, Evil, and Aghori Practices and Black Magic Act, 2013",
+   "reporting_route": "complaint by the woman to police",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/nation/40-year-old-maharashtra-man-held-for-practising-black-magic-890731",
+     "published": "2024-04-23"
+    }
+   ]
+  },
+  {
+   "id": "c059",
+   "verdict": "verified",
+   "title": "Mumbai self-styled godman allegedly takes cash, gold and donations for black-magic cure of chronic pain and other remedies",
+   "date": "2024-01-30",
+   "location": "RAK Marg police area, Sewri, Mumbai, Maharashtra, India",
+   "script": "disease-cure-puja",
+   "channel": "in person",
+   "steps": [
+    "A woman with chronic body pain that medical treatment had not relieved sought his help.",
+    "He allegedly said black-magic rituals would cure her within 40 days and demanded Rs 4 lakh plus gold, promising animal sacrifices and donations at dargahs.",
+    "He gave two amulets (taweez) to place in her house and took two tolas of gold and Rs 50,000 cash on 23 March 2023.",
+    "He later allegedly took Rs 1.70 lakh from a relative for a promised US job for her son and did not deliver; other victims allegedly paid for a cancer remedy and a baby-crying remedy.",
+    "FIR registered under IPC 406, 420 and the Maharashtra anti-superstition Act 2013 s.3; police began gathering evidence."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 4 lakh demanded (payment not confirmed); two tolas of gold and Rs 50,000 cash handed over; victims claim total Rs 6,12,000 cash and 230 g gold valued at Rs 11,50,000",
+   "outcome": "FIR registered; investigation ongoing; no arrest reported",
+   "legal_sections": "IPC 406 (criminal breach of trust); IPC 420 (cheating); Maharashtra Prevention and Eradication of Human Sacrifice and Other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013, Section 3",
+   "reporting_route": "complaint by a victim; FIR at RAK Marg police",
+   "sources": [
+    {
+     "outlet": "Organiser",
+     "url": "https://organiser.org/2024/02/01/219562/bharat/mumbai-police-book-fakir-ali-sheikh-for-coercing-woman-into-goat-sacrifice-donations-allegedly-for-cancer-cure/",
+     "published": "2024-02-01"
+    }
+   ]
+  },
+  {
+   "id": "c060",
+   "verdict": "verified",
+   "title": "Delhi Police arrest self-styled tantrik 'Bengali Baba' who ran newspaper ads for love and relationship remedies",
+   "date": "2024-01-21",
+   "location": "Delhi, India (Southwest district; accused from Ghaziabad, Uttar Pradesh)",
+   "script": "vashikaran-love-problem",
+   "channel": "newspaper ad, then phone",
+   "steps": [
+    "He ran newspaper ads as a 'Tantrik Baba' with a prominent mobile number, offering to resolve family, relationship and business problems, including love marriage and extramarital issues.",
+    "Once contacted, he promised guaranteed solutions and asked victims to pay through various UPI accounts.",
+    "He performed phone-based rituals reciting mantras, which police describe as a pretence producing no real result.",
+    "When problems persisted he demanded more money; when victims refused he threatened them and in some cases their family members.",
+    "After a tip-off, a team tracking proclaimed offenders took him into custody, ending about four years on the run."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "not reported (amounts not stated)",
+   "outcome": "Taken into custody; faces charges of cheating, extortion and criminal intimidation; first booked in 2018 (Safdarjung Enclave PS), declared proclaimed offender by Saket Court in 2019; chargesheet not reported",
+   "legal_sections": "not reported (cheating, extortion and criminal intimidation named, no sections)",
+   "reporting_route": "not reported (arrest followed a tip-off)",
+   "sources": [
+    {
+     "outlet": "IANS (ianslive.in)",
+     "url": "https://ianslive.in/delhi-police-nab-bengali-baba-for-love-marriage-scam--20240121210606",
+     "published": "2024-01-21"
+    },
+    {
+     "outlet": "Tribune India (Delhi)",
+     "url": "https://www.tribuneindia.com/news/delhi/love-marriage-scam-elusive-bengali-baba-lands-in-police-net-for-duping-several-women-583378",
+     "published": ""
+    }
+   ]
+  },
+  {
+   "id": "c061",
+   "verdict": "partly",
+   "title": "Warangal task force arrests fake astrologer who took about Rs 14 lakh for an evil-eye pooja",
+   "date": "2024-01-12",
+   "location": "Warangal, Telangana, India (arrest at MGBS, Gowliguda, Hyderabad)",
+   "script": "black-magic-removal",
+   "channel": "TV and local channel advertisements, then in-person visits",
+   "steps": [
+    "The accused advertised his services with a contact number on local channels and at astrology centres; the victim saw a TV advertisement.",
+    "The victim, whose mother had been ill for over six months, contacted him in November 2023 and met him in Warangal.",
+    "He visited the home to perform a pooja against the evil eye ('Nardosham') and asked for Rs 2 lakh.",
+    "The victim paid about Rs 14 lakh over several occasions.",
+    "The accused stopped taking calls; the victim reported the fraud to police on 10 January 2024.",
+    "He was arrested on 12 January 2024; he admitted devising the scheme to earn money illegally."
+   ],
+   "quoted_lines": [
+    "came up with this idea to earn a hefty amount of money illegally"
+   ],
+   "amount_lost": "About Rs 14 lakh paid; Rs 14,65,000 cash recovered from the accused",
+   "outcome": "Arrested by Warangal Commissioner's Task Force and Chatrinaka police; case registered; cash and ritual materials recovered; police urged the public not to believe such faith healers and to report them",
+   "legal_sections": "IPC 406 and 420; sections 2(c) and 7 of the Drugs and Magic Remedies Act, 1954",
+   "reporting_route": "complaint to Warangal police on 10 January 2024",
+   "sources": [
+    {
+     "outlet": "Siasat",
+     "url": "https://www.siasat.com/fake-astrologer-held-for-duping-follower-of-rs-14-l-in-warangal-2955132/",
+     "published": "2024-01-12"
+    }
+   ]
+  },
+  {
+   "id": "c062",
+   "verdict": "verified",
+   "title": "Chennai man cheated of over Rs 2 crore by Kerala friend claiming to speak with the dead",
+   "date": "2023-05",
+   "location": "Thiruvananthapuram, Kerala, India (complaint filed in Chennai, Tamil Nadu)",
+   "script": "other",
+   "channel": "email and in person",
+   "steps": [
+    "The two men met in 2005 while working in Nigeria and stayed in touch as family friends for nearly two decades.",
+    "He exploited the victim's interest in spirituality and promised he could make him converse with the spirit of a godman and deceased family members.",
+    "He staged rituals (moving plates, lemons appearing from nowhere) that the victim later learned were tricks.",
+    "He sent emails describing alleged conversations with the victim's mother.",
+    "He took more than Rs 2 crore between 2015 and 2019; the victim complained to Chennai Police in 2022.",
+    "Chennai CCB's Entrustment Document Fraud wing arrested him at his Thiruvananthapuram house; he was produced before a magistrate and remanded to judicial custody."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "More than Rs 2 crore (2015-2019)",
+   "outcome": "Arrested; produced before a magistrate and remanded to judicial custody",
+   "legal_sections": "not reported",
+   "reporting_route": "complaint to Chennai Police, 2022",
+   "sources": [
+    {
+     "outlet": "DT Next",
+     "url": "https://www.dtnext.in/city/2023/05/11/kerala-man-held-for-black-magic-claims-cheats-friend-of-2-cr",
+     "published": "2023-05-11"
+    }
+   ]
+  },
+  {
+   "id": "c063",
+   "verdict": "partly",
+   "title": "Man posing as tribal astrologer takes housewife's gold during ritual, Hyderabad",
+   "date": "2023-01-30",
+   "location": "LB Nagar, Hyderabad, Telangana, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "The accused posed as a tribal astrologer and offered to forecast the housewife's future.",
+    "He asked her to bring rice, water and a bowl and to place her gold ornament in the bowl, then asked for turmeric.",
+    "While she went inside to fetch it, he took the gold and fled.",
+    "She reported the theft to LB Nagar police, who checked CCTV footage.",
+    "Police arrested him at the LB Nagar bus stand within about six hours; he had earlier been arrested by Dindi and Saroornagar police for similar crimes."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "One gold ornament of about 6 grams; total value not reported; gold worth Rs 40,000 recovered",
+   "outcome": "Arrested; gold worth Rs 40,000 recovered",
+   "legal_sections": "not reported",
+   "reporting_route": "police station (LB Nagar), reported immediately",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/nation/in-other-news/300123/fake-astrologer-flees-with-housewifes-ornaments-held.html",
+     "published": "2023-01-30"
+    }
+   ]
+  },
+  {
+   "id": "c064",
+   "verdict": "verified",
+   "title": "Miami fortune teller and accomplice sentenced in curse-lifting scheme worth over $3 million",
+   "date": "2022-12-08",
+   "location": "Miami, Florida, USA (U.S. District Court, Southern District of Florida)",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "In 2012 the defendant met the victim in Miami, posing as a psychic.",
+    "She won the victim's trust by claiming a curse had been placed on the victim's family.",
+    "She said rituals involving large sums of money were needed to lift the curse, and implied refusal would bring harm to the victim and family.",
+    "Over several years the victim handed over more than $3 million; the defendant and an accomplice spent it on vehicles, property and casino gambling.",
+    "The scheme ended in 2016 when she cut off contact because the victim could no longer pay; the victim reported to federal law enforcement."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "More than $3 million from one victim over several years; joint restitution $3.198 million",
+   "outcome": "Sentenced: 38 months (accomplice) and 30 months (fortune teller); joint restitution $3.198 million",
+   "legal_sections": "not reported (fortune-telling fraud scheme and money laundering, no statute numbers on the page)",
+   "reporting_route": "victim reported to federal law enforcement; investigated by IRS Criminal Investigation, Miami",
+   "sources": [
+    {
+     "outlet": "IRS Criminal Investigation (announcement of U.S. Department of Justice case)",
+     "url": "https://www.irs.gov/node/117141",
+     "published": "2022-12-08"
+    }
+   ]
+  },
+  {
+   "id": "c065",
+   "verdict": "verified",
+   "title": "Mumbai astrologer takes Rs 60 lakh from wife over promised black-magic 'dominance' over husband",
+   "date": "2022-11-15",
+   "location": "Andheri West, Mumbai, Maharashtra, India",
+   "script": "vashikaran-love-problem",
+   "channel": "Instagram",
+   "steps": [
+    "The wife found an astrologer on Instagram and described problems in her marriage.",
+    "He offered her 'full dominance' over her husband through black magic.",
+    "She paid Rs 35 lakh in cash, taken from money kept at home, and the rest of Rs 60 lakh in jewellery.",
+    "The husband reported the missing cash to Mumbai Police and suspected an insider.",
+    "Police arrested one man for allegedly taking the money; the wife later admitted paying the astrologer."
+   ],
+   "quoted_lines": [
+    "full dominance"
+   ],
+   "amount_lost": "Rs 60 lakh in total (Rs 35 lakh cash plus jewellery)",
+   "outcome": "One man arrested for allegedly taking the money; charges, court proceedings and recovery not reported",
+   "legal_sections": "not reported",
+   "reporting_route": "complaint by the husband to Mumbai Police",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/trending/woman-pays-whopping-rs-60-lakh-to-astrologer-for-getting-full-control-over-husband-through-black-magic-451260/",
+     "published": "2022-11-15"
+    }
+   ]
+  },
+  {
+   "id": "c066",
+   "verdict": "verified",
+   "title": "Jabalpur impostor baba's 'court of Mata Mahakali' multiplied-money scheme",
+   "date": "2022-11",
+   "location": "Adhartal and Andhmook Bypass, Jabalpur, Madhya Pradesh, India",
+   "script": "money-gold-doubling",
+   "channel": "in person (at the accused's rented house)",
+   "steps": [
+    "After a 2017 release from jail, a man set up a 'court of Mata Mahakali' in a rented house in Adhartal, claiming worship and prayers could multiply money.",
+    "He promised to multiply money 4 to 10 times and taught the art of extracting buried money through 'Tantra mantra'.",
+    "He showed bundles of fake notes with a few real notes hidden among them to seem credible.",
+    "He and his wife allegedly took Rs 11.53 lakh from an Adhartal woman about a week before the arrest.",
+    "He was arrested at Andhmook Bypass; police seized a bike, gold and silver jewellery, household items bought with the money, and fake notes worth Rs 20 lakh."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 11.53 lakh from one woman; fake notes worth Rs 20 lakh found; total across victims stated only as 'lakhs'",
+   "outcome": "Arrested; about six complaints registered (five at Ranjhi, one at Sanjeevani Nagar); property seized; police trying to recover the money",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaints at Ranjhi and Sanjeevani Nagar police stations",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/bhopal/jabalpur-impostor-baba-cheats-people-in-the-name-of-worshiping-and-tantra-mantra-arrested",
+     "published": "2022-11-16"
+    }
+   ]
+  },
+  {
+   "id": "c067",
+   "verdict": "partly",
+   "title": "Fake sadhus and hawala operators cheat a transport businessman over a snake-dosha puja, Bhongir",
+   "date": "2022-07-05",
+   "location": "Bhongir Zone, Rachakonda Commissionerate, Telangana, India",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "Police said the accused roamed residential areas dressed as sadhus, looking for people with mental disabilities.",
+    "After the victim was hurt in a motorcycle fall in November 2020, two of them visited his transport office and told him he had sarpa dosha.",
+    "They performed a puja at his house and charged Rs 41,000.",
+    "Until February 2022 they kept taking money on various pretexts; cash was deposited with hawala agents who passed it to the sadhus and associates.",
+    "Police arrested seven men from Rajasthan (four fake sadhus, three hawala operators) and seized cash, phones and ritual items."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 37.71 lakh (as reported)",
+   "outcome": "Seven arrested (all from Rajasthan); four others (two sadhus, two hawala operators) absconding; police seized Rs 8.30 lakh cash, 12 phones, rudraksha malas, a kamandalam and a money counting machine",
+   "legal_sections": "not reported",
+   "reporting_route": "victim's complaint led to a joint operation by the Special Operations Team of Bhongir Zone and Bhongir town police station",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/gang-of-fake-sadhus-from-rajasthan-arrested-in-hyderabad",
+     "published": "2022-07-05"
+    }
+   ]
+  },
+  {
+   "id": "c068",
+   "verdict": "verified",
+   "title": "Woman doctor loses about Rs 80,000 to a Facebook astrologer over exam pujas, Kondapur",
+   "date": "2021-07-31",
+   "location": "Kondapur, Hyderabad, Telangana, India",
+   "script": "escalating-fees-threats",
+   "channel": "social media (Facebook)",
+   "steps": [
+    "A woman doctor preparing for the FMGE exam searched online for astrology help and found a Facebook profile with a phone number.",
+    "The fraudster promised pujas and rituals would help her clear the exam, and she paid an initial sum.",
+    "She sat the exam and failed.",
+    "She was told more rituals were needed for a better result and paid Rs 70,000 in two instalments to a bank account.",
+    "She failed again; they kept asking for more money for further pujas, she realised she was being cheated and complained."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Nearly Rs 80,000 (Rs 70,000 in two instalments plus an earlier unspecified sum)",
+   "outcome": "Cyberabad Cybercrime police registered a case; no arrests reported",
+   "legal_sections": "not reported",
+   "reporting_route": "police complaint to Cyberabad Cybercrime police",
+   "sources": [
+    {
+     "outlet": "Telangana Today",
+     "url": "https://telanganatoday.com/hyderabad-doctor-seeks-help-from-astrologer-for-exam-loses-money",
+     "published": "2021-07-31"
+    }
+   ]
+  },
+  {
+   "id": "c069",
+   "verdict": "partly",
+   "title": "Self-styled astrologer allegedly tells a woman a 'black dog's soul' is inside her; Delhi High Court cancels his bail",
+   "date": "2021-07-21",
+   "location": "Delhi, India (travel to Nainital, Uttarakhand)",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "The petition says the accused was an astrologer and palmist; after reading the woman's hand he allegedly said a black dog's soul was inside her.",
+    "He allegedly said it had to be removed at Vaishno Devi or by a tantrik, and said he would get her married.",
+    "Her parents' complaint alleges she took Rs 50,000 and gold jewellery at his instance.",
+    "She left with him on 21 July 2021; phone location showed Nainital and police brought them back to Delhi on 23 July.",
+    "The trial court granted bail on 7 September 2021; the Delhi High Court cancelled it on 4 March 2022 and directed surrender within one week.",
+    "Her statement alleges threats with a pistol and that he recorded videos; these are allegations, not findings."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 50,000 and gold jewellery (as alleged by the parents; timing not stated)",
+   "outcome": "Trial court bail (7 Sept 2021) set aside by the Delhi High Court on 4 March 2022; accused directed to surrender within one week",
+   "legal_sections": "Section 376(2)(l) IPC (cited by petitioner); Sections 323, 341, 354, 506 IPC in a separate FIR No. 734/2021; Section 164 CrPC; Section 439(2) CrPC; Section 84 IPC and Mental Health Care Act, 2017 discussed on mental capacity",
+   "reporting_route": "complaint by the parents to police (DD No. 109-A) on the day she left; FIR 457/2021 registered 30 July 2021",
+   "sources": [
+    {
+     "outlet": "Indian Kanoon (Delhi High Court judgment)",
+     "url": "https://indiankanoon.org/doc/89924200/",
+     "published": "2022-03-04"
+    }
+   ]
+  },
+  {
+   "id": "c070",
+   "verdict": "verified",
+   "title": "Navi Mumbai tantrik takes Rs 4.57 lakh for black magic to bring back an estranged lover",
+   "date": "2021-07",
+   "location": "Kharghar, Navi Mumbai; accused arrested in Govind Nagar, Mira Road, Thane district, Maharashtra, India",
+   "script": "vashikaran-love-problem",
+   "channel": "posters in suburban train coaches, then phone",
+   "steps": [
+    "A depressed woman whose lover refused to marry her saw a self-proclaimed tantrik's posters in suburban train coaches in February 2021 and contacted him.",
+    "Over the phone he said he would perform black magic to bring the lover back and stop his future marriage proposals, and asked for money for rituals at a dargah in Meerut.",
+    "She paid Rs 4.57 lakh in instalments and got no result.",
+    "When she asked for a refund and said she would go to police, he warned her off and said he would kill her through a black-magic road accident.",
+    "A case was registered and he was arrested on 11 July 2021 in Mira Road."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 4.57 lakh (paid in instalments)",
+   "outcome": "Case registered; accused arrested",
+   "legal_sections": "Various Indian Penal Code sections (not specified); Maharashtra Prevention and Eradication of Human Sacrifice and other Inhuman, Evil and Aghori Practices and Black Magic Act, 2013",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Free Press Journal (PTI)",
+     "url": "https://www.freepressjournal.in/mumbai/navi-mumbai-tantrik-dupes-woman-of-rs-457-lakh-under-pretext-of-performing-black-magic-to-help-her-win-back-estranged-lover-held",
+     "published": "2021-07-13"
+    }
+   ]
+  },
+  {
+   "id": "c071",
+   "verdict": "partly",
+   "title": "Meerut doctor pays Rs 31 lakh for a 'magic lamp' sold by two men posing as a baba's associates",
+   "date": "2020-10-25",
+   "location": "Meerut, Uttar Pradesh, India",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "The doctor met two men while treating their sick mother and then visited their home regularly for about a month.",
+    "They said they knew a baba (tantrik) and persuaded him to meet the baba.",
+    "At the meeting they rubbed a lamp and presented a man in costume as a djinn; the article says he had no real power.",
+    "The doctor paid Rs 31 lakh as a down payment; the men said the lamp would sell for Rs 1.5 crore and bring wealth, fame and better health.",
+    "The doctor complained on 25 October (2020 inferred from publication); police arrested the two men and recovered a golden lamp."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 31 lakh (down payment)",
+   "outcome": "Two men arrested; golden lamp recovered; police said they had cheated several others and were searching for a linked woman",
+   "legal_sections": "not reported",
+   "reporting_route": "complaint by the doctor to Meerut police (station not named)",
+   "sources": [
+    {
+     "outlet": "Zee News Hindi",
+     "url": "https://zeenews.india.com/hindi/india/2-men-arrested-after-they-allegedly-cheated-a-city-doctor-of-%E2%82%B9-31-lakh-by-selling-him-aladdin-lamp/776824",
+     "published": "2020-10-31"
+    }
+   ]
+  },
+  {
+   "id": "c072",
+   "verdict": "verified",
+   "title": "Fake 'hidden crores' tantrik money-moving gang caught in sting, Indore",
+   "date": "2020-07-04",
+   "location": "Indore, Madhya Pradesh, India (meeting at a shop in Pigdamber; arrest at the leader's flat)",
+   "script": "other",
+   "channel": "in person",
+   "steps": [
+    "The gang targeted superstitious people who believed in black magic and tantriks.",
+    "The leader showed a video of currency bundles claimed to be hidden crores in a godown; only the top note in each bundle was real.",
+    "The gang said a tantrik could physically move the money, which they would hand over as payment for their fee.",
+    "Small magic tricks built the victim's confidence; after the fee was collected the gang disappeared.",
+    "A Bhopal-based reporter complained to the Crime Branch; a friend posed as a tantrik and the Crime Branch arrested three men at the leader's flat."
+   ],
+   "quoted_lines": [
+    "small magic tricks"
+   ],
+   "amount_lost": "Not reported for past victims; the sting was quoted a Rs 50,000 fee; victims reportedly charged Rs 50,000 to Rs 1 lakh each",
+   "outcome": "Three men arrested; counterfeit Rs 2,000 notes (15 bundles) and Rs 500 notes (230 bundles) and the car seized; questioning to identify other victims",
+   "legal_sections": "not reported",
+   "reporting_route": "a news reporter's complaint to the Crime Branch led to a police trap",
+   "sources": [
+    {
+     "outlet": "Free Press Journal",
+     "url": "https://www.freepressjournal.in/indore/indore-three-member-gang-of-tricksters-arrested",
+     "published": "2020-07-04"
+    }
+   ]
+  },
+  {
+   "id": "c073",
+   "verdict": "partly",
+   "title": "Self-styled baba's Rs 100 crore 'money doubling' dera scam, arrested in Faridabad",
+   "date": "2020-06-09",
+   "location": "Haryana, India (accused from Kurukshetra; arrested in Faridabad)",
+   "script": "money-gold-doubling",
+   "channel": "in person (dera)",
+   "steps": [
+    "He set up a religious dera in Haryana and cheated people through claimed black magic.",
+    "He promised devotees their money would be doubled quickly.",
+    "He handed out candies presented as sacred offerings (parsad).",
+    "He allegedly took about Rs 100 crore from people; 31 FIRs were registered against him.",
+    "He stayed on the run for about a year before Haryana Police arrested him in Faridabad."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About Rs 100 crore (alleged)",
+   "outcome": "Arrested; 10-day police remand ordered by a local court; no further outcome reported",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "The Tribune",
+     "url": "https://www.tribuneindia.com/news/haryana/candy-baba-accused-of-rs-100-crore-fraud-arrested-in-haryana-96764",
+     "published": "2020-06-10"
+    }
+   ]
+  },
+  {
+   "id": "c074",
+   "verdict": "partly",
+   "title": "Madhya Pradesh tantrik takes gold necklace from couple on pretext of puja",
+   "date": "2020-02-04",
+   "location": "Ujjain, Madhya Pradesh, India (victims from Indore)",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "A tantrik invited a woman and a man from Indore to Ujjain, saying a puja was needed.",
+    "In the name of the puja he took a 7-tola gold necklace worth about Rs 2.5 lakh from them.",
+    "After the cheating, two companions of the tantrik allegedly assaulted the victims.",
+    "One victim complained at Nanakheda police station; the tantrik and the two companions were arrested."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Gold necklace (7 tola), valued at about Rs 2.5 lakh",
+   "outcome": "Three accused arrested; gold necklace and the Bolero used in the incident recovered",
+   "legal_sections": "IPC 420 (cheating), IPC 406 (criminal breach of trust)",
+   "reporting_route": "police station (Nanakheda, Ujjain)",
+   "sources": [
+    {
+     "outlet": "Zee News Hindi",
+     "url": "https://zeenews.india.com/hindi/india/madhya-pradesh-chhattisgarh/nanakheda-police-arrested-tantrik-in-case-of-cheating-in-ujjain/635456",
+     "published": "2020-02-04"
+    }
+   ]
+  },
+  {
+   "id": "c075",
+   "verdict": "verified",
+   "title": "Kerala man posing as temple priest takes gold and cash from family for 'rituals'",
+   "date": "2019-11",
+   "location": "Palakkad district, Kerala, India (family met at a temple in Palani, Tamil Nadu)",
+   "script": "black-magic-removal",
+   "channel": "in person (met at temples)",
+   "steps": [
+    "He posed as an ascetic temple priest, claimed to perform pujas at Guruvayur temple, and approached devotees at temples.",
+    "He offered rituals to fix a family's troubles, telling them that burying the lady of the house's jewellery in a cloth sack in their courtyard would bring jobs and end problems.",
+    "He took Rs 10,000 for the puja and left with 2.5 sovereigns of gold, which he did not return.",
+    "After the family complained, police phoned him posing as clients needing a ritual in Palakkad, and arrested him when he came."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 10,000 cash plus 2.5 sovereigns of gold",
+   "outcome": "Arrested after a police phone sting; police said he faces similar cases in Ernakulam and Thrissur and that many victims did not complain for fear of ridicule",
+   "legal_sections": "IPC 420 (cheating), IPC 380 (theft in dwelling house)",
+   "reporting_route": "family complaint to police; arrest at Kuzhalmannam police station, Palakkad",
+   "sources": [
+    {
+     "outlet": "The News Minute",
+     "url": "https://www.thenewsminute.com/article/kerala-cops-arrest-man-who-posed-temple-priest-steal-gold-money-devotees-112180",
+     "published": "2019-11-12"
+    }
+   ]
+  },
+  {
+   "id": "c076",
+   "verdict": "verified",
+   "title": "South Florida psychic sentenced for $1.6 million curse-lifting fraud on a Houston woman",
+   "date": "2019-09-06",
+   "location": "South Florida, USA (victim in Houston, Texas)",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "She met the victim in Houston in 2007 while presenting herself as a psychic and fortune teller.",
+    "She told the victim a curse had been placed on her and her family.",
+    "She said buying items such as crystals and candles was needed to lift the curse.",
+    "She warned that refusing would bring harm to the victim and her family.",
+    "The scheme ended in 2014, when she admitted there was no curse."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "About $1.6 million from one victim",
+   "outcome": "Guilty plea; sentenced to 40 months in federal prison; ordered to pay $1.6 million restitution",
+   "legal_sections": "One count of wire fraud (guilty plea)",
+   "reporting_route": "not reported (federal prosecution)",
+   "sources": [
+    {
+     "outlet": "CBS News Miami",
+     "url": "https://www.cbsnews.com/miami/news/south-florida-woman-who-claimed-she-needed-money-to-lift-curse-sentenced-to-prison-ordered-to-pay-1-6-million-in-restitution",
+     "published": "2019-09-09"
+    }
+   ]
+  },
+  {
+   "id": "c078",
+   "verdict": "verified",
+   "title": "Psychic accused of evil-spirit scam against 67-year-old man who sold his house and car, York Region, Ontario",
+   "date": "2018-10-25",
+   "location": "York Region, Ontario, Canada (accused from Toronto)",
+   "script": "black-magic-removal",
+   "channel": "not reported",
+   "steps": [
+    "A woman presenting herself as a psychic, whom the victim had known for about four years, told him evil spirits were in his home.",
+    "She said he had to sell the house and transfer the money to her account, to be held until the spirits were removed.",
+    "He sold the house and transferred the money; he also sold his car and used credit and other sources to pay later demands.",
+    "She asked for another $6,000, saying she would burn it to ward off the spirits.",
+    "Police say the earlier funds were not returned; the investigation began in November 2017 and charges were announced in October 2018."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Over $600,000",
+   "outcome": "27-year-old woman charged; no outcome reported",
+   "legal_sections": "Pretending to practise witchcraft; fraud over $5,000; possession of property obtained by crime",
+   "reporting_route": "police investigation (York Regional Police)",
+   "sources": [
+    {
+     "outlet": "Daily Hive (Toronto)",
+     "url": "https://dailyhive.com/toronto/york-regional-police-witchcraft-scam-october-2018",
+     "published": "2018-10-25"
+    }
+   ]
+  },
+  {
+   "id": "c077",
+   "verdict": "partly",
+   "title": "Astrologer allegedly cheated client of Rs 1.5 lakh for puja to improve her mother's health, later stabbed her; bail refused",
+   "date": "2018-05-04",
+   "location": "Delhi, India",
+   "script": "disease-cure-puja",
+   "channel": "not reported (astrologer-client relationship)",
+   "steps": [
+    "A woman, the astrologer's client, alleged he harassed her for about one and a half years and cheated her of Rs 1.5 lakh, supposedly to improve her mother's health and solve her personal problems.",
+    "On 4 May 2018 he allegedly took her to a hotel in Delhi, saying a puja of about three and a half hours would be performed.",
+    "He allegedly chanted mantras for about two hours, then asked her to sit on the bed and touched her inappropriately.",
+    "He allegedly struck her neck with a knife and stabbed her again when she tried to run; she suffered seven injuries, three on the neck.",
+    "The prosecution argued he may have been attempting a human sacrifice; the Delhi High Court dismissed his bail plea on 12 August 2021."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 1.5 lakh (as alleged by the complainant)",
+   "outcome": "Bail dismissed by the Delhi High Court on 12 August 2021 because the complainant's cross-examination was pending; accused given liberty to apply again afterwards",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "LiveLaw",
+     "url": "https://www.livelaw.in/news-updates/delhi-high-court-denies-bail-to-astrologer-stabbed-woman-for-human-sacrifice-179552",
+     "published": "2021-08-14"
+    }
+   ]
+  },
+  {
+   "id": "c079",
+   "verdict": "partly",
+   "title": "Haryana-origin baba extorts woman over a son-conception remedy, Hyderabad",
+   "date": "2017-10",
+   "location": "Tolichowki and Humayunnagar, Hyderabad, Telangana, India",
+   "script": "black-magic-removal",
+   "channel": "not reported",
+   "steps": [
+    "A woman with three daughters was pressured by her husband for a son and approached a self-described black-magic practitioner.",
+    "He said an evil spirit was in her and demanded Rs 1 lakh to remove it.",
+    "He demanded another Rs 1 lakh to help her conceive a boy, and she paid without telling her family.",
+    "After three months, with no conception, he demanded more money and asked her for sex.",
+    "When she refused, he threatened to kill her daughters using his powers; she approached the DCP West Zone, who laid a trap and police arrested him."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Rs 2 lakh, plus a further unspecified amount demanded",
+   "outcome": "Arrested by Humayunnagar police; sent to judicial remand",
+   "legal_sections": "not reported",
+   "reporting_route": "complaint to DCP West Zone, who laid a trap; police booked a case",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://deccanchronicle.com/amp/nation/crime/191017/hyderabad-baba-held-for-duping-woman.html",
+     "published": "2017-10-18"
+    }
+   ]
+  },
+  {
+   "id": "c080",
+   "verdict": "partly",
+   "title": "Self-styled astrologer arrested for cheating people over personal and marital problems, LB Nagar",
+   "date": "2017-09-27",
+   "location": "LB Nagar, Hyderabad, Telangana, India",
+   "script": "other",
+   "channel": "not reported",
+   "steps": [
+    "A man who had hosted programmes on private TV channels posed as an astrologer.",
+    "Police said he claimed to solve marital problems and trapped women this way (no further detail given).",
+    "People paid him money to resolve personal problems; LB Nagar police arrested him for allegedly cheating them.",
+    "Police seized a fake pistol, 2 tolas of gold, 5 kg of silver, Rs 5 lakh cash, an Innova car and a fake CBI identity card."
+   ],
+   "quoted_lines": [],
+   "amount_lost": "Not reported (cash and valuables were seized from the accused; victims' losses not stated)",
+   "outcome": "Arrested; no further proceedings described",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/amp/nation/crime/280917/hyderabad-police-arrests-fake-baba-for-cheating.html",
+     "published": "2017-09-27"
+    }
+   ]
+  },
+  {
+   "id": "c081",
+   "verdict": "verified",
+   "title": "Man posing first as NGO worker, then as face-reading astrologer, takes Rs 20 lakh and gold from mother of epileptic child on a curse pretext, Bengaluru",
+   "date": "2017-05-23",
+   "location": "Bengaluru, Karnataka, India (Vijayanagar police)",
+   "script": "black-magic-removal",
+   "channel": "in person",
+   "steps": [
+    "In November 2016 the accused approached a 35-year-old woman as an NGO worker collecting donations for differently-abled children; she donated Rs 200 and her phone number was on the receipt.",
+    "He later presented himself as an astrologer who could read faces; her son had epilepsy and had not improved with several doctors.",
+    "He told her a curse (dosha) and a spell were on her and said he could remove it if she had sex with him; a woman was allegedly made to call her to reinforce the claim.",
+    "He allegedly drugged her with narcotic-laced cigarettes, recorded her while unconscious and used the video to say her body was cursed; police allege seven assaults.",
+    "He took about Rs 20 lakh in cash and gold jewellery, saying it was for rituals to help her son.",
+    "She realised the fraud when he switched off his phone, told her husband and filed a complaint; police arrested him and recovered Rs 14 lakh and 300 g of gold jewellery."
+   ],
+   "quoted_lines": [
+    "claimed himself to be an astrologer and sexually exploited her seven times"
+   ],
+   "amount_lost": "About Rs 20 lakh in cash and gold jewellery (gold quantity lost not reported)",
+   "outcome": "Arrest; police recovered Rs 14 lakh cash and 300 g gold jewellery; charges and court proceedings not reported",
+   "legal_sections": "not reported",
+   "reporting_route": "Complaint to police (Vijayanagar) after she told her husband; no helpline or portal named",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/nation/crime/230517/bengaluru-woman-trusts-fake-astrologer-gets-raped.html",
+     "published": "2017-05-23"
+    }
+   ]
+  },
+  {
+   "id": "c082",
+   "verdict": "verified",
+   "title": "Fake swami drugs devotees on temple pilgrimages to take cash and gold under a money-doubling promise, Hyderabad",
+   "date": "2017-02-11",
+   "location": "Hyderabad, Telangana, India (West Zone police; a family was drugged at a lodge in Panjagutta; accused from East Godavari district, Andhra Pradesh)",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "Posing as a swami, the accused performed poojas and, police said, convinced devotees of 'superhuman powers' to double cash and gold.",
+    "He told victims they had a bad omen in their families and asked them to bring valuables to rituals.",
+    "He invited victims on pilgrimages to temples and gave them drinks laced with sleeping pills during rituals.",
+    "When they became dizzy he took their gold and cash; in the Panjagutta case a family was drugged at a lodge and gold and cash taken from them.",
+    "West Zone police arrested him and recovered 1.5 kg of gold and Rs 40 lakh; he is linked to 11 fraud cases across Telangana and Andhra Pradesh."
+   ],
+   "quoted_lines": [
+    "He convinces devotees about his superhuman powers to double cash and gold.",
+    "Then he makes them take drinks laced with sleeping pills."
+   ],
+   "amount_lost": "Not reported per victim (police said several people were cheated of large sums)",
+   "outcome": "Arrest; 1.5 kg gold and Rs 40 lakh recovered; linked to 11 fraud cases; he started the business in 2011, was arrested in 2013 and released, then resumed; sent to judicial custody",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/nation/crime/110217/hyderabad-fake-swamy-held-gold-seized.html",
+     "published": "2017-02-11"
+    }
+   ]
+  },
+  {
+   "id": "c083",
+   "verdict": "partly",
+   "title": "Self-described healer advertising magical cures on TV; Madras High Court refuses to quash fraud and cheating cases",
+   "date": "2016-10-12",
+   "location": "Tamil Nadu, India (Madras High Court)",
+   "script": "disease-cure-puja",
+   "channel": "TV advertisements",
+   "steps": [
+    "The accused allegedly claimed supernatural powers to cure all ailments and advertised on several TV channels.",
+    "He allegedly claimed to have been blessed with magical powers by a goddess.",
+    "His daughter and son-in-law allegedly also took money from victims while giving treatment.",
+    "After his arrest was reported in the media, more complaints came in and the Commissioner of Police moved several cases from local stations to the Central Crime Branch.",
+    "The Madras High Court held that return of money does not erase the offence, dismissed the petition to quash the FIRs (stayed since 2010 and 2011) and directed expeditious investigation."
+   ],
+   "quoted_lines": [
+    "return of money cannot efface the offence of fraud and cheating committed by quacks"
+   ],
+   "amount_lost": "not reported (described only as large sums)",
+   "outcome": "Petition to quash dismissed by a single-judge bench; investigation to proceed expeditiously; several cases transferred to the Central Crime Branch",
+   "legal_sections": "not reported (article describes the offences as fraud and cheating; court relied on State of Haryana v. Bhajan Lal)",
+   "reporting_route": "not reported (complaints followed media reports of the arrest)",
+   "sources": [
+    {
+     "outlet": "LiveLaw",
+     "url": "https://www.livelaw.in/quacks-cant-escape-legal-tangle-cheating-misleading-people-madras-hc",
+     "published": "2016-10-12"
+    }
+   ]
+  },
+  {
+   "id": "c084",
+   "verdict": "partly",
+   "title": "Fake tantrik fakes money-doubling demos, Rs 1.33 crore lost to a businessman, Hyderabad",
+   "date": "2016-06-18",
+   "location": "Hyderabad, Telangana, India (Banjara Hills police); first meeting at a club in Bengaluru",
+   "script": "money-gold-doubling",
+   "channel": "in person",
+   "steps": [
+    "A friend introduced a businessman to a self-styled tantrik at a club in Bengaluru, where he was said to have 'magically' doubled Rs 2 lakh.",
+    "A demo puja was held at the businessman's house; police say small sums were shown appearing from nowhere, funded by Rs 1.7 lakh borrowed from friends and Rs 70,000 from the introducing friend.",
+    "The tantrik persuaded the businessman to hand over larger sums for doubling; the businessman lost Rs 1.33 crore.",
+    "Victims were drugged with a mixture of datura and white sesame seeds and the tantrik fled with the money.",
+    "Police arrested the tantrik and two helpers and seized Rs 1,19,50,000, to be deposited in court; income-tax officials sought the cash; the introducing friend is absconding."
+   ],
+   "quoted_lines": [
+    "after drugging them with a mixture of datura and white sesame seeds"
+   ],
+   "amount_lost": "Rs 1.33 crore",
+   "outcome": "Arrest of the tantrik and two helpers; Rs 1,19,50,000 seized; income-tax department sought possession claiming tax owed; introducing friend absconding",
+   "legal_sections": "not reported",
+   "reporting_route": "not reported",
+   "sources": [
+    {
+     "outlet": "Deccan Chronicle",
+     "url": "https://www.deccanchronicle.com/nation/crime/180616/hyderabad-friend-introduced-fake-tantrik-to-businessman.html",
+     "published": "2016-06-18"
+    }
+   ]
+  }
+ ]
+}
