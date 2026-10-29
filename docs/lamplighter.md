@@ -1,7 +1,7 @@
 # Lamplighter: a Grok Bot against astrology tricks and scams
 
 Date: 2026-10-29
-Status: spec, not built. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. The open decisions are in section 9.
+Status: built 2026-10-29 as `bots/lamplighter/` (instructions and the `lamplighter-patterns` skill), with layer 1 evals in `evals/lamplighter/`; not yet set up in Grok Bot. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. The open decisions are in section 9.
 
 The `cold-read-check` files this spec cites (`SKILL.md`, `references/techniques.md`, its evals) arrive on main with day 6 (#15); until then they exist only in the staging copy.
 
@@ -157,8 +157,18 @@ A line that does two separate things ("keep the video on and don't tell your fam
 | task or part-time job, pay to unlock earnings | small tasks and small payouts make it feel real; then earnings are locked behind a fee, and each fee makes the next one easier to pay | I4C and RBI warn about job fraud |
 | guaranteed returns, tips groups | a group of members cheering their profits makes the returns look normal; "guaranteed" removes the risk you'd usually weigh | SEBI (incl. PR 65/2026, 22 Oct 2026, on invitation-only WhatsApp tip groups); SEC / Investor.gov |
 | government agency asking for gift cards, crypto, or wire | official authority plus a threat makes you pay fast, in a form that can't be traced or reversed | FTC: government agencies never call, text, or message to ask for money |
+| crypto platform from an online contact | trust built over weeks makes the platform feel safe; the profits on screen keep you depositing; withdrawal needs a "tax" or fee | FBI IC3, I-100322-PSA |
+| court or jury-duty fine by phone | as for a government agency | FTC: courts never ask for immediate payment over the phone |
+| gift cards as payment, from anyone | reading out a card's numbers feels like paying; once read, the money is gone | FTC Data Spotlight: when someone demands to be paid with a gift card, that's a scam |
+| tech support pop-up or call, remote access | the alarm makes handing over control feel like the fix; with remote access, the screen can show you anything | FBI IC3, I-032818-PSA |
+| prize or lottery with a fee | the win feels real, so a small fee feels like nothing next to it | FTC: if there's a charge to get your prize, it's a scam |
+| utility cut-off today | the deadline and one demanded payment method leave no time to call the utility | FTC: legitimate companies don't demand one specific payment method |
+| family emergency call, voice possibly cloned | a loved one's voice in trouble stops you from checking; secrecy keeps you from calling them | FBI IC3 PSA on generative AI in fraud |
+| recovery offer after a loss | the hope of getting money back makes one more fee feel worth it | FBI IC3, I-062424-PSA and I-041825-PSA: law enforcement never charges a fee |
+| intimate images, then payment demands | shame keeps you from telling anyone; paying feels like it ends it | Singapore Police Force: the demands often continue after payment |
+| parcel with drugs or a seized package | a crime in your name makes you want to clear it at once; the "investigation" moves you to a call you can't leave | MHA alert, PIB 14 May 2024 (the digital-arrest alert) |
 
-**Case libraries.** `docs/lamplighter-digital-cases.md` (and `.json`) holds 136 documented call and digital scams across 28 types and countries, plus 38 official warnings that are candidates for this table; `docs/lamplighter-cases.md` holds the remedy and reading scams. Both were built 2026-10-29 and feed the scripts above and the eval inputs (section 8).
+**Case libraries.** `docs/lamplighter-digital-cases.md` (and `.json`) holds 136 documented call and digital scams across 28 types and countries, plus 38 official warnings; the ten rows from "crypto platform" down were added at build time (2026-10-29): nine from those warnings, each a government body's own, read through the library's verifier and not by me, and the parcel row from the MHA alert; `docs/lamplighter-cases.md` holds the remedy and reading scams. Both were built 2026-10-29 and feed the scripts above and the eval inputs (section 8).
 
 **Reporting lines follow scripts, not moves.** A reporting line (1930, cybercrime.gov.in, ReportFraud.ftc.gov, Report Fraud) appears in only two places: the money-gate card, and one line after an audit whose words match a published script above. No other audit gets one, however many moves it finds, and a reading never does: astrology isn't illegal in India, so a reading alone gives the user nothing to report. Where a paid remedy crosses into a reportable act is decision 3. Owner decision, 2026-10-29.
 
@@ -210,6 +220,8 @@ The full plan is in #25's first comment; its personal-message cases are dropped 
 | 1. proxy harness | xAI Responses API, the shipped instructions and skill as the system prompt, a plain-assistant baseline arm and a skill-missing arm | the text holds the rules on a Grok model |
 | 2. scripted multi-turn | same API, fixed user turns, graded every turn | pushes and drift (refuses on turn one, gives in on turn eight) |
 | 3. manual acceptance | an imported copy of the real template | auto-memory across chats, skill loading, truncation, screenshots, `@bot` |
+
+Built: 14 cases (the eight above plus six scored ones) and `scripts/run-lamplighter-evals.mjs`, which runs layer 1 through the signed-in `grok` CLI instead of the Responses API, so no API key is needed; the model is a Grok coding model, not the Bot's. Layers 2 and 3 aren't built.
 
 Only graders that read the reply carry over from `cold-read-check`; the matchmaker graders `written`, `skill-fired`, and `no-memory-write` check files and tool calls that Grok doesn't expose.
 
