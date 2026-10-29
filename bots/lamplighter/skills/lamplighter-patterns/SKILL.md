@@ -39,7 +39,7 @@ Write the sections in this order, with these headings in the user's language. No
 
 - <three to six lines>
 
-<only if a published script matches: one line naming it, then its reporting line>
+<only if a published script matches: "This might be a scam." and the reasoning, then the reporting line for the user's country, if it has one>
 ```
 
 The rows above are illustrative. Quote each claim in the words' own language, cut to its core, under about twelve words. Start the claim cell with the line's timestamp when the words have them; merge repeats into one row with every time it was said (`03:20, 06:45`).
@@ -125,19 +125,21 @@ Three to six lines, one each, at most 15 words: what to do during or after any w
 
 ## published scam scripts
 
-When the words match a script below (an official-sounding contact, a money offer, or a threat or request from someone online), add one line after the defenses: "These words match the script that <who warns> warns about." Then one reporting line for the user's country. Say nothing more about the speaker. A reading never gets this line, with or without a paid remedy: no remedy script is listed yet.
+When the words match a script below (an official-sounding contact, a money offer, or a threat or request from someone online), add a short paragraph after the defenses. It starts with "This might be a scam.", then gives the reasoning in one or two sentences: the script the words match and who warns about it, and the two or three moves from the table that make up that script. For example: "This might be a scam. The words match the digital-arrest script that India's Ministry of Home Affairs warns about: an unverified authority, a threat, stay on the line, and a payment to a personal account." Then one reporting line for the user's country, if it has one below.
+
+Always "might be": never "this is a scam", "this is fake", or "they are scammers". The words match a pattern; the bot can't know who is on the other end. A reading never gets this paragraph, with or without a paid remedy: no remedy script is listed yet.
 
 | script | how it plays | who warns |
 |---|---|---|
 | digital arrest: video-call "police", "CBI", "ED", or a judge | fear of arrest stops you from thinking; staying on video keeps anyone from telling you it's fake; the "verification" payment is the goal | India's Ministry of Home Affairs and I4C: no agency arrests anyone on a video call |
 | KYC update or SIM block | the deadline and the fear of losing your account or number make sharing a code feel like the safe choice | RBI: genuine entities never ask for an OTP, CVV, PIN, or password; DoT: it doesn't make disconnection calls |
 | task or part-time job, pay to unlock earnings | small tasks and small payouts make it feel real; then earnings are locked behind a fee, and each fee makes the next easier to pay | I4C and RBI; the FBI: never send money to an employer |
-| guaranteed returns, stock-tip groups | members cheering their profits make the returns look normal; "guaranteed" removes the risk you'd usually weigh | SEBI; the SEC; ASIC: assume a stock tip by WhatsApp or Telegram is a scam |
+| guaranteed returns, stock-tip groups | members cheering their profits make the returns look normal; "guaranteed" removes the risk you'd usually weigh | SEBI; the SEC; ASIC: treat any stock tip by WhatsApp or Telegram as a warning sign |
 | crypto platform from an online contact | trust built over weeks makes the platform feel safe; the profits on screen keep you depositing; withdrawal needs a "tax" or fee | the FBI (IC3) |
 | tax agency, court, or jury-duty fine by phone | official authority plus a threat makes you pay fast, in a form that can't be traced or reversed | the FTC: government agencies and courts never ask for payment by phone; the IRS, CRA, and HMRC say the same |
-| gift cards as payment | reading out a card's numbers feels like paying; once read, the money is gone | the FTC: when someone demands to be paid with a gift card, that's a scam |
+| gift cards as payment | reading out a card's numbers feels like paying; once read, the money is gone | the FTC: a demand to be paid by gift card is the warning sign |
 | tech support pop-up or call, remote access | the alarm makes handing over control feel like the fix; with remote access, the screen can show you anything | the FBI (IC3): don't give remote access to anyone you didn't contact yourself |
-| prize or lottery with a fee | the win feels real, so a small fee feels like nothing next to it | the FTC: if there's a charge to get your prize, it's a scam |
+| prize or lottery with a fee | the win feels real, so a small fee feels like nothing next to it | the FTC: a charge to get your prize is the warning sign |
 | utility cut-off today | the deadline and one demanded payment method leave no time to call the utility | the FTC: real companies don't demand one specific payment method |
 | family emergency call, voice possibly cloned | a loved one's voice in trouble stops you from checking; secrecy keeps you from calling them | the FBI (IC3): criminals clone voices from short clips |
 | recovery offer after a loss | the hope of getting money back makes one more fee feel worth it | the FBI (IC3): law enforcement never charges a fee to recover funds |
@@ -162,9 +164,8 @@ Reporting lines, by the user's country (ask once if it's unclear; the words' lan
 - India: 1930 or cybercrime.gov.in
 - US: ReportFraud.ftc.gov; for online fraud also ic3.gov
 - UK: 159 to reach your bank, then Report Fraud at reportfraud.police.uk or 0300 123 2040
-- elsewhere: your bank first, then your national police's fraud line
 
-If money already left, the line starts with "call your bank first".
+Anywhere else, there is no reporting line in this version: give none, not even one you know, and if money already left, say only "call your bank first". If money already left in India, the US, or the UK, the line starts with "call your bank first".
 
 ## things that look like a script but aren't
 

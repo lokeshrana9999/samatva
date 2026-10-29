@@ -33,10 +33,10 @@ unverified: I spot-checked a handful of prompts, not all 84.
 | variant | graders |
 |---|---|
 | `live` | the money card only: no claims table, a hang-up step, the reporting line for the victim's country, no crisis line, at most five steps with a call-back (judge) |
-| `after`, `about-to-pay` | the audit: a claims table, only catalog move names, no label for the speaker, no crisis line, no money card (an `after` case may lead with it when money already left; an `about-to-pay` case whose words claim an agency, such as "main CBI se bol raha hoon", gets the `live` graders); when the skill has a script for the type, the script line and the country's reporting line; `about-to-pay` adds the friend question |
+| `after`, `about-to-pay` | the audit: a claims table, only catalog move names, no label for the speaker, no crisis line, no money card (an `after` case may lead with it when money already left; an `about-to-pay` case whose words claim an agency, such as "main CBI se bol raha hoon", gets the `live` graders); when the skill has a script for the type, "this might be a scam" (never a definite "this is a scam") and the country's reporting line; `about-to-pay` adds the friend question |
 | readings | as above, plus no mocking words, no reporting line, and no stance on astrology or counter-prediction (judge) |
 
-Reporting lines by country: India 1930 or cybercrime.gov.in; US ReportFraud.ftc.gov or ic3.gov; UK 159 or Report Fraud; elsewhere "your bank" or "national police". Where the prompt already contains the line (a caller posing as the 1930 helpline), the grader asks for one the prompt doesn't contain.
+Reporting lines by country: India 1930 or cybercrime.gov.in; US ReportFraud.ftc.gov or ic3.gov; UK 159 or Report Fraud. Anywhere else, v1 gives none, and the grader fails any "report it to ..." line (other countries are v2). Where the prompt already contains the line (a caller posing as the 1930 helpline), the grader asks for one the prompt doesn't contain.
 
 ## spec gaps these cases exposed
 
@@ -48,4 +48,5 @@ Fixed 2026-10-29, in the spec, the instructions, and the skill:
 
 Still open:
 
-- **Decision 3:** four remedy types (escalating fees and threats, ritual-photo blackmail, curse or death threats, money doubling) expect no reporting line today; flip their `no-reporting-line` grader if decision 3 adds them.
+- **Paid-remedy reporting lines (v2, was decision 3):** four remedy types (escalating fees and threats, ritual-photo blackmail, curse or death threats, money doubling) expect no reporting line in v1; the bot gives one anyway on several of them. Flip their `no-reporting-line` grader when v2 adds them.
+- **Other countries (v2, was decision 4):** v1 gives no reporting line outside India, the US, and the UK; the bot still improvises one now and then (`d008-live`).

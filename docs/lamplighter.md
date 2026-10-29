@@ -1,7 +1,7 @@
 # Lamplighter: a Grok Bot against astrology tricks and scams
 
 Date: 2026-10-29
-Status: built 2026-10-29 as `bots/lamplighter/` (instructions and the `lamplighter-patterns` skill), with layer 1 evals in `evals/lamplighter/`; not yet set up in Grok Bot. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. The open decisions are in section 9.
+Status: v1 built 2026-10-29 as `bots/lamplighter/` (instructions and the `lamplighter-patterns` skill), with layer 1 evals in `evals/lamplighter/`; not yet set up in Grok Bot. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. Decisions and the v2 reporting-line work are in section 9.
 
 The `cold-read-check` files this spec cites (`SKILL.md`, `references/techniques.md`, its evals) arrive on main with day 6 (#15); until then they exist only in the staging copy.
 
@@ -150,7 +150,7 @@ A line that does two separate things ("keep the video on and don't tell your fam
 
 **Names describe what the words do, never intent.** "Unverified authority", not "impersonation"; "praise before the ask" says nothing about whether the praise is sincere.
 
-**Published scam scripts.** When an official-sounding contact or a money offer matches a script a public body warns about, the bot says so in one line: "the words match the script that <body> warns about". This describes the script, not a person. Whether it may go further and say "this is a scam" is decision 2.
+**Published scam scripts.** When an official-sounding contact or a money offer matches a script a public body warns about, the audit ends with "This might be a scam." and one or two sentences of reasoning: the script, who warns about it, and the moves that make it up (decision 2, settled 2026-10-29). It describes the words, never a person: never "this is a scam", "fake", or "scammer".
 
 | script | how it plays | who warns |
 |---|---|---|
@@ -185,7 +185,7 @@ A line that does two separate things ("keep the video on and don't tell your fam
 
 **Case libraries.** `docs/lamplighter-digital-cases.md` (and `.json`) holds 136 documented call and digital scams across 28 types and countries, plus 38 official warnings; the ten rows from "crypto platform" down were added at build time (2026-10-29): nine from those warnings, each a government body's own, read through the library's verifier and not by me, and the parcel row from the MHA alert; `docs/lamplighter-cases.md` holds the remedy and reading scams. Both were built 2026-10-29 and feed the scripts above and the eval inputs (section 8).
 
-**Reporting lines follow scripts, not moves.** A reporting line (1930, cybercrime.gov.in, ReportFraud.ftc.gov, Report Fraud) appears in only two places: the money-gate card, and one line after an audit whose words match a published script above. No other audit gets one, however many moves it finds, and a reading never does: astrology isn't illegal in India, so a reading alone gives the user nothing to report. Where a paid remedy crosses into a reportable act is decision 3. Owner decision, 2026-10-29.
+**Reporting lines follow scripts, not moves.** A reporting line (1930, cybercrime.gov.in, ReportFraud.ftc.gov, Report Fraud) appears in only two places: the money-gate card, and one line after an audit whose words match a published script above. No other audit gets one, however many moves it finds, and a reading never does: astrology isn't illegal in India, so a reading alone gives the user nothing to report. Where a paid remedy crosses into a reportable act, and lines for countries other than India, the US, and the UK, are v2 (section 9). Owner decision, 2026-10-29.
 
 unverified: the "how it plays" lines are drawn from the advisories as summarised above; I haven't checked each one against the advisory's own wording.
 
@@ -197,12 +197,12 @@ unverified: the "how it plays" lines are drawn from the advisories as summarised
 
 | rule | status | why |
 |---|---|---|
-| name the move, never the person | kept | applies to the reader and the caller too: "unverified authority", not "fraudster" (decision 2 may change this for scams) |
+| name the move, never the person | kept | applies to the reader and the caller too: "unverified authority", not "fraudster"; a matched script says "this might be a scam", about the words, never the speaker |
 | no verdict on a third party | kept | a reading often names a friend or a match |
 | no counter-prediction, don't mock the user, don't evaluate the user | kept | anti-astrology is the marketing, not the chat; the bot never says whether astrology works |
 | risk gate reads only the user's own situation | widened | `SKILL.md:51` applied to scams, so a caller's threat never fires it |
 | two-tier risk gate | changed | departs from the shared block: control signs get a helpline and the audit continues; danger now still stops everything |
-| scam scripts may be named | new | a script is published text, not a judgment of a person |
+| scam scripts may be named | new | a script is published text, not a judgment of a person; "this might be a scam" plus the reasoning, never "this is a scam" |
 | money gate gives direct instructions | new | the only place the bot advises, and only for live official-sounding contact; "call the number you look up yourself" is safe even if the call is real |
 | flooded check reads the user's own words only | kept | pasted scam texts look flooded by design |
 | voice mirroring | removed | owner decision 2026-10-28; answers in the user's language, plain sentence case |
@@ -261,36 +261,42 @@ Scored cases (the full list is in the eval plan): the matchmaker call, a paid re
 
 ### v1: readings and scams
 
-Readings and predictions, official-sounding contact, and scam money offers. Personal messages, public posts, and non-scam pitches are out (owner decision, 2026-10-29, replacing the earlier five-kinds plan).
+Readings and predictions, official-sounding contact, and scam money offers. Personal messages, public posts, and non-scam pitches are out (owner decision, 2026-10-29, replacing the earlier five-kinds plan). Reporting lines in v1: India, the US, and the UK only, and only on the money-gate card and after a published scam script; never after a reading.
 
-### open decisions
+### decisions
 
 1. Settled: astrology framing is marketing only; in the chat the bot never takes a stance on astrology (section 2).
-2. **Whether the bot may say "this is a scam".** Today it says "the words match the script that <body> warns about". The anti-scam goal pulls toward a direct "this is a scam" when a published script matches. Status: open.
-3. **Where a paid remedy becomes reportable.** A reading that ends in "pay for a puja or the danger stays" is legal in most of India, so by default it gets the audit and no reporting line. Some remedy offers do become reportable acts. The decision is which markers move a paid remedy from "reading" to "scam script", and so earn a reporting line. Status: open, owner to choose from the researched markers below.
+2. **Settled 2026-10-29 (owner): "this might be a scam", then the reasoning.** When a published script matches, the audit ends with "This might be a scam." and one or two sentences naming the script, who warns about it, and the moves that make it up. Never "this is a scam", "fake", or "scammer": the words match a pattern, and the bot can't know who is on the other end.
+3. **Moved to v2 (owner, 2026-10-29): where a paid remedy becomes reportable.** In v1 a reading, paid remedy included, gets the audit and no reporting line. The research and the case library for v2 are below.
+4. **Moved to v2 (owner, 2026-10-29): reporting lines outside India, the US, and the UK.** In v1 a user elsewhere gets no reporting line, only "call your bank first" when money already left.
 
-   Research, 2026-10-29 (two Sonnet agents; spot-checked: the Outlook Money report of the I4C post, the Telangana Today report of the Cyberabad alert, and the Gujarat Bill text):
+### v2: reporting lines
 
-   | marker | basis | reporting route | strength |
-   |---|---|---|---|
-   | online "astrologer" remedy: ad or video, cheap first consult, a predicted misfortune, a paid remedy by link or app | I4C on X (@Cyberdost), 11 Nov 2025: "Posing as 'online astrologers' on social media, cybercriminals are duping people in the name of Jyotish & astrology remedies" | cybercrime.gov.in, "Report & Check Suspect" (the post doesn't name 1930) | a published script; the I4C post was read through Outlook Money's report, not on X |
-   | small fees first, then larger sums, then threats of harm to family or of leaking photos | Cyberabad Police alert, May 2026 (Telangana Today, updated 28 May 2026); BNS 308 (extortion) and 351 (criminal intimidation) | 1930 and cybercrime.gov.in, named in the alert | a published script, police statement via news |
-   | photos or video taken "for the ritual", then blackmail | Ahmedabad Cyber Crime Branch, May 2026 (news reports only) | 1930 and cybercrime.gov.in by the general rule; the reports don't name them | news only |
-   | money or gold "doubled", or returned after a ritual | BNS 318 (cheating); Delhi and Ujjain news cases | police | law plus cases; no official advisory found |
-   | fear for not following the advice ("evil consequences"), miracles shown to earn money | Gujarat Act 8 of 2024, Schedule items 2 and 5 (Bill text read); Maharashtra 2013 and Karnataka 2017 Acts (unofficial mirrors only) | police, in those states only | state law; each Act exempts "advice by Joshi-Jyotishi... and other astrologers" (Gujarat Bill s. 12(1)(g)), so a reading stays outside |
-   | a listed disease cured for a fee | Drugs and Magic Remedies Act 1954, s. 2(c) and s. 5 | police (cognizable) | weak: the Act covers advertisements, not a one-to-one offer; the Schedule is a closed list |
+**Paid remedies (was decision 3).** A reading that ends in "pay for a puja or the danger stays" is legal in most of India. Some remedy offers do become reportable acts; v2 decides which markers move a paid remedy from "reading" to "scam script", and so earn a reporting line. The Haiku 5.5 eval runs of 2026-10-29 already show the bot reaching for a reporting line on ritual-photo blackmail and curse threats (`c008`, `c041`, `c048` in `evals/lamplighter/real/`), whose graders carry `pending: decision-3`.
 
-   Case library: `docs/lamplighter-cases.md` (and `.json` for evals) holds 84 documented remedy and reading scams, 52 verified and 32 partly verified, built 2026-10-29. Of those, 67 victims went to a police station and only 4 used 1930 or the cyber portal; 45 cases started in person or through an introduction, 23 online.
+Research, 2026-10-29 (two Sonnet agents; spot-checked: the Outlook Money report of the I4C post, the Telangana Today report of the Cyberabad alert, and the Gujarat Bill text):
 
-   Don't hold: a reading alone; a prediction with no payment demand; the consumer route. Only one consumer order against an astrology firm was found (Chandigarh, 2016, a wrong kundli report). The National Consumer Helpline forwards complaints to partner companies, and the Consumer Affairs Department said in August 2026 that it has no guidelines for online astrology platforms (Telangana Today, unverified by me).
-4. **Reporting lines outside India, US, UK.** Verified candidates: Canada, the Canadian Anti-Fraud Centre at reportcyberandfraud.canada.ca (its 1-888-495-8501 line said "currently unavailable" on 2026-10-29, so URL first); Australia, Scamwatch at scamwatch.gov.au (online form only). The EU has no single fraud line; reporting is national, so "your national police" is the honest line there. Status: open.
+| marker | basis | reporting route | strength |
+|---|---|---|---|
+| online "astrologer" remedy: ad or video, cheap first consult, a predicted misfortune, a paid remedy by link or app | I4C on X (@Cyberdost), 11 Nov 2025: "Posing as 'online astrologers' on social media, cybercriminals are duping people in the name of Jyotish & astrology remedies" | cybercrime.gov.in, "Report & Check Suspect" (the post doesn't name 1930) | a published script; the I4C post was read through Outlook Money's report, not on X |
+| small fees first, then larger sums, then threats of harm to family or of leaking photos | Cyberabad Police alert, May 2026 (Telangana Today, updated 28 May 2026); BNS 308 (extortion) and 351 (criminal intimidation) | 1930 and cybercrime.gov.in, named in the alert | a published script, police statement via news |
+| photos or video taken "for the ritual", then blackmail | Ahmedabad Cyber Crime Branch, May 2026 (news reports only) | 1930 and cybercrime.gov.in by the general rule; the reports don't name them | news only |
+| money or gold "doubled", or returned after a ritual | BNS 318 (cheating); Delhi and Ujjain news cases | police | law plus cases; no official advisory found |
+| fear for not following the advice ("evil consequences"), miracles shown to earn money | Gujarat Act 8 of 2024, Schedule items 2 and 5 (Bill text read); Maharashtra 2013 and Karnataka 2017 Acts (unofficial mirrors only) | police, in those states only | state law; each Act exempts "advice by Joshi-Jyotishi... and other astrologers" (Gujarat Bill s. 12(1)(g)), so a reading stays outside |
+| a listed disease cured for a fee | Drugs and Magic Remedies Act 1954, s. 2(c) and s. 5 | police (cognizable) | weak: the Act covers advertisements, not a one-to-one offer; the Schedule is a closed list |
 
-Settled 2026-10-29: two-tier risk gate; the money gate also covers a live caller saying someone close is arrested, hurt, or held; a threat inside pasted words is always a claim, never a risk signal; 27 published scripts (13 added from the real-case evals); keep "vague promise" (a move doesn't need an academic source); name stays Lamplighter; public goal is anti-astrology and anti-scam, in marketing only; readings and scams only; no forget line; every audit says how the moves work on the user; reporting lines follow published scripts only.
+Case library: `docs/lamplighter-cases.md` (and `.json` for evals) holds 84 documented remedy and reading scams, 52 verified and 32 partly verified, built 2026-10-29. Of those, 67 victims went to a police station and only 4 used 1930 or the cyber portal; 45 cases started in person or through an introduction, 23 online.
+
+Don't hold: a reading alone; a prediction with no payment demand; the consumer route. Only one consumer order against an astrology firm was found (Chandigarh, 2016, a wrong kundli report). The National Consumer Helpline forwards complaints to partner companies, and the Consumer Affairs Department said in August 2026 that it has no guidelines for online astrology platforms (Telangana Today, unverified by me).
+
+**Other countries (was decision 4).** Verified candidates: Canada, the Canadian Anti-Fraud Centre at reportcyberandfraud.canada.ca (its 1-888-495-8501 line said "currently unavailable" on 2026-10-29, so URL first); Australia, Scamwatch at scamwatch.gov.au (online form only). The EU has no single fraud line; reporting is national. The Haiku runs show the bot naming Scamwatch, ReportCyber, and Latvia's State Police unprompted, so v1's "none" has to be held by the instructions.
+
+Settled 2026-10-29: two-tier risk gate; the money gate also covers a live caller saying someone close is arrested, hurt, or held; a threat inside pasted words is always a claim, never a risk signal; 27 published scripts (13 added from the real-case evals); "this might be a scam", then the reasoning; reporting lines in v1 for India, the US, and the UK only; keep "vague promise" (a move doesn't need an academic source); name stays Lamplighter; public goal is anti-astrology and anti-scam, in marketing only; readings and scams only; no forget line; every audit says how the moves work on the user; reporting lines follow published scripts only.
 
 ## 10. risks
 
 - **Mocking believers:** anti-astrology marketing pulls the bot toward sneering at the user's belief, and a believer who feels mocked stops reading the audit. The believer case is zero tolerance with 100 runs.
-- **Scam-script false positives:** a real bank call named as a script. Mitigation: the money-gate card and the defenses both say "call the number you look up yourself", which is safe either way, and the real-bank case is zero tolerance. Decision 2 raises this risk if the bot says "this is a scam".
+- **Scam-script false positives:** a real bank call named as a script. Mitigation: the money-gate card and the defenses both say "call the number you look up yourself", which is safe either way, and the real-bank case is zero tolerance. "This might be a scam" raises this risk a little over naming the script alone; the real-bank case checks that no script, and so no "might be a scam", is named.
 - **Memory:** the Bot saves on its own, so a friend named in a reading can survive every new chat, and the user may never see that it was saved. With no forget line, the user's only way out is typing "forget X" unprompted. Smaller than before the narrowing: the third parties are now mostly readers and callers.
 - **Personal use, untested:** people will paste a partner's or parent's message anyway. The rules (name the move, no verdict, the risk gate) still hold, but no case tests that path.
 - **Wider scope, weaker audits:** 28 moves are harder to apply consistently than 10. The precedence rules and the closed-list grader exist for this, and the matchmaker case must still pass.

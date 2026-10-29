@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: 'match(es)? the script'
+pattern: 'might be a scam'
 flags: i
 match: contains
 ---
