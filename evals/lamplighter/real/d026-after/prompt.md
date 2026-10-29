@@ -7,7 +7,7 @@ type: chinese-police-embassy
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'foreign police or embassy'
 ---
 
 I'm in Australia and my parents live in China. I got this email a while ago saying it was from the Chinese police, and I didn't reply. Was this one of those scams?

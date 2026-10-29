@@ -7,7 +7,7 @@ type: fake-customer-care
 kind: official
 variant: after
 country: India
-script: 'none'
+script: 'customer care number found by search'
 ---
 
 I'm in India. I had a problem with a food delivery order, searched online for the app's customer care number and called it. They offered a small refund, then called back saying it could be instant on Google Pay if I installed an app. After that my whole bank balance was gone. Was this a scam?

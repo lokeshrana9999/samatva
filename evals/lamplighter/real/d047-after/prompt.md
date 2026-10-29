@@ -7,7 +7,7 @@ type: refund-overpayment
 kind: official
 variant: after
 country: India
-script: 'none'
+script: 'refund or overpayment'
 ---
 
 I'm in India. My sister couldn't get a flight refund of about ₹3,200, so she called an airline helpline she found online and added me to the call. Within minutes of following the man's steps, ₹1.3 lakh went out of my account in two debits. Was this a scam?

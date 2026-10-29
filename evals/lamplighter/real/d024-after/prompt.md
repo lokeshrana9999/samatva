@@ -7,7 +7,7 @@ type: chinese-police-embassy
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'foreign police or embassy'
 ---
 
 I'm living in Canada, originally from China. Last week I got an automated call, and then my parents back home got a call too. Nobody has paid anything. Can you tell me if this is a known scam?

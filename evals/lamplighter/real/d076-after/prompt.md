@@ -7,7 +7,7 @@ type: fake-customer-care
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'customer care number found by search'
 ---
 
 I'm in Canada. I was stuck setting up my new Roku, asked my phone's voice search for Roku support, called the number it gave me, and paid a $100 activation fee. Now I'm not sure that was really Roku. Can you check?

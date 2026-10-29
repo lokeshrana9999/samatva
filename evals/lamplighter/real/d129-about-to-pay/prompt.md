@@ -7,7 +7,7 @@ type: charity-disaster
 kind: offer
 variant: about-to-pay
 country: US
-script: 'none'
+script: 'charity after a disaster'
 ---
 
 I'm in the US. A member of a local group I follow posted a fundraiser on social media for Hurricane Helene relief. I'm about to send $250 through PayPal. Should I send it?

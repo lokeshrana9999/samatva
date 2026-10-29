@@ -7,7 +7,7 @@ type: bank-safe-account
 kind: official
 variant: after
 country: US
-script: 'none'
+script: 'safe account'
 ---
 
 I'm in the US. Over the past week I had calls with three different people about a hacker in my bank account. I stopped answering and nobody has come to the house. Was this one of those scams?

@@ -7,7 +7,7 @@ type: rental-booking-ticket
 kind: offer
 variant: about-to-pay
 country: India
-script: 'none'
+script: 'rental, booking, or tickets'
 ---
 
 Main India mein hoon aur Goa trip ke liye ek bade luxury hotel chain ki website se room book kar raha hoon. Website pe ek number tha, maine call kiya, aur ab woh poora amount UPI se maang rahe hain. Kya main pay kar doon?

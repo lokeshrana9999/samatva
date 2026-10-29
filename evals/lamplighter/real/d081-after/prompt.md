@@ -7,7 +7,7 @@ type: deepfake-ceo-bec
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'urgent transfer from a boss'
 ---
 
 I'm in Hong Kong. Last week I joined a video conference with our CFO and several other senior people from the company, and afterwards I made the transfers they asked for, about HK$40 million in all. Something now feels off and I'd like it checked.

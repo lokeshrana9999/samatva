@@ -7,7 +7,7 @@ type: marketplace-buyer-seller
 kind: offer
 variant: about-to-pay
 country: India
-script: 'none'
+script: 'marketplace'
 ---
 
 I'm in Chennai, India. I found an Activa scooter on OLX and the seller says he is an army officer being transferred to New Delhi. He wants ₹30,000 on Google Pay before he sends it. Should I pay?

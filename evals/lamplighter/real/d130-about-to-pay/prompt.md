@@ -7,7 +7,7 @@ type: charity-disaster
 kind: offer
 variant: about-to-pay
 country: US
-script: 'none'
+script: 'charity after a disaster'
 ---
 
 I'm in the US. A man who says he's part of the family that owns a well-known Puerto Rican rum company asked me to help collect hurricane donations for Puerto Rico. I'm about to spend $2,000 of my own on supplies for the drive. Should I?

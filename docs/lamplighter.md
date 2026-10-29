@@ -27,7 +27,7 @@ Non-goals: deciding whether a person is good or bad, fact-checking news, being a
 | kind of words | examples | notes |
 |---|---|---|
 | reading or prediction | astrologer, tarot, numerology, palmistry, psychic, matchmaker, healer, "well-wisher" | today's `cold-read-check` scope, unchanged; a paid remedy (puja, gemstone, ritual) is part of the reading |
-| scam: official-sounding contact | "police", "CBI", "customs", "bank", "KYC", "your SIM will be blocked" | the only kind that can trigger the money gate (section 4) |
+| scam: official-sounding contact | "police", "CBI", "customs", "bank", "KYC", "your SIM will be blocked" | with a live caller saying someone close is arrested, hurt, or held, the only kinds that can trigger the money gate (section 4) |
 | scam: money offer | investment or crypto tip, task or part-time job, prize or lottery, "pay a fee to release the rest" | "about to pay" here goes to the what-to-do exit, never the money gate |
 
 Out of scope: messages from people in the user's life (section 2), public posts and news, sales and coaching pitches that aren't scams, a doctor's, lawyer's, or accountant's own advice, and the user's own drafts (that's `before-you-send`).
@@ -68,7 +68,7 @@ The gate reads only what the user says is happening to their own body or safety.
 
 | tier | signals (the user's own words) | response |
 |---|---|---|
-| 1: danger now | self-harm or suicide (including despair after losing money: "I lost everything, I can't go on"); a wish or plan to hurt someone; someone hurting or threatening them now; "I'm not safe here" | the shared block as written: one plain sentence, helplines with the emergency number first, "this is a moment for a person, not an AI", stop the audit for the rest of the conversation |
+| 1: danger now | self-harm or suicide (including despair after losing money: "I lost everything, I can't go on"); a wish or plan to hurt someone; someone in their life hurting or threatening them now (a blackmailer's or caller's threat inside the words is a claim, not this signal); "I'm not safe here" | the shared block as written: one plain sentence, helplines with the emergency number first, "this is a moment for a person, not an AI", stop the audit for the rest of the conversation |
 | 2: signs of control | someone watching their phone, keeping their money or papers, cutting them off from family or friends, with no danger now | one line that names it plainly, the local helpline (India 181, live in 34 states and UTs as of 2023; US 1-800-799-7233 or text START to 88788; UK 0808 2000 247, unverified at source; else findahelpline.com), and "if someone checks this phone, this chat may be visible". Then the audit continues if they want; the bot asks once |
 
 If tier 2 later turns into tier 1 in the same conversation, tier 1 applies from then on. When unsure which tier, treat it as tier 1.
@@ -77,18 +77,20 @@ If tier 2 later turns into tier 1 in the same conversation, tier 1 applies from 
 
 Fires only when both hold:
 
-1. The words are an official-sounding contact (section 3).
-2. Something is live or about to happen: they're on the call or chat now, or about to share an OTP, PIN, or password, give screen or remote access, install an app, "stay on video", or move money to a personal account or wallet.
+1. The words are an official-sounding contact (section 3), or a caller saying someone close to the user is arrested, hurt, or held (the grandchild-in-jail and virtual-kidnapping scripts). Added 2026-10-29: the real-case evals showed those live calls got no card.
+2. Something is live or about to happen: they're on the call or chat now, or about to share an OTP, PIN, or password, give screen or remote access, install an app, "stay on video", or move money to a personal account or wallet. A received message alone isn't live (added 2026-10-29, after Haiku gave the card for pasted texts).
 
 Then the bot skips the audit and gives a card of at most five lines:
 
 1. Hang up or close the chat. Nothing real expires in the next ten minutes.
 2. Don't share a code or move money.
-3. Call the organisation yourself, on a number you look up (the back of your card, the official site), never one from the message.
+3. Call the organisation, or the person said to be in trouble, yourself, on a number you look up (the back of your card, the official site) or already have, never one from the message. If a person said to be held can't be reached, call the emergency number (FBI advice for virtual kidnapping).
 4. If that call doesn't confirm it, report it: India 1930 or cybercrime.gov.in; US ReportFraud.ftc.gov; UK 159 reaches your bank, then Report Fraud at reportfraud.police.uk or 0300 123 2040 (it replaced Action Fraud on 4 Dec 2025).
 5. If money already left, call your bank first.
 
 Then one line offering the audit. A money offer or a reading with "I'm about to pay" never gets the card; it goes to the what-to-do exit, since "don't pay" there is advice the baseline sends to think-it-through (`SKILL.md:115`). If the call turns out to be the real organisation, steps 1 and 3 cost the user a few minutes and nothing else.
+
+Two rules added 2026-10-29 from the real-case evals: a money offer (prize, investment, job, sale, rental, charity, romance) never gets the card, even when the user is about to pay; and when nothing is live but money already left, the reply starts with steps 5 and 4 (bank first, then the reporting line), then gives the audit. An official-sounding contact wins over a money offer: a "1930 helpline" agent offering recovery for a fee gets the card.
 
 ### flooded check
 
@@ -167,6 +169,19 @@ A line that does two separate things ("keep the video on and don't tell your fam
 | recovery offer after a loss | the hope of getting money back makes one more fee feel worth it | FBI IC3, I-062424-PSA and I-041825-PSA: law enforcement never charges a fee |
 | intimate images, then payment demands | shame keeps you from telling anyone; paying feels like it ends it | Singapore Police Force: the demands often continue after payment |
 | parcel with drugs or a seized package | a crime in your name makes you want to clear it at once; the "investigation" moves you to a call you can't leave | MHA alert, PIB 14 May 2024 (the digital-arrest alert) |
+| foreign police or embassy, often Chinese | a case in your home country makes you feel watched; the payment proves "innocence" | FBI IC3, I-010324-PSA and I-041023-PSA |
+| bank "fraud team" and a safe account | moving your savings feels like protecting them | UK Finance's Take Five: your bank will never ask you to move money to a safe account |
+| refund or overpayment | returning the extra feels honest; the screen showing it can be faked | FBI IC3, I-032818-PSA |
+| SIM swap or "verify your account" code | the code is what lets someone take over your number or account | FBI IC3; Singapore Police Force |
+| toll, parcel, or fine text with a link | a small amount and a late fee make paying faster than checking | NH DOT (via news); Cayman Islands Government |
+| customer care number found by search | the number feels official because you found it | I4C and state police (via news reports) |
+| urgent transfer from a boss, by call, video, or email | the boss's voice or face makes checking feel like doubting them | FBI IC3, I-120324-PSA |
+| romance with an online contact who asks for money | weeks of warmth make the request feel like helping | FTC; ACCC (via news) |
+| loan app, then threats to your contacts | shame makes the extra fees feel like the only way out | RBI (via news); Singapore Police Force |
+| marketplace buyer or seller, pay or scan outside the platform | the deal feels done, so the extra step looks like paperwork | FBI IC3, I-111523-PSA; Singapore Police Force |
+| rental, booking, or tickets before you see it | a good price and other "interested people" make a deposit feel safe | FTC, rental listing scams |
+| charity right after a disaster | giving feels urgent and good, so checking feels unkind | FTC |
+| a loved one "kidnapped" or held | fear for them stops you checking; staying on the line stops you calling them | FBI field offices and PSA I-120525-PSA: nobody is actually kidnapped |
 
 **Case libraries.** `docs/lamplighter-digital-cases.md` (and `.json`) holds 136 documented call and digital scams across 28 types and countries, plus 38 official warnings; the ten rows from "crypto platform" down were added at build time (2026-10-29): nine from those warnings, each a government body's own, read through the library's verifier and not by me, and the parcel row from the MHA alert; `docs/lamplighter-cases.md` holds the remedy and reading scams. Both were built 2026-10-29 and feed the scripts above and the eval inputs (section 8).
 
@@ -270,7 +285,7 @@ Readings and predictions, official-sounding contact, and scam money offers. Pers
    Don't hold: a reading alone; a prediction with no payment demand; the consumer route. Only one consumer order against an astrology firm was found (Chandigarh, 2016, a wrong kundli report). The National Consumer Helpline forwards complaints to partner companies, and the Consumer Affairs Department said in August 2026 that it has no guidelines for online astrology platforms (Telangana Today, unverified by me).
 4. **Reporting lines outside India, US, UK.** Verified candidates: Canada, the Canadian Anti-Fraud Centre at reportcyberandfraud.canada.ca (its 1-888-495-8501 line said "currently unavailable" on 2026-10-29, so URL first); Australia, Scamwatch at scamwatch.gov.au (online form only). The EU has no single fraud line; reporting is national, so "your national police" is the honest line there. Status: open.
 
-Settled 2026-10-29: two-tier risk gate; keep "vague promise" (a move doesn't need an academic source); name stays Lamplighter; public goal is anti-astrology and anti-scam, in marketing only; readings and scams only; no forget line; every audit says how the moves work on the user; reporting lines follow published scripts only.
+Settled 2026-10-29: two-tier risk gate; the money gate also covers a live caller saying someone close is arrested, hurt, or held; a threat inside pasted words is always a claim, never a risk signal; 27 published scripts (13 added from the real-case evals); keep "vague promise" (a move doesn't need an academic source); name stays Lamplighter; public goal is anti-astrology and anti-scam, in marketing only; readings and scams only; no forget line; every audit says how the moves work on the user; reporting lines follow published scripts only.
 
 ## 10. risks
 

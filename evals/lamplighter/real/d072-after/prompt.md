@@ -7,7 +7,7 @@ type: sim-swap-otp-takeover
 kind: official
 variant: after
 country: US
-script: 'none'
+script: 'SIM swap'
 ---
 
 I'm in the US. A few days ago my phone suddenly lost service, and by the time I got it back most of my crypto, about $240,000, was gone. Can you check what happened here?

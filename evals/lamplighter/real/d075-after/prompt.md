@@ -7,7 +7,7 @@ type: delivery-toll-smishing
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'toll, parcel, or fine text'
 ---
 
 I'm in Hong Kong. I got this text this morning and called the number in it. They asked me to make a transfer; I didn't pay and hung up. Was this one of those scams?

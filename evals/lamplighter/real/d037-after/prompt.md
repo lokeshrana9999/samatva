@@ -7,7 +7,7 @@ type: bank-safe-account
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'safe account'
 ---
 
 I'm in Singapore. I got a call from someone saying he was from DBS, and he passed me to a 'police officer' who wanted me to buy gold bars and hand them to an agent. I hung up. Was this one of those scams?

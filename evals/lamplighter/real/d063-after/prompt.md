@@ -7,7 +7,7 @@ type: virtual-kidnapping
 kind: pressure
 variant: after
 country: US
-script: 'none'
+script: 'kidnapped or held'
 ---
 
 I'm in the US. A few days ago I got a call from a number I didn't know while my daughter's phone was dead. My husband called the police while I stayed on the line, and it turned out she was fine the whole time. Was this one of those scams?

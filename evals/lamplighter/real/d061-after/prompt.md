@@ -7,7 +7,7 @@ type: virtual-kidnapping
 kind: pressure
 variant: after
 country: elsewhere
-script: 'none'
+script: 'kidnapped or held'
 ---
 
 I'm in Singapore. A few days ago I got calls from an overseas number starting with + from someone who said he was a Chinese police officer. I stopped talking to him after the second call. Can you check this for me?

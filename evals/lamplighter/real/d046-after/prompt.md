@@ -7,7 +7,7 @@ type: refund-overpayment
 kind: official
 variant: after
 country: US
-script: 'none'
+script: 'refund or overpayment'
 ---
 
 I'm in the US. A tech support company I'd paid before called about a refund, got onto my computer, and then said they had refunded far too much by mistake. I closed the laptop and haven't sent anything. Was this a scam?

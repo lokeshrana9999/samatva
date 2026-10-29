@@ -7,7 +7,7 @@ type: romance
 kind: offer
 variant: about-to-pay
 country: US
-script: 'none'
+script: 'romance with an online contact'
 ---
 
 I'm in the US. I met a man on a dating site about a year ago and we talk on the phone most days. He's asking me for $60,000 now, and he's also asked me to open a bank account for his business. Should I send it?

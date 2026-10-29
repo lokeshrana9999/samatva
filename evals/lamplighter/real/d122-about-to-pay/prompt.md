@@ -7,7 +7,7 @@ type: marketplace-buyer-seller
 kind: offer
 variant: about-to-pay
 country: India
-script: 'none'
+script: 'marketplace'
 ---
 
 I'm in India. I found a motorcycle on OLX and the seller says he's an army officer. He has sent me the papers, and I'm about to pay. Should I go ahead?

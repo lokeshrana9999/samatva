@@ -7,7 +7,7 @@ type: sim-swap-otp-takeover
 kind: official
 variant: after
 country: elsewhere
-script: 'none'
+script: 'SIM swap'
 ---
 
 I'm in Poland. Yesterday my phone suddenly lost signal, and by the time my number worked again my crypto exchange account had been emptied. These are the messages I found afterwards. Was this a SIM swap?

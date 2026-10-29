@@ -7,7 +7,7 @@ type: deepfake-ceo-bec
 kind: official
 variant: after
 country: US
-script: 'none'
+script: 'urgent transfer from a boss'
 ---
 
 I'm in the US. We wired about $1.3 million to a business partner last month after an email from what looked like their usual address said their bank details had changed. They now say they never got it. Was this one of those scams?

@@ -7,7 +7,7 @@ type: romance
 kind: offer
 variant: about-to-pay
 country: elsewhere
-script: 'none'
+script: 'romance with an online contact'
 ---
 
 I'm in Singapore. I've been talking to a man I met online for a few months, and he has asked me to send money to a friend's bank account here to help him. Should I send it today?

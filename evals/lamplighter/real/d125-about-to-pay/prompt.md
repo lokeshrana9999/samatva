@@ -7,7 +7,7 @@ type: rental-booking-ticket
 kind: offer
 variant: about-to-pay
 country: elsewhere
-script: 'none'
+script: 'rental, booking, or tickets'
 ---
 
 I'm in Hong Kong and found someone on social media selling tickets for a holiday concert. We're meeting later so I can pay cash, and he says I can check the tickets first. Should I pay him?
