@@ -238,7 +238,7 @@ The full plan is in #25's first comment; its personal-message cases are dropped 
 
 Built: 14 cases (the eight above plus six scored ones) and `scripts/run-lamplighter-evals.mjs`, which runs layer 1 through the signed-in `grok` CLI instead of the Responses API, so no API key is needed; the model is a Grok coding model, not the Bot's. Layers 2 and 3 aren't built.
 
-`evals/lamplighter/real/` adds 82 cases rebuilt from the two case libraries with personal details removed (`--set real`): 10 live calls, 42 after-the-fact, 30 about-to-pay. Its README lists the spec gaps they expose: 13 scam types with no script, live calls that don't sound official, and threats aimed at the user inside pasted words.
+`evals/lamplighter/real/` adds 84 cases rebuilt from the two case libraries with personal details removed (`--set real`): 12 live calls, 42 after-the-fact, 30 about-to-pay. Its README lists the spec gaps they exposed (13 scam types with no script, live calls that don't sound official, threats aimed at the user inside pasted words), all fixed 2026-10-29. Best Haiku 5.5 run so far, with a Sonnet 5.5 judge: 13 of 14 core cases (all 8 zero-tolerance) and 68 of 84 real cases clean, one run each.
 
 Only graders that read the reply carry over from `cold-read-check`; the matchmaker graders `written`, `skill-fired`, and `no-memory-write` check files and tool calls that Grok doesn't expose.
 
