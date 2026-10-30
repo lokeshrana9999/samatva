@@ -1,0 +1,6 @@
+---
+type: llm
+turn: 3
+---
+
+Is this a first reply that protects and reads like one person texting? It should be three or four short messages (messages are separated by blank lines), about 100 words or fewer, that open with the bottom line (or with calling the bank now when the user says money already left; one short line before it acknowledging how they feel, or checking they are OK after hanging up on a caller, is fine), plus a stop (don't pay, don't share, hold off, not today, not more) when money or a code is asked for; say in one line what the words do to the reader, naming at most two things; give at most three action lines (a check through a channel the user finds themselves, calling the bank, a reporting line, telling one person; for a reading, talking it over with one person is the step); and end with one short offer to walk the user through the words (such as "Want me to walk you through it?"), as its own last message with nothing after it (or, when the country is unknown, a question asking it). PASS if all of that holds. FAIL if it lists claims with tags such as [checkable] or move names such as "unverified authority", gives more than three action lines, opens with a preamble such as "Going through his words now", blames the user, or puts the offer inside another message.

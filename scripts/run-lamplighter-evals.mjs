@@ -25,8 +25,12 @@
 // manual layer 3 can check. --runs defaults to 1 per case; --full uses each case's own runs.
 //
 // Graders: regex (pattern, flags, match: contains | not_contains), llm (a PASS/FAIL question
-// answered by a Grok judge), and catalog (every moves-table row names a move from the skill).
-// --check only verifies the instruction length and the catalog, then exits.
+// answered by a Grok judge), catalog (every line under a ledger's "Moves:" label names a move from
+// the skill; attach it to ledger turns only), and repeat (no sentence of min_words or more words
+// repeats one from an earlier bot reply in the conversation, except sentences matching exempt).
+// The summary adds, for multi-turn sets, each case's first failing turn, and for every set the
+// lines repeated most across first replies. Graders are written by scripts/lamplighter/*.js.
+// --check verifies the instruction length, the catalog, and every case's graders, then exits.
 // Results go to evals/lamplighter/results/<timestamp>/ (git-ignored).
 
 import { spawn } from 'node:child_process';
@@ -73,6 +77,18 @@ const frontmatter = (s) => {
   return [meta, m[2]];
 };
 
+function loadCase(dir, name) {
+  const [meta, prompt] = frontmatter(read(path.join(dir, name, 'prompt.md')));
+  const gdir = path.join(dir, name, 'graders');
+  const graders = fs.readdirSync(gdir).filter((f) => f.endsWith('.md')).map((f) => {
+    const [gm, body] = frontmatter(read(path.join(gdir, f)));
+    return { name: f.replace(/\.md$/, ''), ...gm, question: body.trim() };
+  });
+  // a multi-turn case splits its user turns with lines of "=== turn ==="; a grader's `turn: N` picks the reply it reads
+  const turns = prompt.split(/^=== turn ===\s*$/m).map((t) => t.trim()).filter(Boolean);
+  return { name, meta, turns, graders };
+}
+
 const instructions = read(path.join(BOT, 'instructions.md')).trimEnd();
 const skill = read(path.join(BOT, 'skills', 'lamplighter-patterns', 'SKILL.md'));
 const skillBody = frontmatter(skill)[1];
@@ -92,6 +108,33 @@ function check() {
   if (catalog.size !== 28) problems.push(`the skill's catalog has ${catalog.size} moves, expected 28`);
   if (!instructions.includes('lamplighter-patterns')) problems.push('instructions never name the skill');
   console.log(`instructions: ${n}/${INSTRUCTION_LIMIT} characters; catalog: ${catalog.size} moves`);
+  // every grader in every set parses: a known type, a regex that compiles, a turn the case has
+  const counts = [];
+  for (const sub of ['', 'multi', 'real']) {
+    const dir = path.join(CASES, sub);
+    if (!fs.existsSync(dir)) continue;
+    let nCases = 0;
+    let nGraders = 0;
+    for (const d of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (!d.isDirectory() || ['results', 'real', 'multi'].includes(d.name)) continue;
+      const c = loadCase(dir, d.name);
+      nCases++;
+      for (const g of c.graders) {
+        nGraders++;
+        const where = `${sub ? `${sub}/` : ''}${d.name}/${g.name}`;
+        if (!['regex', 'llm', 'catalog', 'repeat'].includes(g.type)) problems.push(`${where}: unknown type ${g.type}`);
+        if (g.turn && !(Number(g.turn) >= 1 && Number(g.turn) <= c.turns.length)) problems.push(`${where}: turn ${g.turn} of ${c.turns.length}`);
+        if (g.type === 'regex' && !['contains', 'not_contains'].includes(g.match)) problems.push(`${where}: match ${g.match}`);
+        if (g.type === 'llm' && !g.question) problems.push(`${where}: no question`);
+        try {
+          if (g.type === 'regex') new RegExp(g.pattern, g.flags || '');
+          if (g.type === 'repeat' && g.exempt) new RegExp(g.exempt, 'i');
+        } catch (e) { problems.push(`${where}: ${e.message}`); }
+      }
+    }
+    counts.push(`${sub || 'core'} ${nCases} cases, ${nGraders} graders`);
+  }
+  console.log(`cases: ${counts.join('; ')}`);
   return problems;
 }
 
@@ -204,7 +247,21 @@ function movesRows(text) {
   return rows;
 }
 
-async function grade(g, reply) {
+// a sentence of min_words or more words, normalised, that appeared in an earlier bot reply
+const normText = (s) => s.toLowerCase().replace(/[^\p{L}\p{M}\p{N}\s]+/gu, ' ').replace(/\s+/g, ' ').trim();
+function repeated(g, reply, earlier) {
+  const min = Number(g.min_words || 8);
+  const exempt = g.exempt ? new RegExp(g.exempt, 'i') : null;
+  const before = ` ${earlier.map(normText).join(' | ')} `;
+  const hits = reply.split(/(?<=[.!?\u0964\uFF1F])\s+|\n+/)
+    .filter((s) => !(exempt && exempt.test(s)))
+    .map(normText)
+    .filter((s) => s.split(' ').length >= min && before.includes(` ${s} `));
+  return { pass: hits.length === 0, why: hits.length ? `repeats: "${hits[0].slice(0, 120)}"${hits.length > 1 ? ` and ${hits.length - 1} more` : ''}` : 'no repeated sentence' };
+}
+
+async function grade(g, reply, earlier = []) {
+  if (g.type === 'repeat') return repeated(g, reply, earlier);
   if (g.type === 'regex') {
     const hit = new RegExp(g.pattern, g.flags || '').test(reply);
     return { pass: g.match === 'not_contains' ? !hit : hit, why: hit ? 'matched' : 'no match' };
@@ -228,15 +285,8 @@ function loadCases() {
     .filter((d) => d.isDirectory() && !['results', 'real', 'multi'].includes(d.name))
     .filter((d) => !onlyCases.length || onlyCases.includes(d.name))
     .map((d) => {
-      const [meta, prompt] = frontmatter(read(path.join(CASE_DIR, d.name, 'prompt.md')));
-      const gdir = path.join(CASE_DIR, d.name, 'graders');
-      const graders = fs.readdirSync(gdir).filter((f) => f.endsWith('.md')).map((f) => {
-        const [gm, body] = frontmatter(read(path.join(gdir, f)));
-        return { name: f.replace(/\.md$/, ''), ...gm, question: body.trim() };
-      });
+      const { meta, turns, graders } = loadCase(CASE_DIR, d.name);
       const runs = Number(runsOverride || (full ? meta.runs : 1) || 1);
-      // a multi-turn case splits its user turns with lines of "=== turn ==="; a grader's `turn: N` picks the reply it reads
-      const turns = prompt.split(/^=== turn ===\s*$/m).map((t) => t.trim()).filter(Boolean);
       return { name: d.name, tier: meta.tier, variant: meta.variant, kind: meta.kind, runs, turns, graders };
     })
     .filter((c) => (!tier || c.tier === tier) && (!variant || c.variant === variant) && (!kind || c.kind === kind));
@@ -272,8 +322,10 @@ const results = await pool(tasks, jobs, async ({ c, run }) => {
   }
   const grades = {};
   for (const g of c.graders) {
-    const rt = replies[Number(g.turn || c.turns.length) - 1];
-    grades[g.name] = !rt || rt.error ? { pass: false, why: `run failed: ${rt ? rt.error : 'turn not reached'}` } : await grade(g, rt.text);
+    const k = Number(g.turn || c.turns.length);
+    const rt = replies[k - 1];
+    grades[g.name] = !rt || rt.error ? { pass: false, why: `run failed: ${rt ? rt.error : 'turn not reached'}` } : await grade(g, rt.text, replies.slice(0, k - 1).map((x) => x.text || ''));
+    grades[g.name].turn = k;
     cost += grades[g.name].cost || 0;
   }
   const failed = Object.entries(grades).filter(([, v]) => !v.pass).map(([k]) => k);
@@ -282,20 +334,26 @@ const results = await pool(tasks, jobs, async ({ c, run }) => {
     : (r.text || r.error);
   fs.writeFileSync(path.join(outDir, `${c.name}.${run + 1}.md`), `# ${c.name} run ${run + 1} (${r.model || 'no model'})\n\n${body}\n\n## grades\n\n${Object.entries(grades).map(([k, v]) => `- ${v.pass ? 'pass' : 'FAIL'} ${k}: ${v.why}`).join('\n')}\n`);
   console.log(`${failed.length ? 'FAIL' : 'pass'} ${c.name} #${run + 1}${failed.length ? `: ${failed.join(', ')}` : ''}`);
-  return { case: c.name, tier: c.tier, variant: c.variant, run: run + 1, failed, grades, model: r.model };
+  // the first turn with a failing grader (the "turn of flip"), for multi-turn cases
+  const firstFail = c.turns.length > 1 && failed.length ? Math.min(...failed.map((k) => grades[k].turn)) : null;
+  return { case: c.name, tier: c.tier, variant: c.variant, run: run + 1, failed, firstFail, grades, model: r.model, firstReply: replies[0] && replies[0].text };
 });
 
 const byCase = {};
 for (const r of results) {
-  const b = (byCase[r.case] = byCase[r.case] || { tier: r.tier, runs: 0, clean: 0, graders: {} });
+  const b = (byCase[r.case] = byCase[r.case] || { tier: r.tier, runs: 0, clean: 0, graders: {}, flips: [] });
   b.runs++;
+  if (r.firstFail) b.flips.push(r.firstFail);
   if (!r.failed.length) b.clean++;
   for (const [k, v] of Object.entries(r.grades)) b.graders[k] = (b.graders[k] || 0) + (v.pass ? 1 : 0);
 }
-const lines = [`# lamplighter evals, arm ${arm}, ${stamp}`, '', `backend: ${backend}; model: ${model}; judge: ${judgeModel}; cost: $${cost.toFixed(2)}`, '', '| case | tier | clean runs | failing graders (passes/runs) |', '|---|---|---|---|'];
+const multi = cases.some((c) => c.turns.length > 1);
+const lines = [`# lamplighter evals, arm ${arm}, ${stamp}`, '', `backend: ${backend}; model: ${model}; judge: ${judgeModel}; cost: $${cost.toFixed(2)}`, '',
+  `| case | tier | clean runs |${multi ? ' first failing turn |' : ''} failing graders (passes/runs) |`, `|---|---|---|${multi ? '---|' : ''}---|`];
 for (const [name, b] of Object.entries(byCase)) {
   const failing = Object.entries(b.graders).filter(([, n]) => n < b.runs).map(([k, n]) => `${k} ${n}/${b.runs}`).join(', ');
-  lines.push(`| ${name} | ${b.tier} | ${b.clean}/${b.runs} | ${failing || 'none'} |`);
+  const flip = b.flips.length ? b.flips.sort((x, y) => x - y).map((n) => `t${n}`).join(', ') : '-';
+  lines.push(`| ${name} | ${b.tier} | ${b.clean}/${b.runs} |${multi ? ` ${flip} |` : ''} ${failing || 'none'} |`);
 }
 const byVariant = {};
 for (const r of results) if (r.variant) {
@@ -307,8 +365,20 @@ if (Object.keys(byVariant).length) {
   lines.push('', '| variant | clean runs |', '|---|---|');
   for (const [k, v] of Object.entries(byVariant)) lines.push(`| ${k} | ${v.clean}/${v.runs} |`);
 }
+// the lines repeated most across first replies (exact lines, case and spacing aside): a template showing through
+const lineCount = new Map();
+const firsts = results.filter((r) => r.firstReply);
+for (const r of firsts) {
+  const own = new Set(r.firstReply.split(/\r?\n/).map((l) => l.trim().replace(/\s+/g, ' ').toLowerCase()).filter((l) => l.split(' ').length >= 4));
+  for (const l of own) lineCount.set(l, (lineCount.get(l) || 0) + 1);
+}
+const top = [...lineCount].filter(([, n]) => n > 1).sort((x, y) => y[1] - x[1]).slice(0, 3);
+if (top.length) {
+  lines.push('', '| most repeated first-reply lines | replies |', '|---|---|');
+  for (const [l, n] of top) lines.push(`| ${l.replace(/\|/g, '\\|')} | ${n}/${firsts.length} |`);
+}
 fs.writeFileSync(path.join(outDir, 'summary.md'), `${lines.join('\n')}\n`);
-fs.writeFileSync(path.join(outDir, 'results.json'), JSON.stringify(results, null, 1));
+fs.writeFileSync(path.join(outDir, 'results.json'), JSON.stringify(results.map(({ firstReply, ...r }) => r), null, 1));
 console.log(`\n${lines.slice(4).join('\n')}\n\ncost $${cost.toFixed(2)}; results in ${path.relative(ROOT, outDir)}`);
 fs.rmSync(work, { recursive: true, force: true });
 const zeroFail = Object.values(byCase).some((b) => b.tier === 'zero' && b.clean < b.runs);

@@ -7,4 +7,8 @@ this guy in a whatsapp group sent: 'Join our VIP signal group. Guaranteed 30% mo
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

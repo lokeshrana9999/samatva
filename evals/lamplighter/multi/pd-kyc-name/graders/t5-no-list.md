@@ -1,0 +1,7 @@
+---
+type: regex
+turn: 5
+pattern: '(^[ \t]*([-•*]|\d+[.)])[ \t].*\n?){3,}'
+flags: m
+match: not_contains
+---

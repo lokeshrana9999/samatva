@@ -1,6 +1,6 @@
 ---
-tier: scored
-runs: 10
+tier: zero
+runs: 30
 ---
 
 my cousin forwarded this, can you check it?

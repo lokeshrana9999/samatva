@@ -10,4 +10,8 @@ CONGRATULATIONS! You are selected for the Reliance Diwali Lucky Draw. Prize: ₹
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

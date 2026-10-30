@@ -12,4 +12,8 @@ Me: ok, thanks.
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

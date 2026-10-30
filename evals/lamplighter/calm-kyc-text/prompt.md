@@ -9,4 +9,8 @@ Dear Customer, your SBI account will be BLOCKED today due to pending KYC. Update
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

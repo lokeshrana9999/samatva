@@ -99,4 +99,8 @@ i don't believe in this stuff but this call left me unsettled. can you check wha
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

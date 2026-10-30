@@ -7,4 +7,8 @@ is this normal for a part-time job? they paid me ₹150 and then ₹300 for liki
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name

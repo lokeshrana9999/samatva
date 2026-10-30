@@ -7,7 +7,11 @@ the astrologer on the app said: 'Rahu is sitting on your career. Within 40 days 
 
 === turn ===
 
-yes, go through each claim
+yes
+
+=== turn ===
+
+ok, now list every claim and every move by name
 
 === turn ===
 

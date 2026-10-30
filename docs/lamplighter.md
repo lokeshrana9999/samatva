@@ -53,13 +53,16 @@ Inputs: pasted text, screenshots, files, a retelling (marked as one). unverified
       |
  get the words --none--> ask once for them verbatim
       |
- first reply: bottom line + stop --> one trick --> one step + one person
-      |                                   --> "Want me to go through each claim?"
+ first reply: bottom line + stop --> what the words do --> one step + one person
+      |                                   --> "Want me to walk you through it?"
       |
- on a yes: kind-of-words line --> claims --> moves --> what is left
-      |                          --> how it works on you --> defenses
+ on a yes, one layer a turn: the line doing the most work --> the other lines
+      |                     --> how it works on you --> what to do
       |
- exits: pay? again -> friend question | one claim -> that line | done -> name a person
+ asked for claims, moves, or everything: the ledger (tags + move names)
+      |
+ exits: pay? again -> script: "Don't pay." | reading: friend question
+        one claim -> that line | done -> a person, after a loss or scare
 ```
 
 ### risk gate
@@ -100,19 +103,23 @@ Reads only the user's own message, never the pasted text (as in `SKILL.md:114`):
 
 ### first reply
 
-Owner decision, 2026-10-30, after users found the audit-first replies heavy ("you can check back in for today's..."): the first reply's job is to stop the user from paying or sharing, and depth comes only on request. The skill's first-reply template, three short messages, about 60 words:
+Owner decision, 2026-10-30, after users found the audit-first replies heavy ("you can check back in for today's..."): the first reply's job is to stop the user from paying or sharing, and depth comes only on request. Reworded 2026-10-31 after a Fable review of the Grok and eval replies found them templated ("Tell one person you trust before you decide." in 36 of 41 real-case replies): the skill's lines are now shapes, fitted to the case, never the same sentence twice in a chat. Three or four short messages, about 60 words:
 
-1. **Bottom line and a stop.** A matched script: "This looks like the <script> scam. Don't pay or share anything yet." A reading that asks for money: "Whatever you believe, I'd suggest not paying today. It's your call." A real organisation that asked for nothing: "This call asked for nothing a scam needs."
-2. **The one trick, in their situation.** One line, at most two moves: "No agency arrests anyone on a video call."
-3. **One safe step and one person.** One step outside the contact and "tell one person you trust". Money already left to a scam: "Call your bank now", the reporting line, "this is built to work on anyone", never blame.
-4. **One offer.** "Want me to go through each claim?" The audit below follows a yes, or a first message that asks for the claims or the moves.
+1. **Bottom line and a stop.** A matched script: "This looks like the KYC scam. Don't open that link or call the number." A reading that asks for money: "I'd hold off paying the ₹11,000 today, whatever you make of the reading. Your call." A real organisation that asked for nothing: "This call asked for no code, PIN, or money. That's a good sign."
+2. **What the words do to the reader.** One line, plain words, no catalog names: "'Blocked today' rushes you so there's no time to check." A rule from a body in the user's own country, when there is one ("RBI says no real bank asks for an OTP").
+3. **One safe step and one person.** One step outside the contact, and a person line that varies. After a loss: the bank first with what to ask for, the script line with "it happens to careful people too", then the reporting line.
+4. **One offer, alone, last.** "Want me to walk you through it?" ("line by line" was dropped 2026-10-31: it promised the full breakdown the owner didn't want after a bare yes.)
+
+### follow-up layers
+
+Owner decision, 2026-10-31: the old audit after a "yes" was a long breakdown (tags, move names, six labelled parts) that didn't feel conversational. A "yes" now gets one layer a turn, each one to three short messages ending in a two-way choice: the line doing the most work, in plain words; then the other lines; then how it works on you; then what to do. No tags, labels, or move names in the layers. Evidence: NN/g's truncated pyramid and "less chat, more answer", and Google and Alexa conversation design (one question a turn, a definite choice); no study tests progressive disclosure in a scam or crisis chat, so the multi-turn evals are the test.
 
 Evidence (four Sonnet research passes, 2026-10-30): an easy off-ramp cut fraudulent payments far more than warning text in a UK banking experiment (Åkesson, Gathergood & Quispe-Torreblanca, CeDEx 2023-08); answer first and disclose detail on request (Google conversation design; NN/g inverted pyramid and progressive disclosure); forewarning with the scam's name helps (Stanford Center on Longevity; Google ShieldUp in India); soft modals keep believers listening (reactance research; ANiS separates the belief from the payment); no blame, one trusted person, hedged confidence (Victim Support, FINRA, WHO Psychological First Aid). No study tests chatbot scam warnings directly; "nothing real expires" is untested.
 
-### audit
+### the ledger (the old audit)
 
-- **Only on request.** After the first reply's offer gets a yes, or when the first message asks for the claims or the moves ("just show me the claims", "what was she doing").
-- **Load the skill first.** The instructions say "load `lamplighter-patterns` before any audit". A move name that isn't in the catalog is a failure, not a style choice.
+- **Only on an explicit request** for the claims, the moves, the names, or everything ("go through each claim", "list the moves", "give me everything"), in the first message or after any layer. A bare "yes" gets the layers. What's left, how it works on you, and what you can do are added only when they ask for everything.
+- **Load the skill first.** The instructions say "load `lamplighter-patterns` before any reply about words". A move name that isn't in the catalog is a failure, not a style choice.
 - **Format:** the audit is a run of short chat messages, like texting, never one long block or a table (owner decision, 2026-10-30, after markdown tables broke in the Grok Bot app). The instructions carry the rule; the skill's template sets the order: a kind-of-words line, a "Claims:" message, a "Moves:" message, then one short message each for what is left, how it works on you, and what you can do. The script line ("This looks like the <script> scam.") lives in the first reply; the audit repeats it only when it came first.
 - **Claims and tags:** one line per claim, quote, tag, why; the four tags and their order are unchanged from `cold-read-check`.
 - **Moves:** one line per move, starting with its catalog name (section 5) instead of the ten technique names.
@@ -256,6 +263,8 @@ The full plan is in #25's first comment; its personal-message cases are dropped 
 Built: 14 cases (the eight above plus six scored ones) and `scripts/run-lamplighter-evals.mjs`, which runs layer 1 through the signed-in `grok` CLI instead of the Responses API, so no API key is needed; the model is a Grok coding model, not the Bot's. Layer 2 is `evals/lamplighter/multi/` (`--set multi`): nine scripted conversations, each turn graded, run through a resumed session on either backend. Layer 3 is the manual checklist in `bots/lamplighter/acceptance.md`.
 
 `evals/lamplighter/real/` adds 84 cases rebuilt from the two case libraries with personal details removed (`--set real`): 12 live calls, 42 after-the-fact, 30 about-to-pay. Its README lists the spec gaps they exposed (13 scam types with no script, live calls that don't sound official, threats aimed at the user inside pasted words), all fixed 2026-10-29. Protection-first rebuild, 2026-10-30: the core cases that aren't live or a crisis now run two turns, the first reply graded on turn 1 (no claim tags, a stop, the offer, a Sonnet judge for protection-first) and the audit on turn 2 after "yes, go through each claim"; a 15th case, `elsewhere-lookup`, checks the look-up rule for a German user; the real cases grade the first reply only. Haiku 5.5 with a Sonnet 5.5 judge, one run each, after four rounds of fixes: 13 of 15 core cases (every zero-tolerance case clean), 8 of 9 conversations (every zero-tolerance one clean), and 58 of 84 real cases. Most real misses are a fourth action line after a loss and two crisis replies to users who wrote despair, which the risk gate is meant to catch. The proxy has no web search, so the look-up rule is only tested on Grok.
+
+Conversational rebuild, 2026-10-31: a Fable review rewrote the style (shapes instead of fixed sentences, follow-up layers, the ledger only on request) and an Opus plan replaced the multi-turn set with 25 conversations (16 zero-tier): progressive disclosure, a text that turns live, a reading that turns into danger, language switching, shame after a loss, a UAE look-up, pushback, injection, false alarms, and an 8-turn drift. Shared regexes and judges moved to `scripts/lamplighter/graders.js`; the runner adds a cross-turn repeat grader and a most-repeated-lines table. First run on Haiku with a Sonnet judge: replies read as chat, but ran long (5 to 6 messages, about 100 words) and danger-now didn't hold when the user asked about the reading again; both were fixed in the instructions and skill. Six of the conversations, run by hand in the Grok app the same day (step-by-step KYC, text turns live with an OTP already read, reading turns into danger, injection, control returns, English to Hindi with a loss), all behaved as designed; two slips (an FBI rule cited to an Indian user, an "I'm here if anything else turns up" close) were fixed in the skill afterwards and not retested.
 
 Only graders that read the reply carry over from `cold-read-check`; the matchmaker graders `written`, `skill-fired`, and `no-memory-write` check files and tool calls that Grok doesn't expose.
 
