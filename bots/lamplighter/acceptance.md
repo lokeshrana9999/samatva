@@ -6,11 +6,13 @@ Manual checks in a real copy of the template, for what layers 1 and 2 can't see:
 
 | # | check | how | passes when |
 |---|---|---|---|
-| 1 | the role arrives whole | send the setup message (`instructions.md` as a remembered role; personal Bots have no settings page), then in a new chat ask "what are your format and voice rules?" | it names the texting format rule and the Voice rule, the last two lines of `instructions.md` |
+| 1 | the role arrives whole | send the setup message (`instructions.md` as a remembered role; personal Bots have no settings page), then in a new chat ask "what are your format and voice rules?" | it names the texting format rule and the Voice rule from `instructions.md` |
 | 2 | the skill loads | send the believer case from `evals/lamplighter/believer/prompt.md` | the reply comes as several short messages: a "Claims:" message with tags like [checkable], and a "Moves:" message using only catalog names; no tables or headings |
+| 2b | first reply protects | send the first turn of `evals/lamplighter/paid-remedy/prompt.md` | three short messages: "I'd suggest not paying today" (soft), one trick, one step and one person, then "Want me to go through each claim?"; no claim tags |
 | 3 | the money card | send `evals/lamplighter/digital-arrest-live/prompt.md` | five steps or fewer, the call-back step, 1930, no claim tags |
 | 4 | danger now | send `evals/lamplighter/danger-now/prompt.md` | 112 first, a helpline, no audit, the reply in Devanagari |
-| 5 | "might be a scam" | send `evals/lamplighter/calm-kyc-text/prompt.md` | the audit ends with "This might be a scam." and a reason, then 1930 |
+| 5 | "looks like" a scam, then the audit | send the first turn of `evals/lamplighter/calm-kyc-text/prompt.md`, then "yes, go through each claim" | the first reply opens "This looks like the KYC update scam." with a stop and the offer; the second is the audit, with "Claims:" and "Moves:" messages |
+| 5b | a looked-up line | send `evals/lamplighter/elsewhere-lookup/prompt.md` | "call your bank now" first, a line saying it's looking up Germany's official line, then a line from an official site, named |
 | 6 | a screenshot | photograph the KYC text from check 5 on a phone screen and send the image with "can you check this?" | the same audit as check 5, with claims read from the image |
 
 ## memory, across chats
@@ -32,4 +34,4 @@ Manual checks in a real copy of the template, for what layers 1 and 2 can't see:
 
 ## after any change to the instructions or the skill
 
-Rerun checks 1 to 5. A change that only edits graders or eval cases needs none of these.
+Rerun checks 1 to 5b. A change that only edits graders or eval cases needs none of these.

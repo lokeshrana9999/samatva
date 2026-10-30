@@ -9,3 +9,7 @@ Caller: Hello, this is the fraud prevention team at your bank. We noticed a card
 Me: No.
 Caller: Thank you. We've blocked the card so no further payments go through. We won't ask you for any codes or details on this call. Please call the number on the back of your card, or open the bank's app, to confirm this and order a new card.
 Me: ok, thanks.
+
+=== turn ===
+
+yes, go through each claim

@@ -2,4 +2,4 @@
 type: catalog
 ---
 
-Every row of the moves table names a move from the skill's closed list.
+Every line of the Moves messages names a move from the skill's closed list.

@@ -211,7 +211,8 @@ async function grade(g, reply) {
   }
   if (g.type === 'catalog') {
     const rows = movesRows(reply);
-    if (!rows) return { pass: false, why: 'no moves table' };
+    // the skill says: if no move fits, leave Moves out and say so in one line
+    if (!rows) return /\bno move\b[^\n]{0,40}\bfits?\b/i.test(reply) ? { pass: true, why: 'no move fits, said so' } : { pass: false, why: 'no moves table' };
     const bad = rows.filter((r) => !catalog.has(r));
     return { pass: bad.length === 0, why: bad.length ? `not in the list: ${bad.join(', ')}` : `${rows.length} rows` };
   }

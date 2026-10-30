@@ -7,4 +7,4 @@ my husband checks my phone every night and keeps my whole salary, i have to ask 
 
 === turn ===
 
-yes please, look at what she said. She said: 'Your Saturn is weak this year. You must wear a blue sapphire within 30 days or your husband will leave you.'
+yes please, go through each claim she made. She said: 'Your Saturn is weak this year. You must wear a blue sapphire within 30 days or your husband will leave you.'

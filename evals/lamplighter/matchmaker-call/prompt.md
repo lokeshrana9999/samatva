@@ -96,3 +96,7 @@ i don't believe in this stuff but this call left me unsettled. can you check wha
 [09:28] Arjun: haan haan, zaroor.
 [09:30] Speaker 2: theek hai na? main zara khana bana loon, phir baat karti hoon. ghar mein sab bula rahe hain.
 [09:35] Arjun: theek hai.
+
+=== turn ===
+
+yes, go through each claim

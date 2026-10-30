@@ -1,7 +1,7 @@
 # Lamplighter: a Grok Bot against astrology tricks and scams
 
 Date: 2026-10-29
-Status: v1 built 2026-10-29 as `bots/lamplighter/` (instructions and the `lamplighter-patterns` skill), with layer 1 evals in `evals/lamplighter/`; not yet set up in Grok Bot. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. Decisions and the v2 reporting-line work are in section 9.
+Status: v1 built 2026-10-29 as `bots/lamplighter/` (instructions and the `lamplighter-patterns` skill), with layer 1 evals in `evals/lamplighter/`; not yet set up in Grok Bot. Review fixes from #25 applied; the eval plan is in #25's first comment. Scope narrowed 2026-10-29 (owner decision): readings and scams only. Protection-first replies 2026-10-30 (owner decision, after a research pass): the first reply keeps the user from paying or sharing, and the claim-by-claim audit comes only when they ask. Decisions and the v2 reporting-line work are in section 9.
 
 The `cold-read-check` files this spec cites (`SKILL.md`, `references/techniques.md`, its evals) arrive on main with day 6 (#15); until then they exist only in the staging copy.
 
@@ -53,11 +53,13 @@ Inputs: pasted text, screenshots, files, a retelling (marked as one). unverified
       |
  get the words --none--> ask once for them verbatim
       |
- kind-of-words line --> claims --> moves --> what is left
+ first reply: bottom line + stop --> one trick --> one step + one person
+      |                                   --> "Want me to go through each claim?"
       |
- how it works on you --> defenses
+ on a yes: kind-of-words line --> claims --> moves --> what is left
+      |                          --> how it works on you --> defenses
       |
- exits: what to do? -> friend question | one claim -> that row | done -> name a person
+ exits: pay? again -> friend question | one claim -> that line | done -> name a person
 ```
 
 ### risk gate
@@ -96,10 +98,22 @@ Two rules added 2026-10-29 from the real-case evals: a money offer (prize, inves
 
 Reads only the user's own message, never the pasted text (as in `SKILL.md:114`): scam texts are all caps and urgency by design. Three or more signs (caps, `!!`, absolutes, accusations, swearing, urgency, the same fear again): no tables. Reflect their words in at most two sentences, with no advice, reassurance, or label, and offer the audit for when they want it.
 
+### first reply
+
+Owner decision, 2026-10-30, after users found the audit-first replies heavy ("you can check back in for today's..."): the first reply's job is to stop the user from paying or sharing, and depth comes only on request. The skill's first-reply template, three short messages, about 60 words:
+
+1. **Bottom line and a stop.** A matched script: "This looks like the <script> scam. Don't pay or share anything yet." A reading that asks for money: "Whatever you believe, I'd suggest not paying today. It's your call." A real organisation that asked for nothing: "This call asked for nothing a scam needs."
+2. **The one trick, in their situation.** One line, at most two moves: "No agency arrests anyone on a video call."
+3. **One safe step and one person.** One step outside the contact and "tell one person you trust". Money already left to a scam: "Call your bank now", the reporting line, "this is built to work on anyone", never blame.
+4. **One offer.** "Want me to go through each claim?" The audit below follows a yes, or a first message that asks for the claims or the moves.
+
+Evidence (four Sonnet research passes, 2026-10-30): an easy off-ramp cut fraudulent payments far more than warning text in a UK banking experiment (Åkesson, Gathergood & Quispe-Torreblanca, CeDEx 2023-08); answer first and disclose detail on request (Google conversation design; NN/g inverted pyramid and progressive disclosure); forewarning with the scam's name helps (Stanford Center on Longevity; Google ShieldUp in India); soft modals keep believers listening (reactance research; ANiS separates the belief from the payment); no blame, one trusted person, hedged confidence (Victim Support, FINRA, WHO Psychological First Aid). No study tests chatbot scam warnings directly; "nothing real expires" is untested.
+
 ### audit
 
+- **Only on request.** After the first reply's offer gets a yes, or when the first message asks for the claims or the moves ("just show me the claims", "what was she doing").
 - **Load the skill first.** The instructions say "load `lamplighter-patterns` before any audit". A move name that isn't in the catalog is a failure, not a style choice.
-- **Format:** the audit is a run of short chat messages, like texting, never one long block or a table (owner decision, 2026-10-30, after markdown tables broke in the Grok Bot app). The instructions carry the rule; the skill's template sets the order: a kind-of-words line, a "Claims:" message, a "Moves:" message, then one short message each for what is left, how it works on you, what you can do, and "This might be a scam".
+- **Format:** the audit is a run of short chat messages, like texting, never one long block or a table (owner decision, 2026-10-30, after markdown tables broke in the Grok Bot app). The instructions carry the rule; the skill's template sets the order: a kind-of-words line, a "Claims:" message, a "Moves:" message, then one short message each for what is left, how it works on you, and what you can do. The script line ("This looks like the <script> scam.") lives in the first reply; the audit repeats it only when it came first.
 - **Claims and tags:** one line per claim, quote, tag, why; the four tags and their order are unchanged from `cold-read-check`.
 - **Moves:** one line per move, starting with its catalog name (section 5) instead of the ten technique names.
 - **How it works on you:** two or three plain sentences, in the second person, on how these moves work together on the reader of the words: what each one makes you feel or skip, and what that leads you to do. "The deadline stops you from checking; keeping you on video means nobody else can tell you it's fake; the fee is what all of it was for." It describes the words, never the speaker's intent. When a published script matches (section 5), it follows that script's "how it plays" line.
@@ -203,7 +217,9 @@ unverified: the "how it plays" lines are drawn from the advisories as summarised
 | no counter-prediction, don't mock the user, don't evaluate the user | kept | anti-astrology is the marketing, not the chat; the bot never says whether astrology works |
 | risk gate reads only the user's own situation | widened | `SKILL.md:51` applied to scams, so a caller's threat never fires it |
 | two-tier risk gate | changed | departs from the shared block: control signs get a helpline and the audit continues; danger now still stops everything |
-| scam scripts may be named | new | a script is published text, not a judgment of a person; "this might be a scam" plus the reasoning, never "this is a scam" |
+| scam scripts may be named | new | a script is published text, not a judgment of a person; "this looks like the <script> scam" in the first reply, the reasoning on request, never "this is a scam" |
+| first reply protects, the audit waits | new | owner decision 2026-10-30: bottom line and a stop, one trick, one step and one person, then an offer; readings get a soft "I'd suggest not paying today, it's your call" |
+| unlisted countries get a looked-up line | new | owner decision 2026-10-30: the bot says it's looking up the official line, searches, and gives one only from a government, police, or helpline site; never a number from memory |
 | money gate gives direct instructions | new | the only place the bot advises, and only for live official-sounding contact; "call the number you look up yourself" is safe even if the call is real |
 | flooded check reads the user's own words only | kept | pasted scam texts look flooded by design |
 | voice mirroring | removed | owner decision 2026-10-28; answers in the user's language, plain sentence case |
@@ -239,7 +255,7 @@ The full plan is in #25's first comment; its personal-message cases are dropped 
 
 Built: 14 cases (the eight above plus six scored ones) and `scripts/run-lamplighter-evals.mjs`, which runs layer 1 through the signed-in `grok` CLI instead of the Responses API, so no API key is needed; the model is a Grok coding model, not the Bot's. Layer 2 is `evals/lamplighter/multi/` (`--set multi`): nine scripted conversations, each turn graded, run through a resumed session on either backend. Layer 3 is the manual checklist in `bots/lamplighter/acceptance.md`.
 
-`evals/lamplighter/real/` adds 84 cases rebuilt from the two case libraries with personal details removed (`--set real`): 12 live calls, 42 after-the-fact, 30 about-to-pay. Its README lists the spec gaps they exposed (13 scam types with no script, live calls that don't sound official, threats aimed at the user inside pasted words), all fixed 2026-10-29. Best Haiku 5.5 run so far, with a Sonnet 5.5 judge: 13 of 14 core cases (all 8 zero-tolerance) and 68 of 84 real cases clean, one run each. Layer 2 on Haiku: 7 of 9 conversations clean, including all three zero-tolerance ones.
+`evals/lamplighter/real/` adds 84 cases rebuilt from the two case libraries with personal details removed (`--set real`): 12 live calls, 42 after-the-fact, 30 about-to-pay. Its README lists the spec gaps they exposed (13 scam types with no script, live calls that don't sound official, threats aimed at the user inside pasted words), all fixed 2026-10-29. Protection-first rebuild, 2026-10-30: the core cases that aren't live or a crisis now run two turns, the first reply graded on turn 1 (no claim tags, a stop, the offer, a Sonnet judge for protection-first) and the audit on turn 2 after "yes, go through each claim"; a 15th case, `elsewhere-lookup`, checks the look-up rule for a German user; the real cases grade the first reply only. Haiku 5.5 with a Sonnet 5.5 judge, one run each, after four rounds of fixes: 13 of 15 core cases (every zero-tolerance case clean), 8 of 9 conversations (every zero-tolerance one clean), and 58 of 84 real cases. Most real misses are a fourth action line after a loss and two crisis replies to users who wrote despair, which the risk gate is meant to catch. The proxy has no web search, so the look-up rule is only tested on Grok.
 
 Only graders that read the reply carry over from `cold-read-check`; the matchmaker graders `written`, `skill-fired`, and `no-memory-write` check files and tool calls that Grok doesn't expose.
 
@@ -262,14 +278,14 @@ Scored cases (the full list is in the eval plan): the matchmaker call, a paid re
 
 ### v1: readings and scams
 
-Readings and predictions, official-sounding contact, and scam money offers. Personal messages, public posts, and non-scam pitches are out (owner decision, 2026-10-29, replacing the earlier five-kinds plan). Reporting lines in v1: India, the US, and the UK only, and only on the money-gate card and after a published scam script; never after a reading.
+Readings and predictions, official-sounding contact, and scam money offers. Personal messages, public posts, and non-scam pitches are out (owner decision, 2026-10-29, replacing the earlier five-kinds plan). Reporting lines in v1: listed for India, the US, and the UK, looked up for anywhere else (decision 4); on the money-gate card and after money left to a scam; never after a reading.
 
 ### decisions
 
 1. Settled: astrology framing is marketing only; in the chat the bot never takes a stance on astrology (section 2).
-2. **Settled 2026-10-29 (owner): "this might be a scam", then the reasoning.** When a published script matches, the audit ends with "This might be a scam." and one or two sentences naming the script, who warns about it, and the moves that make it up. Never "this is a scam", "fake", or "scammer": the words match a pattern, and the bot can't know who is on the other end.
+2. **Settled 2026-10-29 (owner), reworded 2026-10-30: "This looks like the <script> scam."** When a published script matches, the first reply opens with it, then a stop; the reasoning (the script, who warns about it, its moves) comes when the user asks. Never "this is a scam", "fake", or "scammer": the words match a pattern, and the bot can't know who is on the other end. Reworded from "this might be a scam" with the protection-first redesign: naming the scam helps, and "looks like" stays hedged.
 3. **Moved to v2 (owner, 2026-10-29): where a paid remedy becomes reportable.** In v1 a reading, paid remedy included, gets the audit and no reporting line. The research and the case library for v2 are below.
-4. **Moved to v2 (owner, 2026-10-29): reporting lines outside India, the US, and the UK.** In v1 a user elsewhere gets no reporting line, only "call your bank first" when money already left.
+4. **Settled 2026-10-30 (owner): lines outside India, the US, and the UK are looked up.** The bot says "Looking up the official line for <country>.", searches the web, and gives a line only from a government, police, or helpline site, naming it; if it can't, "your bank and your local police". This covers crisis and domestic-violence lines too, after the emergency number and findahelpline.com. It replaces the 2026-10-29 rule of no line outside the three countries; a curated list for more countries is still v2.
 
 ### v2: reporting lines
 

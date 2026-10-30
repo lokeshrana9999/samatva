@@ -4,16 +4,18 @@ The build of the Lamplighter template specified in [docs/lamplighter.md](../../d
 
 | file | goes into | limit |
 |---|---|---|
-| [instructions.md](instructions.md) | the Bot's instructions, pasted whole | 4,000 characters (a community figure, unverified); `--check` enforces it |
-| [skills/lamplighter-patterns/SKILL.md](skills/lamplighter-patterns/SKILL.md) | one skill, named `lamplighter-patterns` | none known |
+| [instructions.md](instructions.md) | the Bot's standing role, sent in chat | 4,000 characters (a community figure, unverified); `--check` enforces it |
+| [skills/lamplighter-patterns/SKILL.md](skills/lamplighter-patterns/SKILL.md) | one private skill, named `lamplighter-patterns`, created in chat | none known |
 
-The instructions hold what must work even if the skill never loads: the risk gate with its helplines, the money-gate card, the flooded check, the exits, and the hard rules. The skill holds the audit: the tags, the closed list of 28 moves, the published scam scripts with their reporting lines, and the template.
+The instructions hold what must work even if the skill never loads: the risk gate with its helplines, the money-gate card, the flooded check, the protection-first order, the look-up rule for unlisted countries, the exits, and the hard rules. The skill holds the first-reply template, the audit template, the tags, the closed list of 28 moves, the published scam scripts, and the reporting lines.
 
 ## set it up
 
-1. Open Grok Bot and create a Bot named Lamplighter, subtitle "light every move, judge no one", category Personal.
-2. Paste `instructions.md` into its instructions.
-3. Add a skill named `lamplighter-patterns` with the body of `SKILL.md` (its frontmatter description is the skill's description).
+Personal Bots have no settings page: the role and the skill are set by chatting with the new Bot.
+
+1. Open Grok Bot and create a Bot named Lamplighter.
+2. In its chat, send: "Remember everything inside <instructions> below as your standing role, exactly as written. Reply with one word: saved." followed by `instructions.md` inside `<instructions>` tags.
+3. Then send: "Create a private skill named lamplighter-patterns from the text inside <skill> below, exactly as written. Reply with one word: created." followed by `SKILL.md` inside `<skill>` tags.
 4. Leave routines, files, and connectors empty.
 5. Publish: Share, Create a copy, Publish, Copy link. The listing copy and avatar are kept with the launch media, outside this repo.
 
