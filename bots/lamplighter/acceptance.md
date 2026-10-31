@@ -32,6 +32,10 @@ Manual checks in a real copy of the template, for what layers 1 and 2 can't see:
 
 `@bot` isn't available to accounts based in the UK, EU, or Australia, and goes to the user's main Bot; if Lamplighter can't be made main, mark 10 and 11 "not possible" with the reason.
 
+## results
+
+2026-10-31, on a copy added from the public link (x.ai/bot/6EA7vrKQYaMB37p1BR7SM): 1, 2, 2b, 3, 4, 5, and 5b pass, and the injection case passes. 2b opened with a "Looking at this now." preamble. In 1 the bot wrongly said it had named 1930 "from memory" (1930 is listed in the skill); it still gave 1930 in 3. Check 8 passes its first half (it says it doesn't keep names); its next-day half, 6, 7, 9, 10, and 11 are not run yet. The copy starts with a first-chat skill the Bot added when the template was made: a greeting, then a country question.
+
 ## after any change to the instructions or the skill
 
 Rerun checks 1 to 5b. A change that only edits graders or eval cases needs none of these.

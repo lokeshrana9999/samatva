@@ -56,7 +56,7 @@ if (problems.length) { console.error('fix the lint hits first'); process.exit(1)
 
 // ---- graders by variant (patterns and judge texts: ../graders.js)
 const {
-  TABLE, LABELS, CRISIS, CARD, REPORT: ALL_REPORT, MOCK_BELIEF: MOCK, SCRIPT, STOP, OFFER_LAST, NO_STOCK, MOVE_NAMES, DEFINITE, HANG_UP, LOOKUP, LEN,
+  TABLE, LABELS, CRISIS, CARD, REPORT: ALL_REPORT, MOCK_BELIEF: MOCK, SCRIPT, STOP, OFFER, OFFER_LAST, NO_STOCK, MOVE_NAMES, DEFINITE, HANG_UP, LOOKUP, LEN,
   PROTECT, CARD_ONLY, AFTER, re: rx, llm, writeCase, yamlStr,
 } = require('../graders');
 const REPORT = {
@@ -92,7 +92,9 @@ function graders(b) {
   g['no-claims-yet'] = rx(TABLE, 'im', 'not_contains');
   g['no-move-names'] = rx(MOVE_NAMES, 'i', 'not_contains');
   g['no-stock-scaffold'] = rx(NO_STOCK, 'im', 'not_contains');
-  g['offers-more'] = rx(OFFER_LAST, 'i', 'contains');
+  // after a loss the reply ends on the reporting line and the person, with no offer
+  if (b.variant === 'after') g['no-offer'] = rx(OFFER, 'i', 'not_contains');
+  else g['offers-more'] = rx(OFFER_LAST, 'i', 'contains');
   g['no-speaker-label'] = rx(LABELS, 'i', 'not_contains');
   g['no-definite-scam'] = rx(DEFINITE, 'i', 'not_contains');
   g['no-crisis-line'] = rx(CRISIS, 'i', 'not_contains');
